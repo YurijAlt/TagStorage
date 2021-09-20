@@ -9,6 +9,11 @@ import UIKit
 
 class AddNewTagViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var tagNameTextField: UITextField!
+    @IBOutlet weak var tagBrandTextField: UITextField!
+    
+    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +24,15 @@ class AddNewTagViewController: UIViewController {
         view.endEditing(true)
     }
     
+    //MARK: - IBActions
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
+    
+    @IBAction func addButtonTapped() {
+        dismiss(animated: true)
+    }
+    
     
 }
 

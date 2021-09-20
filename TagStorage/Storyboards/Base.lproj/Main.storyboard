@@ -167,6 +167,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonTapped" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Xz-Jc-gft"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAf-OR-OOn"/>
@@ -188,6 +191,10 @@
                             <constraint firstItem="jqX-H5-odh" firstAttribute="top" secondItem="SMY-wp-vHQ" secondAttribute="bottom" constant="8" id="xiz-yo-P0o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tagBrandTextField" destination="SMY-wp-vHQ" id="ZL9-0B-Gwn"/>
+                        <outlet property="tagNameTextField" destination="iFO-Ms-C2R" id="ydn-3x-Bb9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61S-To-zrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

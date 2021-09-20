@@ -7,9 +7,5 @@
 
 struct Tag {
     let tagName: String
-    let tagType: String
     let tagBrand: String
-    let tagSize: Int
-    let tagColor: String
-    let tagYearOfPurchase: Int
 }

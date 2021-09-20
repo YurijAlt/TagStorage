@@ -16,7 +16,7 @@
 		C4AAEF7D26F7BAA400E3891B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF7C26F7BAA400E3891B /* SceneDelegate.swift */; };
 		C4AAEF7F26F7BAA400E3891B /* AddNewTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */; };
 		C4AAEF8226F7BAA400E3891B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8026F7BAA400E3891B /* Main.storyboard */; };
-		C4AAEF8526F7BAA400E3891B /* TagStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */; };
+		C4AAEF8526F7BAA400E3891B /* TagsStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */; };
 		C4AAEF8726F7BAA700E3891B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8626F7BAA700E3891B /* Assets.xcassets */; };
 		C4AAEF8A26F7BAA700E3891B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8826F7BAA700E3891B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -97,7 +97,7 @@
 				C4177D6E26F7C1CA00DD61E3 /* Views */,
 				C4AAEF9326F7BC1500E3891B /* Storyboards */,
 				C4AAEF9426F7BC2C00E3891B /* Source */,
-				C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */,
+				C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */,
 				C4177D7126F7C59700DD61E3 /* Models */,
 				C493508D26F86DFB00DF9AF4 /* Services */,
 			);
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */,
-				C4AAEF8526F7BAA400E3891B /* TagStorage.xcdatamodeld in Sources */,
+				C4AAEF8526F7BAA400E3891B /* TagsStorage.xcdatamodeld in Sources */,
 				C4AAEF7F26F7BAA400E3891B /* AddNewTagViewController.swift in Sources */,
 				C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */,
 				C4AAEF7B26F7BAA400E3891B /* AppDelegate.swift in Sources */,
@@ -425,13 +425,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */ = {
+		C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C4AAEF8426F7BAA400E3891B /* TagStorage.xcdatamodel */,
 			);
 			currentVersion = C4AAEF8426F7BAA400E3891B /* TagStorage.xcdatamodel */;
-			path = TagStorage.xcdatamodeld;
+			path = TagsStorage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
