@@ -41,10 +41,12 @@ class StorageManager {
     }
 
     //MARK: Save and delete Data
-//    func save(_ tag: SavedTag) {
-//        let addTag = SavedTag(context: viewContext)
-//        saveContext()
-//    }
+    func save(_ tag: Tag) {
+        let addTag = SavedTag(context: viewContext)
+        addTag.name = tag.tagName
+        addTag.brand = tag.tagBrand
+        saveContext()
+    }
 
     func delete(_ tag: SavedTag) {
         viewContext.delete(tag)

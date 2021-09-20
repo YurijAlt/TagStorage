@@ -30,9 +30,16 @@ class AddNewTagViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped() {
+        saveTag()
         dismiss(animated: true)
     }
     
+    //MARK: - Private Methods
+    private func saveTag() {
+        if tagNameTextField.text != "" && tagBrandTextField.text != "" {
+            StorageManager.shared.save(Tag(tagName: tagNameTextField.text ?? "", tagBrand: tagBrandTextField.text ?? ""))
+        }
+    }
     
 }
 
