@@ -25,12 +25,19 @@ class AddNewTagViewController: UIViewController {
     }
     
     //MARK: - IBActions
+    
+    
+    @IBAction func deleteButtonTapped() {
+        dismiss(animated: true)
+    }
+    
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
     
     @IBAction func addButtonTapped() {
         saveTag()
+        
         dismiss(animated: true)
     }
     

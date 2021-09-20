@@ -27,12 +27,13 @@ class MainTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)
-        
         let tag = tags[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
         content.text = tag.name
+        content.textProperties.color = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
         content.secondaryText = tag.brand
+        content.secondaryTextProperties.color = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         content.image = UIImage(named: "tag")
         //content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
@@ -46,7 +47,7 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        80
     }
 
     //MARK: - Private Methods

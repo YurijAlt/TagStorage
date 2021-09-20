@@ -21,7 +21,7 @@
                                 <rect key="frame" x="372" y="18" width="22" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="xmark.seal.fill" catalog="system"/>
+                                <state key="normal" image="xmark.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="closeButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="9aY-Vu-wQ0"/>
                                 </connections>
@@ -55,6 +55,16 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtV-nd-Tp2">
+                                <rect key="frame" x="21" y="18" width="20" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" image="xmark.bin.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped" destination="bbq-mm-lp1" eventType="touchUpInside" id="EHZ-fA-GKc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iiW-rk-RsX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +84,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG8-It-tXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bbq-mm-lp1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3609" y="362"/>
         </scene>
@@ -120,6 +131,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tag Storage" id="Aum-hh-eTb">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="gg6-Wq-sUK"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wlf-Sh-A5e">
                             <connections>
                                 <segue destination="hYy-LY-uOF" kind="presentation" id="eOV-TB-KLI"/>
@@ -243,6 +255,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dNl-LR-KiT">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.26256455182873073" green="0.5968639690311317" blue="0.92133218050003052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -255,7 +268,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="tag" width="3001" height="4252"/>
+        <image name="xmark.bin.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="32" height="32"/>
         <image name="xmark.seal.fill" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
