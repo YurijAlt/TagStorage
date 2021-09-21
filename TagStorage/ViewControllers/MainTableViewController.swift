@@ -18,10 +18,20 @@ class MainTableViewController: UITableViewController {
         fetchData()
         tableView.reloadData()
     }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return tags.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController else { return }
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+    
+        
+        detailVC.tag = tags[indexPath.row]
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,7 +44,7 @@ class MainTableViewController: UITableViewController {
         content.secondaryText = tag.brand
         content.secondaryTextProperties.color = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         content.image = UIImage(named: "tag")
-        //content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
         

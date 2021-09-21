@@ -12,11 +12,15 @@ class AddNewTagViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
     
     
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        addButton.isHidden = true
+        
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
