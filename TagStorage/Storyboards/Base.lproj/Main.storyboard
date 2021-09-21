@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -14,11 +15,11 @@
             <objects>
                 <viewController id="jL4-dj-j8S" customClass="DetailViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAX-It-qLH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshort" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-BP-xlt">
-                                <rect key="frame" x="42" y="80" width="290" height="290"/>
+                                <rect key="frame" x="42" y="82" width="290" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="R8c-BP-xlt" secondAttribute="height" multiplier="1:1" id="rfM-cS-FFN"/>
                                 </constraints>
@@ -27,15 +28,17 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3w-wP-S5h">
-                                <rect key="frame" x="339" y="20" width="20" height="22"/>
+                                <rect key="frame" x="334" y="20" width="25" height="24"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="xmark.circle.fill" catalog="system"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
                                     <action selector="closeButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="PxO-X1-kSz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-4b-etO">
-                                <rect key="frame" x="149" y="378" width="77.5" height="77.5"/>
+                                <rect key="frame" x="149" y="380" width="77.5" height="77.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-tl-CLD">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
@@ -57,6 +60,16 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkP-mY-I6y">
+                                <rect key="frame" x="16" y="20" width="25" height="24"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.bin.circle" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="biF-A6-VaQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iiW-rk-RsX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,19 +77,23 @@
                             <constraint firstItem="iiW-rk-RsX" firstAttribute="trailing" secondItem="U3w-wP-S5h" secondAttribute="trailing" constant="16" id="6Dy-so-hPf"/>
                             <constraint firstItem="Tic-4b-etO" firstAttribute="centerX" secondItem="iiW-rk-RsX" secondAttribute="centerX" id="FvG-VY-Nr7"/>
                             <constraint firstItem="iiW-rk-RsX" firstAttribute="trailing" secondItem="R8c-BP-xlt" secondAttribute="trailing" constant="43" id="HEC-RN-owP"/>
+                            <constraint firstItem="CkP-mY-I6y" firstAttribute="top" secondItem="iiW-rk-RsX" secondAttribute="top" constant="20" id="HLm-yK-PIa"/>
                             <constraint firstItem="U3w-wP-S5h" firstAttribute="top" secondItem="iiW-rk-RsX" secondAttribute="top" constant="20" id="ISZ-1d-kge"/>
                             <constraint firstItem="Tic-4b-etO" firstAttribute="top" secondItem="R8c-BP-xlt" secondAttribute="bottom" constant="8" symbolic="YES" id="MUm-v2-hiY"/>
                             <constraint firstItem="R8c-BP-xlt" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="42" id="U9w-b4-Qi4"/>
                             <constraint firstItem="R8c-BP-xlt" firstAttribute="top" secondItem="U3w-wP-S5h" secondAttribute="bottom" constant="38" id="VbY-MA-ffY"/>
+                            <constraint firstItem="CkP-mY-I6y" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="16" id="a0G-SS-cZm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tagBrandLabel" destination="G8o-WK-IJg" id="1XL-kG-B6B"/>
                         <outlet property="tagImage" destination="R8c-BP-xlt" id="Mvx-qz-FxB"/>
                         <outlet property="tagNameLabel" destination="ctf-tl-CLD" id="ExA-FW-49R"/>
+                        <segue destination="fmC-wZ-qk8" kind="unwind" unwindAction="unwind:" id="Fx5-vq-Bi3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG8-It-tXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fmC-wZ-qk8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3608.6956521739135" y="361.60714285714283"/>
         </scene>
@@ -113,7 +130,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="jL4-dj-j8S" kind="presentation" id="em1-iY-LR7"/>
+                                    <segue destination="jL4-dj-j8S" kind="presentation" modalPresentationStyle="fullScreen" id="em1-iY-LR7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -125,12 +142,16 @@
                     <navigationItem key="navigationItem" title="Tag Storage" id="Aum-hh-eTb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wlf-Sh-A5e">
                             <connections>
-                                <segue destination="hYy-LY-uOF" kind="presentation" id="eOV-TB-KLI"/>
+                                <segue destination="hYy-LY-uOF" kind="presentation" modalPresentationStyle="fullScreen" id="eOV-TB-KLI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="Xay-Ju-Tme" kind="unwind" unwindAction="unwind:" id="NcN-UF-1aS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Koy-kh-HFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xay-Ju-Tme" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2586.9565217391305" y="-12.053571428571429"/>
         </scene>
@@ -139,14 +160,16 @@
             <objects>
                 <viewController id="hYy-LY-uOF" customClass="AddNewTagViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKG-Bk-Brw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-Vd-msd">
-                                <rect key="frame" x="339" y="20" width="20" height="19"/>
+                                <rect key="frame" x="334" y="20" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="xmark.circle.fill" catalog="system"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
                                     <action selector="closeButtonTapped" destination="hYy-LY-uOF" eventType="touchUpInside" id="IM9-39-IaN"/>
                                     <action selector="closeButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="UeG-lK-cL2"/>
@@ -167,8 +190,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Цветное"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
-                                <rect key="frame" x="96" y="442" width="183" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
+                                <rect key="frame" x="96" y="462" width="183" height="55"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,6 +230,7 @@
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="40" id="fwj-9U-rfc"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="trailing" secondItem="ZKG-Bk-Brw" secondAttribute="trailingMargin" id="tRM-Ld-e2y"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="tcs-4Q-PYe"/>
+                            <constraint firstItem="XJ8-3p-8Go" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="wrt-nh-csA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -317,12 +341,16 @@
         <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="tshort" width="512" height="512"/>
+        <image name="xmark.bin.circle" catalog="system" width="128" height="121"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

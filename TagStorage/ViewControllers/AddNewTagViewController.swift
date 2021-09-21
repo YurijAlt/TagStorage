@@ -18,7 +18,7 @@ class AddNewTagViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        addButton.isHidden = true
+        //addButton.isHidden = true
         
         
     }

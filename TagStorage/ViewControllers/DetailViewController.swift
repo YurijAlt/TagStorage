@@ -31,10 +31,18 @@ class DetailViewController: UIViewController {
         tagImage.layer.cornerRadius = tagImage.frame.width / 2
     }
     
+    
     //MARK: - IBActions
+    
     
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
+    
+    @IBAction func deleteButtonTapped() {
+        StorageManager.shared.delete(tag)
+        dismiss(animated: true)
+    }
+    
     
 }
