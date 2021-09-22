@@ -44,7 +44,7 @@ class StorageManager {
     func save(_ tag: Tag) {
         let addTag = SavedTag(context: viewContext)
         addTag.name = tag.tagName
-        addTag.brand = tag.tagBrand
+        addTag.brand = tag.tagName
         saveContext()
     }
 

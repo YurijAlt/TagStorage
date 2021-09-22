@@ -8,29 +8,21 @@
 import UIKit
 
 class AddNewTagViewController: UIViewController {
-
+    
     //MARK: - IBOutlets
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
-    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //addButton.isHidden = true
-        
-        
+     //   addButton.isHidden = true
     }
+    
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
     
     //MARK: - IBActions
-    
-    
     @IBAction func deleteButtonTapped() {
         dismiss(animated: true)
     }
@@ -41,7 +33,6 @@ class AddNewTagViewController: UIViewController {
     
     @IBAction func addButtonTapped() {
         saveTag()
-        
         dismiss(animated: true)
     }
     
@@ -54,3 +45,10 @@ class AddNewTagViewController: UIViewController {
     
 }
 
+//MARK: - Work with keyboard
+extension AddNewTagViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+}

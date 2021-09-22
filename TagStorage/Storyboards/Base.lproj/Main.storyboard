@@ -89,11 +89,9 @@
                         <outlet property="tagBrandLabel" destination="G8o-WK-IJg" id="1XL-kG-B6B"/>
                         <outlet property="tagImage" destination="R8c-BP-xlt" id="Mvx-qz-FxB"/>
                         <outlet property="tagNameLabel" destination="ctf-tl-CLD" id="ExA-FW-49R"/>
-                        <segue destination="fmC-wZ-qk8" kind="unwind" unwindAction="unwind:" id="Fx5-vq-Bi3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG8-It-tXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="fmC-wZ-qk8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3608.6956521739135" y="361.60714285714283"/>
         </scene>
@@ -146,12 +144,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="Xay-Ju-Tme" kind="unwind" unwindAction="unwind:" id="NcN-UF-1aS"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Koy-kh-HFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Xay-Ju-Tme" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2586.9565217391305" y="-12.053571428571429"/>
         </scene>
