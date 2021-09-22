@@ -17,13 +17,21 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tagNameLabel: UILabel!
     @IBOutlet weak var tagBrandLabel: UILabel!
     
+    
+    @IBOutlet weak var tagStirkaLabel: UILabel!
+    
+    
+    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tagNameLabel.text = tag.name
         tagBrandLabel.text = tag.brand
+        tagStirkaLabel.isHidden = tag.stirka
     }
 
+    
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         tagImage.layer.cornerRadius = tagImage.frame.width / 2

@@ -52,7 +52,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ц/Ч/Б" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twk-rq-w1W">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚙️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-lW-x1u">
                                         <rect key="frame" x="0.0" y="57" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -86,9 +86,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tagBrandLabel" destination="G8o-WK-IJg" id="1XL-kG-B6B"/>
+                        <outlet property="tagBrandLabel" destination="G8o-WK-IJg" id="tcr-OG-h8P"/>
                         <outlet property="tagImage" destination="R8c-BP-xlt" id="Mvx-qz-FxB"/>
                         <outlet property="tagNameLabel" destination="ctf-tl-CLD" id="ExA-FW-49R"/>
+                        <outlet property="tagStirkaLabel" destination="h1H-lW-x1u" id="rJj-0S-xzS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG8-It-tXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,21 +170,6 @@
                                     <action selector="closeButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="UeG-lK-cL2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqX-H5-odh">
-                                <rect key="frame" x="76" y="193" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Черное"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npx-fG-Mcy">
-                                <rect key="frame" x="135" y="193" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Белое"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLz-dj-1uv">
-                                <rect key="frame" x="181" y="193" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Цветное"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
                                 <rect key="frame" x="96" y="462" width="183" height="55"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -214,6 +200,20 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iew-BP-nwy">
+                                <rect key="frame" x="175" y="247" width="25" height="26"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="26"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="goforward.60" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tagButton:" destination="hYy-LY-uOF" eventType="touchUpInside" id="tOx-aV-ITW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAf-OR-OOn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -222,8 +222,10 @@
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="90" id="N8W-VV-lfR"/>
                             <constraint firstItem="wAf-OR-OOn" firstAttribute="bottom" secondItem="XJ8-3p-8Go" secondAttribute="bottom" constant="150" id="W6P-Nd-WGb"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="40" id="fwj-9U-rfc"/>
+                            <constraint firstItem="iew-BP-nwy" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="sgR-mZ-WOY"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="trailing" secondItem="ZKG-Bk-Brw" secondAttribute="trailingMargin" id="tRM-Ld-e2y"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="tcs-4Q-PYe"/>
+                            <constraint firstItem="iew-BP-nwy" firstAttribute="top" secondItem="SMY-wp-vHQ" secondAttribute="bottom" constant="69" id="vMa-dc-zm7"/>
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="wrt-nh-csA"/>
                         </constraints>
                     </view>
@@ -240,7 +242,7 @@
         <!--Советы-->
         <scene sceneID="t3H-sE-0FH">
             <objects>
-                <collectionViewController id="h67-3o-5nL" sceneMemberID="viewController">
+                <collectionViewController id="h67-3o-5nL" customClass="AdviceCollectionViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dq0-gd-YbA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,6 +335,7 @@
     <resources>
         <image name="book.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <image name="goforward.60" catalog="system" width="121" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="tshort" width="512" height="512"/>
         <image name="xmark.bin.circle" catalog="system" width="128" height="121"/>

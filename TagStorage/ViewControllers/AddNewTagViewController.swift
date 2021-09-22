@@ -14,6 +14,12 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
+    
+    
+    //MARK: - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    private var firstTagIsEnabled = true
+
+    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +41,28 @@ class AddNewTagViewController: UIViewController {
         saveTag()
         dismiss(animated: true)
     }
+
+    
+    @IBAction func tagButton(_ sender: UIButton) {
+        if firstTagIsEnabled { sender.tintColor = .red
+        } else {
+            sender.tintColor = .none
+        }
+        firstTagIsEnabled.toggle()
+    }
+    
+    //MARK: - ?????????????????????????????????????????????????????????
+    
+    
     
     //MARK: - Private Methods
     private func saveTag() {
         if tagNameTextField.text != "" && tagBrandTextField.text != "" {
-            StorageManager.shared.save(Tag(tagName: tagNameTextField.text ?? "", tagBrand: tagBrandTextField.text ?? ""))
+            StorageManager.shared.save(Tag(
+                                        tagName: tagNameTextField.text ?? "",
+                                        tagBrand: tagBrandTextField.text ?? "",
+                                        tagStirka: firstTagIsEnabled
+            ))
         }
     }
     

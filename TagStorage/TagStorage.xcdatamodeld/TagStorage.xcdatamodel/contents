@@ -3,8 +3,9 @@
     <entity name="SavedTag" representedClassName="SavedTag" syncable="YES" codeGenerationType="class">
         <attribute name="brand" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="stirka" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="SavedTag" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="SavedTag" positionX="-63" positionY="-18" width="128" height="74"/>
     </elements>
 </model>

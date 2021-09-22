@@ -11,12 +11,14 @@
 		C4177D6B26F7C14F00DD61E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */; };
 		C4177D6D26F7C1C400DD61E3 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6C26F7C1C400DD61E3 /* MainTableViewCell.swift */; };
 		C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6F26F7C59100DD61E3 /* Tag.swift */; };
+		C446CB8726FBC8A300933DA7 /* AdviceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */; };
+		C446CB8926FBC91E00933DA7 /* AdviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */; };
 		C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493508B26F86DD300DF9AF4 /* StorageManager.swift */; };
 		C4AAEF7B26F7BAA400E3891B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF7A26F7BAA400E3891B /* AppDelegate.swift */; };
 		C4AAEF7D26F7BAA400E3891B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF7C26F7BAA400E3891B /* SceneDelegate.swift */; };
 		C4AAEF7F26F7BAA400E3891B /* AddNewTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */; };
 		C4AAEF8226F7BAA400E3891B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8026F7BAA400E3891B /* Main.storyboard */; };
-		C4AAEF8526F7BAA400E3891B /* TagsStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */; };
+		C4AAEF8526F7BAA400E3891B /* TagStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */; };
 		C4AAEF8726F7BAA700E3891B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8626F7BAA700E3891B /* Assets.xcassets */; };
 		C4AAEF8A26F7BAA700E3891B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AAEF8826F7BAA700E3891B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C4177D6C26F7C1C400DD61E3 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		C4177D6F26F7C59100DD61E3 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewController.swift; sourceTree = "<group>"; };
+		C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewCell.swift; sourceTree = "<group>"; };
 		C493508B26F86DD300DF9AF4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C4AAEF7726F7BAA400E3891B /* TagStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AAEF7A26F7BAA400E3891B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C4177D6C26F7C1C400DD61E3 /* MainTableViewCell.swift */,
+				C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,7 +102,7 @@
 				C4177D6E26F7C1CA00DD61E3 /* Views */,
 				C4AAEF9326F7BC1500E3891B /* Storyboards */,
 				C4AAEF9426F7BC2C00E3891B /* Source */,
-				C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */,
+				C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */,
 				C4177D7126F7C59700DD61E3 /* Models */,
 				C493508D26F86DFB00DF9AF4 /* Services */,
 			);
@@ -120,6 +125,7 @@
 				C4177D6826F7BF8200DD61E3 /* MainTableViewController.swift */,
 				C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */,
 				C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */,
+				C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,8 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C446CB8926FBC91E00933DA7 /* AdviceCollectionViewCell.swift in Sources */,
+				C446CB8726FBC8A300933DA7 /* AdviceCollectionViewController.swift in Sources */,
 				C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */,
-				C4AAEF8526F7BAA400E3891B /* TagsStorage.xcdatamodeld in Sources */,
+				C4AAEF8526F7BAA400E3891B /* TagStorage.xcdatamodeld in Sources */,
 				C4AAEF7F26F7BAA400E3891B /* AddNewTagViewController.swift in Sources */,
 				C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */,
 				C4AAEF7B26F7BAA400E3891B /* AppDelegate.swift in Sources */,
@@ -425,13 +433,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C4AAEF8326F7BAA400E3891B /* TagsStorage.xcdatamodeld */ = {
+		C4AAEF8326F7BAA400E3891B /* TagStorage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C4AAEF8426F7BAA400E3891B /* TagStorage.xcdatamodel */,
 			);
 			currentVersion = C4AAEF8426F7BAA400E3891B /* TagStorage.xcdatamodel */;
-			path = TagsStorage.xcdatamodeld;
+			path = TagStorage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -15,7 +15,7 @@ class StorageManager {
 
     // MARK: Core Data stack
     private let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "TagsStorage")
+        let container = NSPersistentContainer(name: "TagStorage")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -44,7 +44,8 @@ class StorageManager {
     func save(_ tag: Tag) {
         let addTag = SavedTag(context: viewContext)
         addTag.name = tag.tagName
-        addTag.brand = tag.tagName
+        addTag.brand = tag.tagBrand
+        addTag.stirka = tag.tagStirka
         saveContext()
     }
 

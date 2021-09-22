@@ -8,4 +8,5 @@
 struct Tag {
     let tagName: String
     let tagBrand: String
+    let tagStirka: Bool
 }
