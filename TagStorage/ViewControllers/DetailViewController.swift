@@ -17,20 +17,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tagNameLabel: UILabel!
     @IBOutlet weak var tagBrandLabel: UILabel!
     
-    
-    @IBOutlet weak var tagStirkaLabel: UILabel!
-    
-    
-    
+    @IBOutlet weak var tagStirkaButton: UIButton!
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tagNameLabel.text = tag.name
         tagBrandLabel.text = tag.brand
-        tagStirkaLabel.isHidden = tag.stirka
+        tagStirkaButton.isHidden = tag.stirka
     }
-
-    
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -47,4 +41,8 @@ class DetailViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
+    @IBAction func tagStirkaInfo() {
+    }
+    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
 }

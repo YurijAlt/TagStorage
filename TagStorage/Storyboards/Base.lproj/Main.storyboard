@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-4b-etO">
-                                <rect key="frame" x="149" y="380" width="77.5" height="77.5"/>
+                                <rect key="frame" x="149" y="380" width="77.5" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-tl-CLD">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
@@ -48,12 +48,6 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бренд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8o-WK-IJg">
                                         <rect key="frame" x="0.0" y="28.5" width="77.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚙️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1H-lW-x1u">
-                                        <rect key="frame" x="0.0" y="57" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -70,6 +64,14 @@
                                     <action selector="deleteButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="biF-A6-VaQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-La-0Ie">
+                                <rect key="frame" x="165" y="506.5" width="45" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="⚙️"/>
+                                <connections>
+                                    <action selector="tagStirkaInfo" destination="jL4-dj-j8S" eventType="touchUpInside" id="rwD-6Y-nIE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iiW-rk-RsX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,13 +85,15 @@
                             <constraint firstItem="R8c-BP-xlt" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="42" id="U9w-b4-Qi4"/>
                             <constraint firstItem="R8c-BP-xlt" firstAttribute="top" secondItem="U3w-wP-S5h" secondAttribute="bottom" constant="38" id="VbY-MA-ffY"/>
                             <constraint firstItem="CkP-mY-I6y" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="16" id="a0G-SS-cZm"/>
+                            <constraint firstItem="6T4-La-0Ie" firstAttribute="centerX" secondItem="iiW-rk-RsX" secondAttribute="centerX" id="igY-MU-Etx"/>
+                            <constraint firstItem="6T4-La-0Ie" firstAttribute="top" secondItem="Tic-4b-etO" secondAttribute="bottom" constant="77.5" id="zlB-eh-t14"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tagBrandLabel" destination="G8o-WK-IJg" id="tcr-OG-h8P"/>
                         <outlet property="tagImage" destination="R8c-BP-xlt" id="Mvx-qz-FxB"/>
                         <outlet property="tagNameLabel" destination="ctf-tl-CLD" id="ExA-FW-49R"/>
-                        <outlet property="tagStirkaLabel" destination="h1H-lW-x1u" id="rJj-0S-xzS"/>
+                        <outlet property="tagStirkaButton" destination="6T4-La-0Ie" id="Dcz-eA-GQo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG8-It-tXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -254,7 +258,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tGG-UN-WbN">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdviceCollectionViewCell" id="tGG-UN-WbN">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eFV-Fd-KrX">
