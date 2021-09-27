@@ -43,6 +43,7 @@ class DetailViewController: UIViewController {
     
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
     @IBAction func tagStirkaInfo() {
+        
     }
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
 }

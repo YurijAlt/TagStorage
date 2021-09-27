@@ -7,6 +7,11 @@
 
 import UIKit
 
+
+protocol MainTableViewControllerDelegate {
+    func update()
+}
+
 class MainTableViewController: UITableViewController {
     
     //MARK: - Private Properties
@@ -33,9 +38,15 @@ class MainTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailVC = segue.destination as? DetailViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        detailVC.tag = tags[indexPath.row]
+        if segue.identifier == "AddNewTagViewController" {
+            guard let addNewTagVC = segue.destination as? AddNewTagViewController else { return }
+            addNewTagVC.delegate = self
+        }
+        if segue.identifier == "DetailViewController" {
+            guard let detailVC = segue.destination as? DetailViewController else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            detailVC.tag = tags[indexPath.row]
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +62,7 @@ class MainTableViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -85,3 +96,11 @@ class MainTableViewController: UITableViewController {
     
 }
 
+
+
+extension MainTableViewController: MainTableViewControllerDelegate {
+    func update() {
+        fetchData()
+        tableView.reloadData()
+    }
+}

@@ -13,9 +13,12 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    
+
+    var delegate: MainTableViewControllerDelegate!
     
     //MARK: - Private Properties
+    
+    
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
     private var firstTagIsEnabled = true
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
@@ -23,23 +26,21 @@ class AddNewTagViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //   addButton.isHidden = true
+        addButton.isHidden = true
     }
     
     //MARK: - IBActions
-    @IBAction func deleteButtonTapped() {
-        dismiss(animated: true)
-    }
-    
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
     
     @IBAction func addButtonTapped() {
         saveTag()
+        delegate.update()
         dismiss(animated: true)
     }
     
+
     @IBAction func tagButton(_ sender: UIButton) {
         if firstTagIsEnabled { sender.tintColor = .red
         } else {
@@ -50,12 +51,18 @@ class AddNewTagViewController: UIViewController {
     
     //MARK: - Private Methods
     private func saveTag() {
-        if tagNameTextField.text != "" && tagBrandTextField.text != "" {
+        if tagNameTextField.text != "" {
             StorageManager.shared.save(Tag(
                 tagName: tagNameTextField.text ?? "",
                 tagBrand: tagBrandTextField.text ?? "",
                 tagStirka: firstTagIsEnabled
             ))
+        }
+        else {
+            let alert = UIAlertController(title: "Ошибка", message: "Ввете название вещи", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ок", style: .default)
+            alert.addAction(action)
+            present(alert, animated: true)
         }
     }
     
@@ -67,4 +74,16 @@ extension AddNewTagViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if tagNameTextField.text != "" {
+            addButton.isHidden = false
+        } else {
+            addButton.isHidden = true
+        }
+    }
+    
+    
 }

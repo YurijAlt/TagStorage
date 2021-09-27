@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="jL4-dj-j8S" customClass="DetailViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAX-It-qLH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshort" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-BP-xlt">
@@ -133,7 +133,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="jL4-dj-j8S" kind="presentation" modalPresentationStyle="fullScreen" id="em1-iY-LR7"/>
+                                    <segue destination="jL4-dj-j8S" kind="presentation" identifier="DetailViewController" modalPresentationStyle="pageSheet" id="em1-iY-LR7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -145,7 +145,7 @@
                     <navigationItem key="navigationItem" title="Tag Storage" id="Aum-hh-eTb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wlf-Sh-A5e">
                             <connections>
-                                <segue destination="hYy-LY-uOF" kind="presentation" modalPresentationStyle="fullScreen" id="eOV-TB-KLI"/>
+                                <segue destination="hYy-LY-uOF" kind="presentation" identifier="AddNewTagViewController" modalPresentationStyle="pageSheet" id="eOV-TB-KLI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -159,7 +159,7 @@
             <objects>
                 <viewController id="hYy-LY-uOF" customClass="AddNewTagViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKG-Bk-Brw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-Vd-msd">
@@ -175,7 +175,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
-                                <rect key="frame" x="96" y="462" width="183" height="55"/>
+                                <rect key="frame" x="96" y="242" width="183" height="55"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -196,40 +196,39 @@
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="hYy-LY-uOF" id="Ywh-U8-4eU"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Бренд" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMY-wp-vHQ">
                                         <rect key="frame" x="0.0" y="54" width="295" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="hYy-LY-uOF" id="bm2-fq-jJT"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iew-BP-nwy">
-                                <rect key="frame" x="175" y="247" width="25" height="26"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="26"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="goforward.60" catalog="system" symbolScale="large"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tagButton:" destination="hYy-LY-uOF" eventType="touchUpInside" id="tOx-aV-ITW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
+                                <rect key="frame" x="177.5" y="205.5" width="20" height="19"/>
+                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="tagButton:" destination="hYy-LY-uOF" eventType="touchUpInside" id="tOx-aV-ITW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAf-OR-OOn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FGu-0f-ok0" firstAttribute="top" secondItem="SMY-wp-vHQ" secondAttribute="bottom" constant="27" id="5zp-H6-ql9"/>
                             <constraint firstItem="wAf-OR-OOn" firstAttribute="trailing" secondItem="O0T-RH-1HW" secondAttribute="trailing" constant="40" id="6vE-D1-Sq2"/>
+                            <constraint firstItem="XJ8-3p-8Go" firstAttribute="top" secondItem="FGu-0f-ok0" secondAttribute="bottom" constant="17" id="KoF-0z-rah"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="90" id="N8W-VV-lfR"/>
-                            <constraint firstItem="wAf-OR-OOn" firstAttribute="bottom" secondItem="XJ8-3p-8Go" secondAttribute="bottom" constant="150" id="W6P-Nd-WGb"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="40" id="fwj-9U-rfc"/>
-                            <constraint firstItem="iew-BP-nwy" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="sgR-mZ-WOY"/>
+                            <constraint firstItem="FGu-0f-ok0" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="kmw-eO-HTF"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="trailing" secondItem="ZKG-Bk-Brw" secondAttribute="trailingMargin" id="tRM-Ld-e2y"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="tcs-4Q-PYe"/>
-                            <constraint firstItem="iew-BP-nwy" firstAttribute="top" secondItem="SMY-wp-vHQ" secondAttribute="bottom" constant="69" id="vMa-dc-zm7"/>
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="wrt-nh-csA"/>
                         </constraints>
                     </view>
@@ -339,8 +338,8 @@
     <resources>
         <image name="book.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
-        <image name="goforward.60" catalog="system" width="121" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="tshort" width="512" height="512"/>
         <image name="xmark.bin.circle" catalog="system" width="128" height="121"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>

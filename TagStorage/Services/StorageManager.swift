@@ -48,6 +48,8 @@ class StorageManager {
         addTag.stirka = tag.tagStirka
         saveContext()
     }
+    
+
 
     func delete(_ tag: SavedTag) {
         viewContext.delete(tag)
