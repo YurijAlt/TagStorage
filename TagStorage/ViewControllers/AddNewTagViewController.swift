@@ -13,12 +13,10 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-
+    //MARK: - Public Properties
     var delegate: MainTableViewControllerDelegate!
     
     //MARK: - Private Properties
-    
-    
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
     private var firstTagIsEnabled = true
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
@@ -40,7 +38,6 @@ class AddNewTagViewController: UIViewController {
         dismiss(animated: true)
     }
     
-
     @IBAction func tagButton(_ sender: UIButton) {
         if firstTagIsEnabled { sender.tintColor = .red
         } else {
@@ -75,15 +72,14 @@ extension AddNewTagViewController: UITextFieldDelegate {
         view.endEditing(true)
     }
     
-    
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
         if tagNameTextField.text != "" {
             addButton.isHidden = false
+            addButton.increase()
         } else {
             addButton.isHidden = true
         }
     }
-    
+
     
 }

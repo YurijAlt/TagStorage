@@ -27,7 +27,7 @@ class AdviceCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath)
-        cell.backgroundColor = .purple
+        cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         cell.layer.cornerRadius = 20
         return cell
     }

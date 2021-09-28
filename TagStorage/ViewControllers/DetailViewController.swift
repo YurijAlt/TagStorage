@@ -11,6 +11,7 @@ class DetailViewController: UIViewController {
     
     //MARK: - Public Properties
     var tag: SavedTag!
+    var delegate: MainTableViewControllerDelegate!
     
     //MARK: - IB Outlets
     @IBOutlet weak var tagImage: UIImageView!
@@ -38,6 +39,7 @@ class DetailViewController: UIViewController {
     
     @IBAction func deleteButtonTapped() {
         StorageManager.shared.delete(tag)
+        delegate.update()
         dismiss(animated: true)
     }
     

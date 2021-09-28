@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol MainTableViewControllerDelegate {
     func update()
 }
@@ -20,13 +19,6 @@ class MainTableViewController: UITableViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
-        tableView.reloadData()
-        changeTabBarBadgeValue()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         fetchData()
         tableView.reloadData()
         changeTabBarBadgeValue()
@@ -46,6 +38,7 @@ class MainTableViewController: UITableViewController {
             guard let detailVC = segue.destination as? DetailViewController else { return }
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             detailVC.tag = tags[indexPath.row]
+            detailVC.delegate = self
         }
     }
     
@@ -85,10 +78,10 @@ class MainTableViewController: UITableViewController {
     
     private func changeTabBarBadgeValue() {
         if !tags.isEmpty {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.2870845795, green: 0.8194509149, blue: 0.7614896894, alpha: 1)
             self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "\(tags.count)🏷"
         } else {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.9977101684, green: 0.540123105, blue: 0.8452116251, alpha: 1)
+            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.3450009227, green: 0.3846887648, blue: 0.4445621371, alpha: 1)
             self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "0🏷"
         }
     }
@@ -96,11 +89,10 @@ class MainTableViewController: UITableViewController {
     
 }
 
-
-
 extension MainTableViewController: MainTableViewControllerDelegate {
     func update() {
         fetchData()
         tableView.reloadData()
+        changeTabBarBadgeValue()
     }
 }
