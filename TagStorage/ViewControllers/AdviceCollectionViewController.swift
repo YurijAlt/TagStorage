@@ -22,7 +22,7 @@ class AdviceCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 64
+        return DataManager.shared.adviceMainLabelTexts.count + 10
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -36,6 +36,6 @@ class AdviceCollectionViewController: UICollectionViewController {
 //MARK: - Setup UICollectionView
 extension AdviceCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width / 4.8, height: UIScreen.main.bounds.width / 5)
+        CGSize(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.width / 3)
     }
 }
