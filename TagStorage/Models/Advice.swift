@@ -7,7 +7,7 @@
 
 struct Advice {
     let imageName: String
-    let adviceMainLabelText: String
+    let mainLabelText: String
 }
 
 extension Advice {
@@ -18,7 +18,7 @@ extension Advice {
         for index in 0..<DataManager.shared.advicePreviewImages.count {
             let advice = Advice(
                 imageName: imageNames[index],
-                adviceMainLabelText: mainLabelTexts[index]
+                mainLabelText: mainLabelTexts[index]
             )
             advices.append(advice)
         }

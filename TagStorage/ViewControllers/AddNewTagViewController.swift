@@ -50,8 +50,8 @@ class AddNewTagViewController: UIViewController {
     private func saveTag() {
         if tagNameTextField.text != "" {
             StorageManager.shared.save(Tag(
-                tagName: tagNameTextField.text ?? "",
-                tagBrand: tagBrandTextField.text ?? "",
+                name: tagNameTextField.text ?? "",
+                brand: tagBrandTextField.text ?? "",
                 tagStirka: firstTagIsEnabled
             ))
         }

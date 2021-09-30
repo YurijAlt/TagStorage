@@ -9,6 +9,9 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
     
-    
+    //MARK: - IB Outlets
+    @IBOutlet weak var tagImage: UIImageView!
+    @IBOutlet weak var tagNameLabel: UILabel!
+    @IBOutlet weak var TagBrandLabel: UILabel!
     
 }

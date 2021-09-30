@@ -18,10 +18,10 @@ class AdviceCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
     }
     
-    // MARK: - UICollectionViewDataSource
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
+     //MARK: - UICollectionViewDataSource
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return advices.count
@@ -30,10 +30,8 @@ class AdviceCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath) as! AdviceCollectionViewCell
         let advice = advices[indexPath.row]
-        cell.adviceMainLabelText.text = advice.adviceMainLabelText
+        cell.adviceMainLabelText.text = advice.mainLabelText
         cell.advicePreviewImage.image = UIImage(named: advice.imageName)
-        cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        cell.layer.cornerRadius = 20
         return cell
     }
     

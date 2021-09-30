@@ -25,8 +25,9 @@ class MainTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tags.count
+        tags.count
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,16 +44,11 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
         let tag = tags[indexPath.row]
-        var content = cell.defaultContentConfiguration()
-        content.text = tag.name
-        content.textProperties.color = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-        content.secondaryText = tag.brand
-        content.secondaryTextProperties.color = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        content.image = UIImage(named: "tag")
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
-        cell.contentConfiguration = content
+        cell.tagImage.image = UIImage(named: "tshort")
+        cell.tagNameLabel.text = tag.name
+        cell.TagBrandLabel.text = tag.brand
         return cell
     }
     
@@ -61,7 +57,7 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        80
+        126
     }
     
     //MARK: - Private Methods
@@ -78,11 +74,10 @@ class MainTableViewController: UITableViewController {
     
     private func changeTabBarBadgeValue() {
         if !tags.isEmpty {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.2870845795, green: 0.8194509149, blue: 0.7614896894, alpha: 1)
+            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.70562011, green: 0.8036544919, blue: 0.7539008856, alpha: 1)
             self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "\(tags.count)🏷"
         } else {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.3450009227, green: 0.3846887648, blue: 0.4445621371, alpha: 1)
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "0🏷"
+            self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = nil
         }
     }
 }

@@ -6,7 +6,7 @@
 //
 
 struct Tag {
-    let tagName: String
-    let tagBrand: String
+    let name: String
+    let brand: String
     let tagStirka: Bool
 }
