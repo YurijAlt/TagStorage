@@ -13,5 +13,5 @@ class AdviceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var advicePreviewImage: UIImageView!
     @IBOutlet weak var adviceMainLabelText: UILabel!
     
-    
+    var advice: Advice!
 }
