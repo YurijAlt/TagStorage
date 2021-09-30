@@ -12,6 +12,4 @@ class AdviceCollectionViewCell: UICollectionViewCell {
     //MARK: - IB Outlets
     @IBOutlet weak var advicePreviewImage: UIImageView!
     @IBOutlet weak var adviceMainLabelText: UILabel!
-    
-    var advice: Advice!
 }

@@ -10,9 +10,7 @@ import UIKit
 //private let reuseIdentifier = "Cell"
 
 class AdviceCollectionViewController: UICollectionViewController {
-    
-    
-    
+    //MARK: - Private Properties
     private let advices = Advice.getAdviceList()
     
     //MARK: - Override Methods
@@ -21,9 +19,9 @@ class AdviceCollectionViewController: UICollectionViewController {
     }
     
     // MARK: - UICollectionViewDataSource
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return advices.count
@@ -31,9 +29,7 @@ class AdviceCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath) as! AdviceCollectionViewCell
-        
         let advice = advices[indexPath.row]
-
         cell.adviceMainLabelText.text = advice.adviceMainLabelText
         cell.advicePreviewImage.image = UIImage(named: advice.imageName)
         cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

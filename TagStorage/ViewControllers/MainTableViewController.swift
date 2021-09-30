@@ -85,8 +85,6 @@ class MainTableViewController: UITableViewController {
             self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "0🏷"
         }
     }
-    
-    
 }
 
 extension MainTableViewController: MainTableViewControllerDelegate {
