@@ -29,7 +29,6 @@ class DetailViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        tagImage.layer.cornerRadius = tagImage.frame.width / 2
     }
     
     //MARK: - IBActions
