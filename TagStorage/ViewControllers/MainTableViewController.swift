@@ -74,10 +74,10 @@ class MainTableViewController: UITableViewController {
     
     private func changeTabBarBadgeValue() {
         if !tags.isEmpty {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.70562011, green: 0.8036544919, blue: 0.7539008856, alpha: 1)
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = "\(tags.count)🏷"
+            navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.70562011, green: 0.8036544919, blue: 0.7539008856, alpha: 1)
+            navigationController?.tabBarController?.tabBar.items![0].badgeValue = "\(tags.count)🏷"
         } else {
-            self.navigationController?.tabBarController?.tabBar.items![0].badgeValue = nil
+            navigationController?.tabBarController?.tabBar.items![0].badgeValue = nil
         }
     }
 }
