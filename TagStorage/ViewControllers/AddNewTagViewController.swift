@@ -24,7 +24,7 @@ class AddNewTagViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        addButton.isHidden = true
+        //addButton.isHidden = true
     }
     
     //MARK: - IBActions
@@ -72,14 +72,14 @@ extension AddNewTagViewController: UITextFieldDelegate {
         view.endEditing(true)
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if tagNameTextField.text != "" {
-            addButton.isHidden = false
-            addButton.increase()
-        } else {
-            addButton.isHidden = true
-        }
-    }
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        if tagNameTextField.text != "" {
+//            addButton.isHidden = false
+//            addButton.increase()
+//        } else {
+//            addButton.isHidden = true
+//        }
+//    }
 
     
 }

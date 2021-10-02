@@ -26,9 +26,26 @@ class MainTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        tags.count
+//    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tags.count
     }
+    
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        ""
+//    }
+    
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        1
+//    }
+//
+//    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        1
+//    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddNewTagViewController" {
@@ -59,6 +76,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         126
     }
+
     
     //MARK: - Private Methods
     private func fetchData() {

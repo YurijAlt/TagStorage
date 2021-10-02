@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         tagNameLabel.text = tag.name
         tagBrandLabel.text = tag.brand
-        tagStirkaButton.isHidden = tag.stirka
+        tagStirkaButton.tintColor = tag.stirka ? .clear : .red
     }
     
     override func viewWillLayoutSubviews() {
