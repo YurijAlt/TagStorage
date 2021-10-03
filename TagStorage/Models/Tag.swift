@@ -5,7 +5,10 @@
 //  Created by Юрий Чекалюк on 19.09.2021.
 //
 
+import Foundation
+
 struct Tag {
+    let img: Data
     let name: String
     let brand: String
     let tagStirka: Bool

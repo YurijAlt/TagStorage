@@ -63,7 +63,9 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
         let tag = tags[indexPath.row]
-        cell.tagImage.image = UIImage(named: "tshort")
+        
+        cell.tagImage.image = UIImage(data: tag.img!)
+        
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
         return cell

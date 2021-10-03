@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        tagImage.image = UIImage(data: tag.img!)
         tagNameLabel.text = tag.name
         tagBrandLabel.text = tag.brand
         tagStirkaButton.tintColor = tag.stirka ? .clear : .red

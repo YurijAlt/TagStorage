@@ -13,6 +13,13 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
+    
+    
+    @IBOutlet weak var imageFromCam: UIImageView!
+    
+    
+    
+    
     //MARK: - Public Properties
     var delegate: MainTableViewControllerDelegate!
     
@@ -24,6 +31,7 @@ class AddNewTagViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageFromCam.image = UIImage(named: "tshort")
         //addButton.isHidden = true
     }
     
@@ -46,20 +54,31 @@ class AddNewTagViewController: UIViewController {
         firstTagIsEnabled.toggle()
     }
     
+    
+    
+    @IBAction func takeFromCamera() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .camera
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    
     //MARK: - Private Methods
+    
     private func saveTag() {
         if tagNameTextField.text != "" {
-            StorageManager.shared.save(Tag(
-                name: tagNameTextField.text ?? "",
-                brand: tagBrandTextField.text ?? "",
-                tagStirka: firstTagIsEnabled
-            ))
-        }
-        else {
-            let alert = UIAlertController(title: "Ошибка", message: "Ввете название вещи", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ок", style: .default)
-            alert.addAction(action)
-            present(alert, animated: true)
+            
+            //MARK: - Создаем объект типа Data из изображения UIImageView.
+            
+            if let imageData = self.imageFromCam.image?.pngData() {
+                
+                StorageManager.shared.save(Tag(
+                    img: imageData, name: tagNameTextField.text ?? "",
+                    brand: tagBrandTextField.text ?? "",
+                    tagStirka: firstTagIsEnabled
+                ))
+            }
         }
     }
     
@@ -72,14 +91,33 @@ extension AddNewTagViewController: UITextFieldDelegate {
         view.endEditing(true)
     }
     
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        if tagNameTextField.text != "" {
-//            addButton.isHidden = false
-//            addButton.increase()
-//        } else {
-//            addButton.isHidden = true
-//        }
-//    }
+    //    func textFieldDidEndEditing(_ textField: UITextField) {
+    //        if tagNameTextField.text != "" {
+    //            addButton.isHidden = false
+    //            addButton.increase()
+    //        } else {
+    //            addButton.isHidden = true
+    //        }
+    //    }
+    
+    
+}
 
+
+extension AddNewTagViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        imageFromCam.image = image
+        
+    }
+    
+    
+    
     
 }

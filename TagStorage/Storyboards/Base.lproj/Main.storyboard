@@ -442,6 +442,21 @@
                                     <action selector="closeButtonTapped" destination="hYy-LY-uOF" eventType="touchUpInside" id="IM9-39-IaN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
+                                <rect key="frame" x="67" y="486" width="241" height="37"/>
+                                <color key="backgroundColor" red="0.93955492969999999" green="0.75569373370000004" blue="0.52207010980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="            Добавить!            "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonTapped" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Xz-Jc-gft"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-RH-1HW">
                                 <rect key="frame" x="40" y="90" width="295" height="88"/>
                                 <subviews>
@@ -668,21 +683,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
-                                <rect key="frame" x="67" y="486" width="241" height="37"/>
-                                <color key="backgroundColor" red="0.93955492969999999" green="0.75569373370000004" blue="0.52207010980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="            Добавить!            "/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEg-T1-Lqs">
+                                <rect key="frame" x="30.5" y="17" width="139.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Take from camera"/>
                                 <connections>
-                                    <action selector="addButtonTapped" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Xz-Jc-gft"/>
+                                    <action selector="takeFromCamera" destination="hYy-LY-uOF" eventType="touchUpInside" id="EQR-nH-gRz"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshort" translatesAutoresizingMaskIntoConstraints="NO" id="J86-vR-VHn">
+                                <rect key="frame" x="108" y="531" width="159" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J86-vR-VHn" secondAttribute="height" multiplier="159:109" id="95e-KG-OcP"/>
+                                    <constraint firstAttribute="width" constant="159" id="mwJ-0G-O8V"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAf-OR-OOn"/>
                         <color key="backgroundColor" red="0.99636274579999995" green="0.9771860242" blue="0.92557531599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -692,21 +707,26 @@
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="top" secondItem="wZN-r9-ZMO" secondAttribute="bottom" constant="24" id="CHk-GM-EWv"/>
                             <constraint firstItem="wZN-r9-ZMO" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="HHi-2R-VW1"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="90" id="N8W-VV-lfR"/>
+                            <constraint firstItem="J86-vR-VHn" firstAttribute="top" secondItem="XJ8-3p-8Go" secondAttribute="bottom" constant="8" symbolic="YES" id="W66-EN-Rej"/>
+                            <constraint firstItem="zEg-T1-Lqs" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="17" id="XZi-zB-9ms"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="40" id="fwj-9U-rfc"/>
+                            <constraint firstItem="J86-vR-VHn" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="sAg-Ap-Vmb"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="trailing" secondItem="ZKG-Bk-Brw" secondAttribute="trailingMargin" id="tRM-Ld-e2y"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="tcs-4Q-PYe"/>
+                            <constraint firstItem="z96-Vd-msd" firstAttribute="leading" secondItem="zEg-T1-Lqs" secondAttribute="trailing" constant="164" id="vXA-WM-Jmr"/>
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="centerX" secondItem="wAf-OR-OOn" secondAttribute="centerX" id="wrt-nh-csA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="XJ8-3p-8Go" id="Rqf-Q0-94C"/>
+                        <outlet property="imageFromCam" destination="J86-vR-VHn" id="UxK-6e-fFj"/>
                         <outlet property="tagBrandTextField" destination="SMY-wp-vHQ" id="ZL9-0B-Gwn"/>
                         <outlet property="tagNameTextField" destination="iFO-Ms-C2R" id="ydn-3x-Bb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61S-To-zrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="-12"/>
+            <point key="canvasLocation" x="3309.5999999999999" y="-12.143928035982009"/>
         </scene>
         <!--Advice Detail View Controller-->
         <scene sceneID="TvN-11-vET">
