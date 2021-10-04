@@ -10,6 +10,6 @@ import UIKit
 class AdviceCollectionViewCell: UICollectionViewCell {
     
     //MARK: - IB Outlets
-    @IBOutlet weak var advicePreviewImage: UIImageView!
-    @IBOutlet weak var adviceMainLabelText: UILabel!
+    @IBOutlet weak var previewImage: UIImageView!
+    @IBOutlet weak var mainLabelText: UILabel!
 }

@@ -14,25 +14,19 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
-    
     @IBOutlet weak var imageFromCam: UIImageView!
-    
-    
-    
     
     //MARK: - Public Properties
     var delegate: MainTableViewControllerDelegate!
     
     //MARK: - Private Properties
-    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
     private var firstTagIsEnabled = true
-    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
+    
     
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         imageFromCam.image = UIImage(named: "tshort")
-        //addButton.isHidden = true
     }
     
     //MARK: - IBActions
@@ -54,8 +48,6 @@ class AddNewTagViewController: UIViewController {
         firstTagIsEnabled.toggle()
     }
     
-    
-    
     @IBAction func takeFromCamera() {
         let picker = UIImagePickerController()
         picker.sourceType = .camera
@@ -65,14 +57,9 @@ class AddNewTagViewController: UIViewController {
     
     
     //MARK: - Private Methods
-    
     private func saveTag() {
         if tagNameTextField.text != "" {
-            
-            //MARK: - Создаем объект типа Data из изображения UIImageView.
-            
-            if let imageData = self.imageFromCam.image?.pngData() {
-                
+            if let imageData = imageFromCam.image?.pngData() {
                 StorageManager.shared.save(Tag(
                     img: imageData, name: tagNameTextField.text ?? "",
                     brand: tagBrandTextField.text ?? "",
@@ -90,20 +77,9 @@ extension AddNewTagViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
-    //    func textFieldDidEndEditing(_ textField: UITextField) {
-    //        if tagNameTextField.text != "" {
-    //            addButton.isHidden = false
-    //            addButton.increase()
-    //        } else {
-    //            addButton.isHidden = true
-    //        }
-    //    }
-    
-    
 }
 
-
+//MARK: - Work with camera
 extension AddNewTagViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -114,10 +90,5 @@ extension AddNewTagViewController: UIImagePickerControllerDelegate, UINavigation
         picker.dismiss(animated: true, completion: nil)
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
         imageFromCam.image = image
-        
     }
-    
-    
-    
-    
 }

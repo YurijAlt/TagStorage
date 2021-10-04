@@ -12,4 +12,5 @@ struct Tag {
     let name: String
     let brand: String
     let tagStirka: Bool
+    
 }

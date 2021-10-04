@@ -15,21 +15,17 @@ class DetailViewController: UIViewController {
     
     //MARK: - IB Outlets
     @IBOutlet weak var tagImage: UIImageView!
-    @IBOutlet weak var tagNameLabel: UILabel!
-    @IBOutlet weak var tagBrandLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var brandLabel: UILabel!
     
-    @IBOutlet weak var tagStirkaButton: UIButton!
+    @IBOutlet weak var bleachingButton: UIButton!
+    
+    
+    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tagImage.image = UIImage(data: tag.img!)
-        tagNameLabel.text = tag.name
-        tagBrandLabel.text = tag.brand
-        tagStirkaButton.tintColor = tag.stirka ? .clear : .red
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+        setupUI()
     }
     
     //MARK: - IBActions
@@ -44,8 +40,43 @@ class DetailViewController: UIViewController {
     }
     
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
-    @IBAction func tagStirkaInfo() {
+    @IBAction func bleachingInfo() {
         
     }
+    
+    
+    @IBAction func saveButtonTapped() {
+        guard let image = tagImage.image else { return }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
     //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
+    
+    //MARK: - Private Methods
+    private func setupUI() {
+        if let imageData = tag.img {
+            tagImage.image = UIImage(data: imageData)
+            tagImage.transform = tagImage.transform.rotated(by: .pi / 2)
+        }
+        nameLabel.text = tag.name
+        brandLabel.text = tag.brand
+        bleachingButton.tintColor = tag.stirka ? .systemBlue : .red
+        //detail.isHidden = true
+        
+    }
+    
+    @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            let ac = UIAlertController(title: "Ошибка сохранения", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+        } else {
+            let ac = UIAlertController(title: "Готово!", message: "Изображение сохранено в медиатеку", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
+    
 }
+
+
+

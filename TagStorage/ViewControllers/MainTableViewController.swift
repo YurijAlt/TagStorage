@@ -24,29 +24,6 @@ class MainTableViewController: UITableViewController {
         changeTabBarBadgeValue()
     }
     
-    // MARK: - Table view data source
-    
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        tags.count
-//    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tags.count
-    }
-    
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        ""
-//    }
-    
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        1
-//    }
-//
-//    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        1
-//    }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddNewTagViewController" {
             guard let addNewTagVC = segue.destination as? AddNewTagViewController else { return }
@@ -60,19 +37,22 @@ class MainTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tags.count
+    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
         let tag = tags[indexPath.row]
         
-        cell.tagImage.image = UIImage(data: tag.img!)
-        
+        if let imageData = tag.img {
+            cell.tagImage.image = UIImage(data: imageData)
+            cell.tagImage.transform = cell.tagImage.transform.rotated(by: .pi / 2)
+        }
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
