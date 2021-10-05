@@ -35,7 +35,7 @@ class AdviceCollectionViewController: UICollectionViewController {
 //MARK: - Setup UICollectionView
 extension AdviceCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.width / 3)
+        CGSize(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3)
     }
     
 }

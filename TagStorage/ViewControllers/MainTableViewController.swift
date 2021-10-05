@@ -15,6 +15,8 @@ class MainTableViewController: UITableViewController {
     
     //MARK: - Private Properties
     private var tags: [SavedTag] = []
+    private var height: CGFloat = 0
+    
     
     //MARK: - Override Methods
     override func viewDidLoad() {
@@ -22,6 +24,11 @@ class MainTableViewController: UITableViewController {
         fetchData()
         tableView.reloadData()
         changeTabBarBadgeValue()
+        
+        let image = UIImage(named: "back")
+        let imageView = UIImageView(image: image)
+        tableView.backgroundView = imageView
+        tableView.separatorColor = .clear
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +59,7 @@ class MainTableViewController: UITableViewController {
         }
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
+        cell.backgroundView = UIImageView(image: UIImage(named: "cellBack"))
         return cell
     }
     
@@ -74,7 +82,7 @@ class MainTableViewController: UITableViewController {
     
     private func changeTabBarBadgeValue() {
         if !tags.isEmpty {
-            navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.70562011, green: 0.8036544919, blue: 0.7539008856, alpha: 1)
+            navigationController?.tabBarController?.tabBar.items![0].badgeColor = #colorLiteral(red: 0.5076813102, green: 0.403300941, blue: 0.7961540818, alpha: 1)
             navigationController?.tabBarController?.tabBar.items![0].badgeValue = "\(tags.count)🏷"
         } else {
             navigationController?.tabBarController?.tabBar.items![0].badgeValue = nil
