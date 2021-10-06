@@ -26,7 +26,13 @@ class AdviceCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath) as! AdviceCollectionViewCell
         let advice = advices[indexPath.row]
         cell.mainLabelText.text = advice.mainLabelText
-        cell.previewImage.image = UIImage(named: advice.imageName)
+        //cell.previewImage.image = UIImage(named: advice.imageName)
+        cell.previewImage.image = UIImage(systemName: "checkmark.circle")
+        
+        let view = UIView()
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "advicesCellBack")!)
+        cell.backgroundView = view
+        
         return cell
     }
 
@@ -34,8 +40,13 @@ class AdviceCollectionViewController: UICollectionViewController {
 
 //MARK: - Setup UICollectionView
 extension AdviceCollectionViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3)
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        CGSize(width: UIScreen.main.bounds.width / 2, height: 150)
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 22, bottom: 10, right: 22)
     }
+    
     
 }

@@ -20,8 +20,46 @@ class AddNewTagViewController: UIViewController {
     var delegate: MainTableViewControllerDelegate!
     
     //MARK: - Private Properties
-    private var firstTagIsEnabled = true
+    private var wash30 = true
+    private var wash40 = true
+    private var wash50 = true
+    private var wash60 = true
+    private var handWash = true
+    private var doNotWash = true
     
+    private var bleachingWithChlorine = true
+    private var nonChlorineBleach = true
+    private var doNotBleach1 = true
+    private var doNotBleach2 = true
+    
+    private var tumpleDryingLow = true
+    private var tumpleDryingNormal = true
+    private var doNotTumpleDry = true
+    
+    private var lineDry = true
+    private var dryFlat = true
+    private var dripDry = true
+    private var dryInTheShade = true
+    private var lineDryInTheShade = true
+    private var dryFlatInShade = true
+    private var dripDryInShade = true
+    
+    private var ironAtLowTemp = true
+    private var ironAtMediumTemp = true
+    private var ironAtHeightTemp = true
+    private var doNotIron = true
+    
+    private var dryCleanHCSOnly = true
+    private var cleaningWithHCS = true
+    private var gentleCleaningWithHCS = true
+    private var dryCleanPCEOnly = true
+    private var gentleCleaningWithPCE = true
+    private var veryGentleCleaningWithPCE = true
+    private var doNotDryClean = true
+    
+    private var gentleWetCleaning = true
+    private var veryGentleWetCleaning = true
+    private var doNotWetClean = true
     
     //MARK: - Override Methods
     override func viewDidLoad() {
@@ -41,11 +79,11 @@ class AddNewTagViewController: UIViewController {
     }
     
     @IBAction func tagButton(_ sender: UIButton) {
-        if firstTagIsEnabled { sender.tintColor = .red
+        if wash30 { sender.tintColor = .red
         } else {
             sender.tintColor = .none
         }
-        firstTagIsEnabled.toggle()
+        wash30.toggle()
     }
     
     @IBAction func takeFromCamera() {
@@ -63,7 +101,7 @@ class AddNewTagViewController: UIViewController {
                 StorageManager.shared.save(Tag(
                     img: imageData, name: tagNameTextField.text ?? "",
                     brand: tagBrandTextField.text ?? "",
-                    tagStirka: firstTagIsEnabled
+                    tagStirka: wash30
                 ))
             }
         }
@@ -77,6 +115,16 @@ extension AddNewTagViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == tagNameTextField {
+            tagBrandTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
 }
 
 //MARK: - Work with camera

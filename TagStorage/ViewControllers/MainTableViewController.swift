@@ -28,7 +28,6 @@ class MainTableViewController: UITableViewController {
         let image = UIImage(named: "back")
         let imageView = UIImageView(image: image)
         tableView.backgroundView = imageView
-        tableView.separatorColor = .clear
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,14 +58,14 @@ class MainTableViewController: UITableViewController {
         }
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
-        cell.backgroundView = UIImageView(image: UIImage(named: "cellBack"))
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        126
+        100
     }
 
+    
     
     //MARK: - Private Methods
     private func fetchData() {
