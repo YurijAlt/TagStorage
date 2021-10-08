@@ -13,5 +13,5 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var tagImage: UIImageView!
     @IBOutlet weak var tagNameLabel: UILabel!
     @IBOutlet weak var TagBrandLabel: UILabel!
-    
+    @IBOutlet weak var dateLabel: UILabel!
 }

@@ -58,6 +58,19 @@ class MainTableViewController: UITableViewController {
         }
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
+        
+        if let dateData = tag.dateStamp {
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale.current
+            dateFormatter.dateStyle = .short
+            dateFormatter.timeStyle = .short
+            cell.dateLabel.text = dateFormatter.string(from: dateData)
+        }
+        
+        
+    
+        
+        
         return cell
     }
     
@@ -65,7 +78,11 @@ class MainTableViewController: UITableViewController {
         100
     }
 
+    //MARK: - IB Actions
     
+    @IBAction func sortingList(_ sender: UISegmentedControl) {
+        
+    }
     
     //MARK: - Private Methods
     private func fetchData() {

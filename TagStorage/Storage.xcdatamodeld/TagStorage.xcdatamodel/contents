@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="SavedTag" representedClassName="SavedTag" syncable="YES" codeGenerationType="class">
+        <attribute name="bleachingWithChlorine" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="cleaningWithHCS" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dateStamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="doNotBleach1" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotBleach2" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotDryClean" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotIron" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotTumpleDry" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotWash" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="doNotWetClean" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dripDry" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dripDryInShade" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dryCleanHCSOnly" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dryCleanPCEOnly" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dryFlat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dryFlatInShade" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dryInTheShade" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="gentleCleaningWithHCS" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="gentleCleaningWithPCE" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="gentleWetCleaning" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="handWash" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="img" optional="YES" attributeType="Binary"/>
+        <attribute name="ironAtHeightTemp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="ironAtLowTemp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="ironAtMediumTemp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lineDry" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="lineDryInTheShade" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="stirka" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nonChlorineBleach" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tumpleDryingLow" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tumpleDryingNormal" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="veryGentleCleaningWithPCE" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="veryGentleWetCleaning" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wash30" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wash40" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wash50" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wash60" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="SavedTag" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="SavedTag" positionX="-63" positionY="-18" width="128" height="599"/>
     </elements>
 </model>

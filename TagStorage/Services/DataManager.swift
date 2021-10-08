@@ -8,6 +8,10 @@
 class DataManager {
     static let shared = DataManager()
     
+    let settingsMenu = ["Help&Support", "What's New", "About This App"]
+    
+    
+    
     let advicePreviewImages = [
         "one",
         "two",

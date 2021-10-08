@@ -13,6 +13,7 @@
 		C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6F26F7C59100DD61E3 /* Tag.swift */; };
 		C446CB8726FBC8A300933DA7 /* AdviceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */; };
 		C446CB8926FBC91E00933DA7 /* AdviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */; };
+		C474D905270F808700BF571C /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474D904270F808700BF571C /* HelpTableViewController.swift */; };
 		C486DC9B2703A2490031BCB5 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486DC9A2703A2490031BCB5 /* Extension + UIButton.swift */; };
 		C48C0E46270E509D00DE3953 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C0E45270E509D00DE3953 /* SettingsTableViewController.swift */; };
 		C48C0E48270E514900DE3953 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C0E47270E514900DE3953 /* SettingsTableViewCell.swift */; };
@@ -36,6 +37,7 @@
 		C4177D6F26F7C59100DD61E3 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewController.swift; sourceTree = "<group>"; };
 		C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		C474D904270F808700BF571C /* HelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		C486DC9A2703A2490031BCB5 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 		C48C0E45270E509D00DE3953 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C48C0E47270E514900DE3953 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */,
 				C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */,
 				C49848AC2707B2B900320ECB /* AdviceDetailViewController.swift */,
+				C474D904270F808700BF571C /* HelpTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */,
 				C486DC9B2703A2490031BCB5 /* Extension + UIButton.swift in Sources */,
 				C49848AD2707B2BA00320ECB /* AdviceDetailViewController.swift in Sources */,
+				C474D905270F808700BF571C /* HelpTableViewController.swift in Sources */,
 				C4AAEF7B26F7BAA400E3891B /* AppDelegate.swift in Sources */,
 				C4177D6D26F7C1C400DD61E3 /* MainTableViewCell.swift in Sources */,
 				C4956A85270509FE007DFBEC /* Advice.swift in Sources */,
