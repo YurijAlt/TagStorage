@@ -88,12 +88,10 @@ class DetailViewController: UIViewController {
     private func setupUI() {
         if let imageData = tag.img {
             tagImage.image = UIImage(data: imageData)
-            tagImage.transform = tagImage.transform.rotated(by: .pi / 2)
         }
         nameLabel.text = tag.name
         brandLabel.text = tag.brand
         wash30Button.tintColor = tag.wash30 ? .systemBlue : .red
-        
         wash40Button.tintColor = tag.wash40 ? .systemBlue : .red
         wash50Button.tintColor = tag.wash50 ? .systemBlue : .red
         wash60Button.tintColor = tag.wash60 ? .systemBlue : .red
@@ -127,15 +125,6 @@ class DetailViewController: UIViewController {
         gentleWetCleaningButton.tintColor = tag.gentleWetCleaning ? .systemBlue : .red
         veryGentleWetCleaningButton.tintColor = tag.veryGentleWetCleaning ? .systemBlue : .red
         doNotWetCleanButton.tintColor = tag.doNotWetClean ? .systemBlue : .red
-        
-        
-        
-        
-        
-        
-        
-        
-        
         //detail.isHidden = true
         
     }

@@ -231,7 +231,7 @@ class AddNewTagViewController: UIViewController {
     //MARK: - Private Methods
     private func saveTag() {
         if tagNameTextField.text != "" {
-            if let imageData = imageFromCam.image?.pngData() {
+            if let imageData = imageFromCam.image?.jpegData(compressionQuality: 1.0) {
                 StorageManager.shared.save(
                     Tag(
                         img: imageData,

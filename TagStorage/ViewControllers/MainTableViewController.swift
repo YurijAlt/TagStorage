@@ -15,8 +15,6 @@ class MainTableViewController: UITableViewController {
     
     //MARK: - Private Properties
     private var tags: [SavedTag] = []
-    private var height: CGFloat = 0
-    
     
     //MARK: - Override Methods
     override func viewDidLoad() {
@@ -24,7 +22,6 @@ class MainTableViewController: UITableViewController {
         fetchData()
         tableView.reloadData()
         changeTabBarBadgeValue()
-        
         let image = UIImage(named: "back")
         let imageView = UIImageView(image: image)
         tableView.backgroundView = imageView
@@ -54,7 +51,6 @@ class MainTableViewController: UITableViewController {
         
         if let imageData = tag.img {
             cell.tagImage.image = UIImage(data: imageData)
-            cell.tagImage.transform = cell.tagImage.transform.rotated(by: .pi / 2)
         }
         cell.tagNameLabel.text = tag.name
         cell.TagBrandLabel.text = tag.brand
@@ -66,11 +62,6 @@ class MainTableViewController: UITableViewController {
             dateFormatter.timeStyle = .short
             cell.dateLabel.text = dateFormatter.string(from: dateData)
         }
-        
-        
-    
-        
-        
         return cell
     }
     
@@ -79,9 +70,31 @@ class MainTableViewController: UITableViewController {
     }
 
     //MARK: - IB Actions
-    
     @IBAction func sortingList(_ sender: UISegmentedControl) {
         
+        if sender.selectedSegmentIndex == 0 {
+            StorageManager.shared.fetchbyDate { result in
+                switch result {
+                case .success(let tags):
+                    self.tags = tags
+                case .failure(let error):
+                    print(error.localizedDescription)
+            }
+        }
+            tableView.reloadData()
+    }
+        
+        if sender.selectedSegmentIndex == 1 {
+            StorageManager.shared.fetchbyAZ { result in
+                switch result {
+                case .success(let tags):
+                    self.tags = tags
+                case .failure(let error):
+                    print(error.localizedDescription)
+            }
+        }
+            tableView.reloadData()
+    }
     }
     
     //MARK: - Private Methods

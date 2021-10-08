@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="width" constant="130" id="mPw-ei-v3c"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="20"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3w-wP-S5h">
@@ -458,11 +458,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                     <segments>
                                         <segment title="Date"/>
-                                        <segment title="Color"/>
-                                        <segment title="White"/>
-                                        <segment title="Black"/>
                                         <segment title="Item A-Z"/>
                                     </segments>
+                                    <color key="selectedSegmentTintColor" red="0.86264318230000003" green="0.86921828990000005" blue="0.95671111350000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <connections>
                                         <action selector="sortingList:" destination="aHl-S4-Pla" eventType="valueChanged" id="9ii-cA-4tb"/>
                                     </connections>
@@ -495,7 +493,7 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <integer key="value" value="20"/>
+                                                            <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
@@ -516,8 +514,8 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="07-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-dy-KHm">
-                                                    <rect key="frame" x="242" y="73" width="118" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-dy-KHm">
+                                                    <rect key="frame" x="303.5" y="73" width="56.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -531,6 +529,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="Y9P-dy-KHm" secondAttribute="bottom" constant="15" id="E4g-M9-FEM"/>
                                                 <constraint firstAttribute="bottom" secondItem="P4M-az-HXx" secondAttribute="bottom" constant="15" id="GrA-38-5l2"/>
                                                 <constraint firstItem="P4M-az-HXx" firstAttribute="leading" secondItem="a2B-2T-4m5" secondAttribute="leading" constant="15" id="P34-ph-2xx"/>
+                                                <constraint firstItem="Y9P-dy-KHm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="P4M-az-HXx" secondAttribute="trailing" constant="218.5" id="gIE-IK-UYU"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y9P-dy-KHm" secondAttribute="trailing" constant="15" id="vIc-sP-Fzv"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
@@ -914,7 +913,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -1151,6 +1150,8 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="2"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1175,6 +1176,8 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="2"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1199,6 +1202,8 @@
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="2"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -39,6 +39,32 @@ class StorageManager {
             completion(.failure(error))
         }
     }
+    
+    func fetchbyDate(completion: (Result<[SavedTag], Error>) -> Void) {
+        let fetchRequest: NSFetchRequest<SavedTag> = SavedTag.fetchRequest()
+        let sortbyDate = NSSortDescriptor(key: #keyPath(SavedTag.dateStamp), ascending: true)
+        fetchRequest.sortDescriptors = [sortbyDate]
+        do {
+            let addedTags = try viewContext.fetch(fetchRequest)
+            completion(.success(addedTags))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
+    
+    func fetchbyAZ(completion: (Result<[SavedTag], Error>) -> Void) {
+        let fetchRequest: NSFetchRequest<SavedTag> = SavedTag.fetchRequest()
+        let sortbyAZ = NSSortDescriptor(key: #keyPath(SavedTag.name), ascending: true)
+        fetchRequest.sortDescriptors = [sortbyAZ]
+        do {
+            let addedTags = try viewContext.fetch(fetchRequest)
+            completion(.success(addedTags))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
+    
+    
 
     //MARK: Save and delete Data
     func save(_ tag: Tag) {
