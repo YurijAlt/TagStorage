@@ -44,7 +44,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tags.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
         let tag = tags[indexPath.row]
@@ -52,8 +52,12 @@ class MainTableViewController: UITableViewController {
         if let imageData = tag.img {
             cell.tagImage.image = UIImage(data: imageData)
         }
-        cell.tagNameLabel.text = tag.name
-        cell.TagBrandLabel.text = tag.brand
+        cell.nameLabel.text = tag.name
+        cell.brandLabel.text = tag.brand
+        
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(named: "selectedCellColor")
+        cell.selectedBackgroundView = bgColorView
         
         if let dateData = tag.dateStamp {
             let dateFormatter = DateFormatter()
@@ -65,13 +69,16 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
-
+    
     //MARK: - IB Actions
     @IBAction func sortingList(_ sender: UISegmentedControl) {
-        
         if sender.selectedSegmentIndex == 0 {
             StorageManager.shared.fetchbyDate { result in
                 switch result {
@@ -79,10 +86,10 @@ class MainTableViewController: UITableViewController {
                     self.tags = tags
                 case .failure(let error):
                     print(error.localizedDescription)
+                }
             }
-        }
             tableView.reloadData()
-    }
+        }
         
         if sender.selectedSegmentIndex == 1 {
             StorageManager.shared.fetchbyAZ { result in
@@ -91,10 +98,10 @@ class MainTableViewController: UITableViewController {
                     self.tags = tags
                 case .failure(let error):
                     print(error.localizedDescription)
+                }
             }
-        }
             tableView.reloadData()
-    }
+        }
     }
     
     //MARK: - Private Methods

@@ -13,7 +13,6 @@ class AddNewTagViewController: UIViewController {
     @IBOutlet weak var tagNameTextField: UITextField!
     @IBOutlet weak var tagBrandTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    
     @IBOutlet weak var imageFromCam: UIImageView!
     
     //MARK: - Public Properties
@@ -61,8 +60,6 @@ class AddNewTagViewController: UIViewController {
     private var veryGentleWetCleaning = true
     private var doNotWetClean = true
     
-    private var dateStamp = Date()
-    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,143 +78,113 @@ class AddNewTagViewController: UIViewController {
     }
     
     @IBAction func wash30ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: wash30, to: sender)
-        wash30.toggle()
+        if sender.tag == 1 {
+            changeTintColor(from: wash30, to: sender)
+            wash30.toggle()
+        } else if sender.tag == 2 {
+            changeTintColor(from: wash40, to: sender)
+            wash40.toggle()
+        } else if sender.tag == 3 {
+            changeTintColor(from: wash50, to: sender)
+            wash50.toggle()
+        } else if sender.tag == 4 {
+            changeTintColor(from: wash60, to: sender)
+            wash60.toggle()
+        } else if sender.tag == 5 {
+            changeTintColor(from: handWash, to: sender)
+            handWash.toggle()
+        } else if sender.tag == 6 {
+            changeTintColor(from: doNotWash, to: sender)
+            doNotWash.toggle()
+        } else if sender.tag == 7 {
+            changeTintColor(from: bleachingWithChlorine, to: sender)
+            bleachingWithChlorine.toggle()
+        } else if sender.tag == 8 {
+            changeTintColor(from: nonChlorineBleach, to: sender)
+            nonChlorineBleach.toggle()
+        } else if sender.tag == 9 {
+            changeTintColor(from: doNotBleach1, to: sender)
+            doNotBleach1.toggle()
+        } else if sender.tag == 10 {
+            changeTintColor(from: doNotBleach2, to: sender)
+            doNotBleach2.toggle()
+        } else if sender.tag == 11 {
+            changeTintColor(from: tumpleDryingLow, to: sender)
+            tumpleDryingLow.toggle()
+        } else if sender.tag == 12 {
+            changeTintColor(from: tumpleDryingNormal, to: sender)
+            tumpleDryingNormal.toggle()
+        } else if sender.tag == 13 {
+            changeTintColor(from: doNotTumpleDry, to: sender)
+            doNotTumpleDry.toggle()
+        } else if sender.tag == 14 {
+            changeTintColor(from: lineDry, to: sender)
+            lineDry.toggle()
+        } else if sender.tag == 15 {
+            changeTintColor(from: dryFlat, to: sender)
+            dryFlat.toggle()
+        } else if sender.tag == 16 {
+            changeTintColor(from: dripDry, to: sender)
+            dripDry.toggle()
+        } else if sender.tag == 17 {
+            changeTintColor(from: dryInTheShade, to: sender)
+            dryInTheShade.toggle()
+        } else if sender.tag == 18 {
+            changeTintColor(from: lineDryInTheShade, to: sender)
+            lineDryInTheShade.toggle()
+        } else if sender.tag == 19 {
+            changeTintColor(from: dryFlatInShade, to: sender)
+            dryFlatInShade.toggle()
+        } else if sender.tag == 20 {
+            changeTintColor(from: dripDryInShade, to: sender)
+            dripDryInShade.toggle()
+        } else if sender.tag == 21 {
+            changeTintColor(from: ironAtLowTemp, to: sender)
+            ironAtLowTemp.toggle()
+        } else if sender.tag == 22 {
+            changeTintColor(from: ironAtMediumTemp, to: sender)
+            ironAtMediumTemp.toggle()
+        } else if sender.tag == 23 {
+            changeTintColor(from: ironAtHeightTemp, to: sender)
+            ironAtHeightTemp.toggle()
+        } else if sender.tag == 24 {
+            changeTintColor(from: doNotIron, to: sender)
+            doNotIron.toggle()
+        } else if sender.tag == 25 {
+            changeTintColor(from: dryCleanHCSOnly, to: sender)
+            dryCleanHCSOnly.toggle()
+        } else if sender.tag == 26 {
+            changeTintColor(from: cleaningWithHCS, to: sender)
+            cleaningWithHCS.toggle()
+        } else if sender.tag == 27 {
+            changeTintColor(from: gentleCleaningWithHCS, to: sender)
+            gentleCleaningWithHCS.toggle()
+        } else if sender.tag == 28 {
+            changeTintColor(from: dryCleanPCEOnly, to: sender)
+            dryCleanPCEOnly.toggle()
+        } else if sender.tag == 29 {
+            changeTintColor(from: gentleCleaningWithPCE, to: sender)
+            gentleCleaningWithPCE.toggle()
+        } else if sender.tag == 30 {
+            changeTintColor(from: veryGentleCleaningWithPCE, to: sender)
+            veryGentleCleaningWithPCE.toggle()
+        } else if sender.tag == 31 {
+            changeTintColor(from: doNotDryClean, to: sender)
+            doNotDryClean.toggle()
+        } else if sender.tag == 32 {
+            changeTintColor(from: gentleWetCleaning, to: sender)
+            gentleWetCleaning.toggle()
+        } else if sender.tag == 33 {
+            changeTintColor(from: veryGentleWetCleaning, to: sender)
+            veryGentleWetCleaning.toggle()
+        } else if sender.tag == 34 {
+            changeTintColor(from: doNotWetClean, to: sender)
+            doNotWetClean.toggle()
+        } 
     }
     
-    @IBAction func wash40ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: wash40, to: sender)
-        wash40.toggle()
-    }
     
-    @IBAction func wash50ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: wash50, to: sender)
-        wash50.toggle()
-    }
-    @IBAction func wash60ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: wash60, to: sender)
-        wash60.toggle()
-    }
-    @IBAction func handWashButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: handWash, to: sender)
-        handWash.toggle()
-    }
-    @IBAction func doNotWashButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotWash, to: sender)
-        doNotWash.toggle()
-    }
-    @IBAction func bleachingWithChlorineButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: bleachingWithChlorine, to: sender)
-        bleachingWithChlorine.toggle()
-    }
-    @IBAction func nonChlorineBleachButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: nonChlorineBleach, to: sender)
-        nonChlorineBleach.toggle()
-    }
-    @IBAction func doNotBleach1ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotBleach1, to: sender)
-        doNotBleach1.toggle()
-    }
-    @IBAction func doNotBleach2ButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotBleach2, to: sender)
-        doNotBleach2.toggle()
-    }
-    @IBAction func tumpleDryingLowButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: tumpleDryingLow, to: sender)
-        tumpleDryingLow.toggle()
-    }
-    @IBAction func tumpleDryingNormalButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: tumpleDryingNormal, to: sender)
-        tumpleDryingNormal.toggle()
-    }
-    @IBAction func doNotTumpleDryButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotTumpleDry, to: sender)
-        doNotTumpleDry.toggle()
-    }
-    @IBAction func lineDryButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: lineDry, to: sender)
-        lineDry.toggle()
-    }
-    @IBAction func dryFlatButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryFlat, to: sender)
-        dryFlat.toggle()
-    }
-    @IBAction func dripDryButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dripDry, to: sender)
-        dripDry.toggle()
-    }
-    @IBAction func dryInTheShadeButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryInTheShade, to: sender)
-        dryInTheShade.toggle()
-    }
-    @IBAction func lineDryInTheShadeButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: lineDryInTheShade, to: sender)
-        lineDryInTheShade.toggle()
-    }
-    @IBAction func dryFlatInShadeButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryFlatInShade, to: sender)
-        dryFlatInShade.toggle()
-    }
-    @IBAction func dripDryInShadeButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryInTheShade, to: sender)
-        dripDryInShade.toggle()
-    }
-    @IBAction func ironAtLowTempButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: ironAtLowTemp, to: sender)
-        ironAtLowTemp.toggle()
-    }
-    @IBAction func ironAtMediumTempButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: ironAtMediumTemp, to: sender)
-        ironAtMediumTemp.toggle()
-    }
-    @IBAction func ironAtHeightTempButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: ironAtHeightTemp, to: sender)
-        ironAtHeightTemp.toggle()
-    }
-    @IBAction func doNotIronButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotIron, to: sender)
-        doNotIron.toggle()
-    }
-    @IBAction func dryCleanHCSOnlyButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryCleanHCSOnly, to: sender)
-        dryCleanHCSOnly.toggle()
-    }
-    @IBAction func cleaningWithHCSButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: cleaningWithHCS, to: sender)
-        cleaningWithHCS.toggle()
-    }
-    @IBAction func gentleCleaningWithHCSButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: gentleCleaningWithHCS, to: sender)
-        gentleCleaningWithHCS.toggle()
-    }
-    @IBAction func dryCleanPCEOnlyButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: dryCleanPCEOnly, to: sender)
-        dryCleanPCEOnly.toggle()
-    }
-    @IBAction func gentleCleaningWithPCEButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: gentleCleaningWithPCE, to: sender)
-        gentleCleaningWithPCE.toggle()
-    }
-    @IBAction func veryGentleCleaningWithPCEButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: veryGentleCleaningWithPCE, to: sender)
-        veryGentleCleaningWithPCE.toggle()
-    }
-    @IBAction func doNotDryCleanButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotDryClean, to: sender)
-        doNotDryClean.toggle()
-    }
-    @IBAction func gentleWetCleaningButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: gentleWetCleaning, to: sender)
-        gentleWetCleaning.toggle()
-    }
-    @IBAction func veryGentleWetCleaningButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: veryGentleWetCleaning, to: sender)
-        veryGentleWetCleaning.toggle()
-    }
-    @IBAction func doNotWetCleanButtonTapped(_ sender: UIButton) {
-        changeTintColor(from: doNotWetClean, to: sender)
-        doNotWetClean.toggle()
-    }
+    
     
     
     @IBAction func takeFromCamera() {
@@ -227,17 +194,16 @@ class AddNewTagViewController: UIViewController {
         present(picker, animated: true)
     }
     
-    
     //MARK: - Private Methods
     private func saveTag() {
         if tagNameTextField.text != "" {
-            if let imageData = imageFromCam.image?.jpegData(compressionQuality: 1.0) {
+            if let imgData = imageFromCam.image?.jpegData(compressionQuality: 1.0) {
                 StorageManager.shared.save(
                     Tag(
-                        img: imageData,
+                        img: imgData,
                         name: tagNameTextField.text ?? "",
                         brand: tagBrandTextField.text ?? "",
-                        dateStamp: dateStamp,
+                        dateStamp: Date(),
                         wash30: wash30,
                         wash40: wash40,
                         wash50: wash50,
@@ -285,7 +251,6 @@ class AddNewTagViewController: UIViewController {
             sender.tintColor = .none
         }
     }
-    
     
 }
 

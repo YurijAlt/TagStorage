@@ -11,7 +11,7 @@ class MainTableViewCell: UITableViewCell {
     
     //MARK: - IB Outlets
     @IBOutlet weak var tagImage: UIImageView!
-    @IBOutlet weak var tagNameLabel: UILabel!
-    @IBOutlet weak var TagBrandLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
 }

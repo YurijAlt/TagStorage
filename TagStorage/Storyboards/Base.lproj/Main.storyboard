@@ -450,6 +450,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="AQy-o8-SKO">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -475,7 +476,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="100" id="F5W-fe-Lfv" customClass="MainTableViewCell" customModule="TagStorage" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="100" id="F5W-fe-Lfv" customClass="MainTableViewCell" customModule="TagStorage" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="79.5" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F5W-fe-Lfv" id="Wyb-7m-stW">
@@ -486,7 +487,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshort" translatesAutoresizingMaskIntoConstraints="NO" id="P4M-az-HXx">
-                                                    <rect key="frame" x="15" y="15" width="70" height="70"/>
+                                                    <rect key="frame" x="15" y="10" width="70" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="P4M-az-HXx" secondAttribute="height" multiplier="1:1" id="B9W-QF-lGm"/>
                                                         <constraint firstAttribute="width" constant="70" id="Cil-cb-DLK"/>
@@ -498,7 +499,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LXY-gi-wQ3">
-                                                    <rect key="frame" x="100" y="15" width="42.5" height="45"/>
+                                                    <rect key="frame" x="100" y="10" width="42.5" height="45"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPN-De-v7o">
                                                             <rect key="frame" x="0.0" y="0.0" width="42.5" height="24"/>
@@ -515,7 +516,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-dy-KHm">
-                                                    <rect key="frame" x="303.5" y="73" width="56.5" height="12"/>
+                                                    <rect key="frame" x="303.5" y="78" width="56.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -523,13 +524,13 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="LXY-gi-wQ3" firstAttribute="top" secondItem="a2B-2T-4m5" secondAttribute="top" constant="15" id="29h-7S-V9v"/>
-                                                <constraint firstItem="P4M-az-HXx" firstAttribute="top" secondItem="a2B-2T-4m5" secondAttribute="top" constant="15" id="3xf-fI-r8n"/>
+                                                <constraint firstItem="LXY-gi-wQ3" firstAttribute="top" secondItem="a2B-2T-4m5" secondAttribute="top" constant="10" id="29h-7S-V9v"/>
+                                                <constraint firstItem="P4M-az-HXx" firstAttribute="top" secondItem="a2B-2T-4m5" secondAttribute="top" constant="10" id="3xf-fI-r8n"/>
                                                 <constraint firstItem="LXY-gi-wQ3" firstAttribute="leading" secondItem="P4M-az-HXx" secondAttribute="trailing" constant="15" id="DWZ-lA-1TP"/>
-                                                <constraint firstAttribute="bottom" secondItem="Y9P-dy-KHm" secondAttribute="bottom" constant="15" id="E4g-M9-FEM"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y9P-dy-KHm" secondAttribute="bottom" constant="10" id="E4g-M9-FEM"/>
                                                 <constraint firstAttribute="bottom" secondItem="P4M-az-HXx" secondAttribute="bottom" constant="15" id="GrA-38-5l2"/>
                                                 <constraint firstItem="P4M-az-HXx" firstAttribute="leading" secondItem="a2B-2T-4m5" secondAttribute="leading" constant="15" id="P34-ph-2xx"/>
-                                                <constraint firstItem="Y9P-dy-KHm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="P4M-az-HXx" secondAttribute="trailing" constant="218.5" id="gIE-IK-UYU"/>
+                                                <constraint firstItem="Y9P-dy-KHm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="P4M-az-HXx" secondAttribute="trailing" constant="228.5" id="fof-cP-Pg1"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y9P-dy-KHm" secondAttribute="trailing" constant="15" id="vIc-sP-Fzv"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
@@ -550,14 +551,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="20"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="TagBrandLabel" destination="0LK-FJ-6Tn" id="CtQ-hV-7JH"/>
+                                    <outlet property="brandLabel" destination="0LK-FJ-6Tn" id="CtQ-hV-7JH"/>
                                     <outlet property="dateLabel" destination="Y9P-dy-KHm" id="EBI-i7-LrO"/>
+                                    <outlet property="nameLabel" destination="KPN-De-v7o" id="uwC-sQ-aSp"/>
                                     <outlet property="tagImage" destination="P4M-az-HXx" id="91q-GP-rSQ"/>
-                                    <outlet property="tagNameLabel" destination="KPN-De-v7o" id="uwC-sQ-aSp"/>
                                     <segue destination="jL4-dj-j8S" kind="presentation" identifier="DetailViewController" modalPresentationStyle="pageSheet" id="em1-iY-LR7"/>
                                 </connections>
                             </tableViewCell>
@@ -629,39 +630,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-t4-efI">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
                                                 <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
                                                 <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QUU-VY-As1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-A2-0Ex">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-A2-0Ex">
                                                 <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="wash40ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Oom-Zf-Zui"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="l0N-IR-4JS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-Cx-azT">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-Cx-azT">
                                                 <rect key="frame" x="115" y="1.5" width="25" height="18"/>
                                                 <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
                                                 <connections>
-                                                    <action selector="wash50ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Ixx-y3-eeM"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="h5I-Lw-QlJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-y5-vMA">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-y5-vMA">
                                                 <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="wash60ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="nUp-lj-R64"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Qos-pp-Wml"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-05-8Zn">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-05-8Zn">
                                                 <rect key="frame" x="236" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="handWashButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="zCB-lL-blg"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="5xh-hd-2yc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -669,39 +670,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hOE-t3-4iR">
                                         <rect key="frame" x="0.0" y="50" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-DN-bb2">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-DN-bb2">
                                                 <rect key="frame" x="0.0" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotWashButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="yO1-gO-ynH"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="zd9-ec-H0q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-l6-MYR">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-l6-MYR">
                                                 <rect key="frame" x="59" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="bleachingWithChlorineButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="tZn-n6-Cyg"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="82e-4m-ULP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-kU-wZ3">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-kU-wZ3">
                                                 <rect key="frame" x="117.5" y="0.5" width="20" height="19"/>
                                                 <state key="normal" backgroundImage="paperclip.circle" catalog="system"/>
                                                 <connections>
-                                                    <action selector="nonChlorineBleachButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="a0l-r5-Uy0"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QIa-im-9ck"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-G5-GkU">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-G5-GkU">
                                                 <rect key="frame" x="175.5" y="1" width="21" height="20.5"/>
                                                 <state key="normal" backgroundImage="person.badge.plus" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotBleach1ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="0bw-A8-R2o"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ouh-vL-IN8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-xh-bcz">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-xh-bcz">
                                                 <rect key="frame" x="236" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotBleach2ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="e6o-oT-jnj"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Fg8-ul-pg3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -709,39 +710,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iGh-Qr-xgf">
                                         <rect key="frame" x="0.0" y="100" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-Lm-vb4">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-Lm-vb4">
                                                 <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
                                                 <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="tumpleDryingLowButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="gvW-aX-nlU"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="bAI-H4-vxn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-tN-714">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-tN-714">
                                                 <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="tumpleDryingNormalButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Trp-3W-NdS"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="n6w-ha-Z92"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHE-Oh-eW9">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHE-Oh-eW9">
                                                 <rect key="frame" x="115" y="1.5" width="25" height="18"/>
                                                 <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotTumpleDryButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="5s2-nP-JYX"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="NEd-e4-Z5q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-6R-0Wt">
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-6R-0Wt">
                                                 <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="lineDryButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="teI-WW-Lge"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="u7Z-47-JVW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-J7-Ai0">
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-J7-Ai0">
                                                 <rect key="frame" x="236" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dryFlatButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Xl5-tS-Q1Z"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="P6e-97-EgK"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -749,39 +750,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-hq-1GK">
                                         <rect key="frame" x="0.0" y="150" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Ly-Peo">
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Ly-Peo">
                                                 <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
                                                 <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dripDryButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="rj5-JD-ajM"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="hOH-9v-B4L"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-0V-1hI">
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-0V-1hI">
                                                 <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dryInTheShadeButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="AQA-LY-lCQ"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="lHk-He-URX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Bs-TxR">
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Bs-TxR">
                                                 <rect key="frame" x="115" y="1.5" width="25" height="18"/>
                                                 <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
                                                 <connections>
-                                                    <action selector="lineDryInTheShadeButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="P2C-tf-gLJ"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="97I-rX-N1q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-4o-rx8">
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-4o-rx8">
                                                 <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dryFlatInShadeButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ogg-pz-dRZ"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ZWh-xY-j2X"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-vp-9ff">
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-vp-9ff">
                                                 <rect key="frame" x="236" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dripDryInShadeButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="5ax-0U-Yxa"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="eQu-tc-f3d"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -789,39 +790,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wZG-NX-EUq">
                                         <rect key="frame" x="0.0" y="200" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEP-sJ-N27">
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEP-sJ-N27">
                                                 <rect key="frame" x="0.0" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="ironAtLowTempButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Znz-mM-KwU"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Yl-KT-D5f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-DR-R3w">
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-DR-R3w">
                                                 <rect key="frame" x="57.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="ironAtMediumTempButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="r2n-Fg-bUN"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="DVp-0P-7BQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THs-Jp-fQy">
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THs-Jp-fQy">
                                                 <rect key="frame" x="115" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="ironAtHeightTempButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ZvS-ZG-6AS"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kxO-mi-fQS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Gs-apa">
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Gs-apa">
                                                 <rect key="frame" x="172" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotIronButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="N2s-Ok-LPe"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="url-Mh-Q4T"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ZC-LRV">
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ZC-LRV">
                                                 <rect key="frame" x="229.5" y="-1.5" width="25.5" height="19.5"/>
                                                 <state key="normal" backgroundImage="sunrise.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dryCleanHCSOnlyButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="KxJ-wE-QHR"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="1Sm-Ol-dlp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -829,39 +830,39 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-91-nqe">
                                         <rect key="frame" x="0.0" y="250" width="255" height="20"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-Kd-m2L">
+                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-Kd-m2L">
                                                 <rect key="frame" x="0.0" y="0.0" width="21" height="21.5"/>
                                                 <state key="normal" backgroundImage="cloud.heavyrain.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="cleaningWithHCSButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="mQi-py-DFP"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="pKa-O5-wRR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-nr-b3G">
+                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-nr-b3G">
                                                 <rect key="frame" x="58.5" y="-2.5" width="25.5" height="26"/>
                                                 <state key="normal" backgroundImage="cloud.sun.bolt.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="gentleCleaningWithHCSButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kTL-9W-Eaa"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QXs-bV-WYA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-E1-JEE">
+                                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-E1-JEE">
                                                 <rect key="frame" x="120.5" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
                                                 <connections>
-                                                    <action selector="dryCleanPCEOnlyButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="WDW-80-VOb"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="g3R-Z2-EDe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-6T-wdN">
+                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-6T-wdN">
                                                 <rect key="frame" x="177" y="-1" width="19" height="21"/>
                                                 <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="gentleCleaningWithPCEButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="PrV-Hp-twR"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wFJ-bo-xhg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1t-KA-sEy">
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1t-KA-sEy">
                                                 <rect key="frame" x="233.5" y="0.0" width="21.5" height="19.5"/>
                                                 <state key="normal" backgroundImage="cursorarrow.motionlines.click" catalog="system"/>
                                                 <connections>
-                                                    <action selector="veryGentleCleaningWithPCEButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="GS7-FU-IQQ"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="J13-y1-nJv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -869,32 +870,32 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q77-LK-d67">
                                         <rect key="frame" x="0.0" y="300" width="255" height="21"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-Tz-JMU">
+                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-Tz-JMU">
                                                 <rect key="frame" x="0.0" y="2.5" width="22" height="16"/>
                                                 <state key="normal" backgroundImage="square.grid.4x3.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotDryCleanButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="oGj-41-WUI"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wRD-bW-fPs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atp-dt-bIU">
+                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atp-dt-bIU">
                                                 <rect key="frame" x="59" y="0.5" width="20" height="20"/>
                                                 <state key="normal" backgroundImage="pause.circle.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="gentleWetCleaningButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="TqC-hk-Y1f"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kav-Ja-lbR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-yY-2eC">
+                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-yY-2eC">
                                                 <rect key="frame" x="116" y="0.5" width="15" height="20"/>
                                                 <state key="normal" backgroundImage="drop.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="veryGentleWetCleaningButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="n6u-Ls-ejs"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="fIk-ME-CJW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-Qe-pKS">
+                                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-Qe-pKS">
                                                 <rect key="frame" x="168" y="2" width="31" height="17"/>
                                                 <state key="normal" backgroundImage="forward.end.alt.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="doNotWetCleanButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ewn-U9-1N2"/>
+                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="yL6-ke-L6e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i12-td-E5u">
@@ -918,7 +919,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEg-T1-Lqs">
-                                <rect key="frame" x="122" y="126" width="30" height="24"/>
+                                <rect key="frame" x="118" y="124" width="30" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="EMA-BL-vvP"/>
                                     <constraint firstAttribute="width" constant="30" id="snO-Pl-xAe"/>
@@ -957,9 +958,9 @@
                             <constraint firstItem="wAf-OR-OOn" firstAttribute="trailing" secondItem="wZN-r9-ZMO" secondAttribute="trailing" constant="60" id="6hC-qz-ESY"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="62" id="93Z-XK-TG1"/>
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="centerX" secondItem="ZKG-Bk-Brw" secondAttribute="centerX" id="BTo-ej-Hap"/>
-                            <constraint firstItem="zEg-T1-Lqs" firstAttribute="trailing" secondItem="J86-vR-VHn" secondAttribute="trailing" constant="2" id="Ei1-BN-iJ5"/>
+                            <constraint firstItem="zEg-T1-Lqs" firstAttribute="trailing" secondItem="J86-vR-VHn" secondAttribute="trailing" constant="-2" id="Ei1-BN-iJ5"/>
                             <constraint firstItem="wAf-OR-OOn" firstAttribute="trailing" secondItem="O0T-RH-1HW" secondAttribute="trailing" constant="20" id="Hj1-3c-7RU"/>
-                            <constraint firstItem="zEg-T1-Lqs" firstAttribute="bottom" secondItem="J86-vR-VHn" secondAttribute="bottom" id="I2T-jB-EOT"/>
+                            <constraint firstItem="zEg-T1-Lqs" firstAttribute="bottom" secondItem="J86-vR-VHn" secondAttribute="bottom" constant="-2" id="I2T-jB-EOT"/>
                             <constraint firstItem="wZN-r9-ZMO" firstAttribute="top" secondItem="J86-vR-VHn" secondAttribute="bottom" constant="30" id="Jbr-oe-tdS"/>
                             <constraint firstItem="O0T-RH-1HW" firstAttribute="leading" secondItem="J86-vR-VHn" secondAttribute="trailing" constant="20" id="OwN-d4-rkW"/>
                             <constraint firstItem="AUl-ll-aGa" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" id="PQe-C5-H61"/>
@@ -1031,6 +1032,40 @@
             </objects>
             <point key="canvasLocation" x="3309.5999999999999" y="-765.06746626686663"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="8Md-IB-Mio">
+            <objects>
+                <collectionViewController id="Etf-VX-FI9" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VIS-qN-9jw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hJZ-38-jcj">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CN4-5c-TET">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="njT-sw-NDv">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Etf-VX-FI9" id="20j-T7-dwg"/>
+                            <outlet property="delegate" destination="Etf-VX-FI9" id="VdV-ca-ddZ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdb-vn-if7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="-1442"/>
+        </scene>
         <!--ADVICES-->
         <scene sceneID="t3H-sE-0FH">
             <objects>
@@ -1040,7 +1075,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="5" id="jOF-zk-4be">
-                            <size key="itemSize" width="152" height="126"/>
+                            <size key="itemSize" width="162" height="125"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -1051,46 +1086,33 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdviceCollectionViewCell" id="tGG-UN-WbN" customClass="AdviceCollectionViewCell" customModule="TagStorage" customModuleProvider="target">
-                                <rect key="frame" x="10" y="0.0" width="171" height="105"/>
+                                <rect key="frame" x="10" y="0.0" width="162" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eFV-Fd-KrX">
-                                    <rect key="frame" x="0.0" y="0.0" width="171" height="105"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="162" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="📌" translatesAutoresizingMaskIntoConstraints="NO" id="vzN-fq-hbr">
-                                            <rect key="frame" x="7" y="15" width="20" height="20"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="📌" translatesAutoresizingMaskIntoConstraints="NO" id="vzN-fq-hbr">
+                                            <rect key="frame" x="6" y="6" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="IhN-5T-qOR"/>
-                                                <constraint firstAttribute="width" constant="20" id="qyH-zK-WWd"/>
-                                            </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <integer key="value" value="5"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-pK-ovJ">
-                                            <rect key="frame" x="35" y="15" width="128" height="75"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="128" id="CH8-qe-KLe"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="127" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-pK-ovJ">
+                                            <rect key="frame" x="33" y="6" width="52" height="46"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="N7U-pK-ovJ" secondAttribute="trailing" constant="8" id="8AH-lv-K51"/>
-                                        <constraint firstAttribute="bottom" secondItem="vzN-fq-hbr" secondAttribute="bottom" constant="70" id="IFJ-tW-hAA"/>
-                                        <constraint firstAttribute="bottom" secondItem="N7U-pK-ovJ" secondAttribute="bottom" constant="15" id="QwK-Eh-PFX"/>
-                                        <constraint firstItem="vzN-fq-hbr" firstAttribute="top" secondItem="eFV-Fd-KrX" secondAttribute="top" constant="15" id="eXU-1i-pVN"/>
-                                        <constraint firstItem="N7U-pK-ovJ" firstAttribute="top" secondItem="eFV-Fd-KrX" secondAttribute="top" constant="15" id="f8c-XD-zat"/>
-                                        <constraint firstItem="N7U-pK-ovJ" firstAttribute="leading" secondItem="vzN-fq-hbr" secondAttribute="trailing" constant="8" id="heP-7Z-8Mc"/>
-                                        <constraint firstItem="vzN-fq-hbr" firstAttribute="leading" secondItem="eFV-Fd-KrX" secondAttribute="leading" constant="7" id="zYb-ex-2Rh"/>
-                                    </constraints>
-                                </collectionViewCellContentView>
-                                <size key="customSize" width="171" height="105"/>
+                                </view>
+                                <color key="backgroundColor" red="0.86264318230000003" green="0.86921828990000005" blue="0.95671111350000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="customSize" width="162" height="125"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
@@ -1109,6 +1131,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="ADVICES" id="10m-sl-Mxv"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYK-26-2C2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
