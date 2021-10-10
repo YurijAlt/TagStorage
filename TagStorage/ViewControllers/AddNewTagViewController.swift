@@ -19,51 +19,53 @@ class AddNewTagViewController: UIViewController {
     var delegate: MainTableViewControllerDelegate!
     
     //MARK: - Private Properties
-    private var wash30 = true
-    private var wash40 = true
-    private var wash50 = true
-    private var wash60 = true
-    private var handWash = true
-    private var doNotWash = true
+    private var wash30 = false
+    private var wash40 = false
+    private var wash50 = false
+    private var wash60 = false
+    private var handWash = false
+    private var doNotWash = false
     
-    private var bleachingWithChlorine = true
-    private var nonChlorineBleach = true
-    private var doNotBleach1 = true
-    private var doNotBleach2 = true
+    private var bleachingWithChlorine = false
+    private var nonChlorineBleach = false
+    private var doNotBleach1 = false
+    private var doNotBleach2 = false
     
-    private var tumpleDryingLow = true
-    private var tumpleDryingNormal = true
-    private var doNotTumpleDry = true
+    private var tumpleDryingLow = false
+    private var tumpleDryingNormal = false
+    private var doNotTumpleDry = false
     
-    private var lineDry = true
-    private var dryFlat = true
-    private var dripDry = true
-    private var dryInTheShade = true
-    private var lineDryInTheShade = true
-    private var dryFlatInShade = true
-    private var dripDryInShade = true
+    private var lineDry = false
+    private var dryFlat = false
+    private var dripDry = false
+    private var dryInTheShade = false
+    private var lineDryInTheShade = false
+    private var dryFlatInShade = false
+    private var dripDryInShade = false
     
-    private var ironAtLowTemp = true
-    private var ironAtMediumTemp = true
-    private var ironAtHeightTemp = true
-    private var doNotIron = true
+    private var ironAtLowTemp = false
+    private var ironAtMediumTemp = false
+    private var ironAtHeightTemp = false
+    private var doNotIron = false
     
-    private var dryCleanHCSOnly = true
-    private var cleaningWithHCS = true
-    private var gentleCleaningWithHCS = true
-    private var dryCleanPCEOnly = true
-    private var gentleCleaningWithPCE = true
-    private var veryGentleCleaningWithPCE = true
-    private var doNotDryClean = true
+    private var dryCleanHCSOnly = false
+    private var cleaningWithHCS = false
+    private var gentleCleaningWithHCS = false
+    private var dryCleanPCEOnly = false
+    private var gentleCleaningWithPCE = false
+    private var veryGentleCleaningWithPCE = false
+    private var doNotDryClean = false
     
-    private var gentleWetCleaning = true
-    private var veryGentleWetCleaning = true
-    private var doNotWetClean = true
+    private var gentleWetCleaning = false
+    private var veryGentleWetCleaning = false
+    private var doNotWetClean = false
     
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageFromCam.image = UIImage(named: "tshort")
+        
+        imageFromCam.layer.borderWidth = 1
+        imageFromCam.layer.borderColor = UIColor.white.cgColor
     }
     
     //MARK: - IBActions
@@ -79,108 +81,108 @@ class AddNewTagViewController: UIViewController {
     
     @IBAction func wash30ButtonTapped(_ sender: UIButton) {
         if sender.tag == 1 {
-            changeTintColor(from: wash30, to: sender)
+            changeAlpha(from: wash30, to: sender)
             wash30.toggle()
         } else if sender.tag == 2 {
-            changeTintColor(from: wash40, to: sender)
+            changeAlpha(from: wash40, to: sender)
             wash40.toggle()
         } else if sender.tag == 3 {
-            changeTintColor(from: wash50, to: sender)
+            changeAlpha(from: wash50, to: sender)
             wash50.toggle()
         } else if sender.tag == 4 {
-            changeTintColor(from: wash60, to: sender)
+            changeAlpha(from: wash60, to: sender)
             wash60.toggle()
         } else if sender.tag == 5 {
-            changeTintColor(from: handWash, to: sender)
+            changeAlpha(from: handWash, to: sender)
             handWash.toggle()
         } else if sender.tag == 6 {
-            changeTintColor(from: doNotWash, to: sender)
+            changeAlpha(from: doNotWash, to: sender)
             doNotWash.toggle()
         } else if sender.tag == 7 {
-            changeTintColor(from: bleachingWithChlorine, to: sender)
+            changeAlpha(from: bleachingWithChlorine, to: sender)
             bleachingWithChlorine.toggle()
         } else if sender.tag == 8 {
-            changeTintColor(from: nonChlorineBleach, to: sender)
+            changeAlpha(from: nonChlorineBleach, to: sender)
             nonChlorineBleach.toggle()
         } else if sender.tag == 9 {
-            changeTintColor(from: doNotBleach1, to: sender)
+            changeAlpha(from: doNotBleach1, to: sender)
             doNotBleach1.toggle()
         } else if sender.tag == 10 {
-            changeTintColor(from: doNotBleach2, to: sender)
+            changeAlpha(from: doNotBleach2, to: sender)
             doNotBleach2.toggle()
         } else if sender.tag == 11 {
-            changeTintColor(from: tumpleDryingLow, to: sender)
+            changeAlpha(from: tumpleDryingLow, to: sender)
             tumpleDryingLow.toggle()
         } else if sender.tag == 12 {
-            changeTintColor(from: tumpleDryingNormal, to: sender)
+            changeAlpha(from: tumpleDryingNormal, to: sender)
             tumpleDryingNormal.toggle()
         } else if sender.tag == 13 {
-            changeTintColor(from: doNotTumpleDry, to: sender)
+            changeAlpha(from: doNotTumpleDry, to: sender)
             doNotTumpleDry.toggle()
         } else if sender.tag == 14 {
-            changeTintColor(from: lineDry, to: sender)
+            changeAlpha(from: lineDry, to: sender)
             lineDry.toggle()
         } else if sender.tag == 15 {
-            changeTintColor(from: dryFlat, to: sender)
+            changeAlpha(from: dryFlat, to: sender)
             dryFlat.toggle()
         } else if sender.tag == 16 {
-            changeTintColor(from: dripDry, to: sender)
+            changeAlpha(from: dripDry, to: sender)
             dripDry.toggle()
         } else if sender.tag == 17 {
-            changeTintColor(from: dryInTheShade, to: sender)
+            changeAlpha(from: dryInTheShade, to: sender)
             dryInTheShade.toggle()
         } else if sender.tag == 18 {
-            changeTintColor(from: lineDryInTheShade, to: sender)
+            changeAlpha(from: lineDryInTheShade, to: sender)
             lineDryInTheShade.toggle()
         } else if sender.tag == 19 {
-            changeTintColor(from: dryFlatInShade, to: sender)
+            changeAlpha(from: dryFlatInShade, to: sender)
             dryFlatInShade.toggle()
         } else if sender.tag == 20 {
-            changeTintColor(from: dripDryInShade, to: sender)
+            changeAlpha(from: dripDryInShade, to: sender)
             dripDryInShade.toggle()
         } else if sender.tag == 21 {
-            changeTintColor(from: ironAtLowTemp, to: sender)
+            changeAlpha(from: ironAtLowTemp, to: sender)
             ironAtLowTemp.toggle()
         } else if sender.tag == 22 {
-            changeTintColor(from: ironAtMediumTemp, to: sender)
+            changeAlpha(from: ironAtMediumTemp, to: sender)
             ironAtMediumTemp.toggle()
         } else if sender.tag == 23 {
-            changeTintColor(from: ironAtHeightTemp, to: sender)
+            changeAlpha(from: ironAtHeightTemp, to: sender)
             ironAtHeightTemp.toggle()
         } else if sender.tag == 24 {
-            changeTintColor(from: doNotIron, to: sender)
+            changeAlpha(from: doNotIron, to: sender)
             doNotIron.toggle()
         } else if sender.tag == 25 {
-            changeTintColor(from: dryCleanHCSOnly, to: sender)
+            changeAlpha(from: dryCleanHCSOnly, to: sender)
             dryCleanHCSOnly.toggle()
         } else if sender.tag == 26 {
-            changeTintColor(from: cleaningWithHCS, to: sender)
+            changeAlpha(from: cleaningWithHCS, to: sender)
             cleaningWithHCS.toggle()
         } else if sender.tag == 27 {
-            changeTintColor(from: gentleCleaningWithHCS, to: sender)
+            changeAlpha(from: gentleCleaningWithHCS, to: sender)
             gentleCleaningWithHCS.toggle()
         } else if sender.tag == 28 {
-            changeTintColor(from: dryCleanPCEOnly, to: sender)
+            changeAlpha(from: dryCleanPCEOnly, to: sender)
             dryCleanPCEOnly.toggle()
         } else if sender.tag == 29 {
-            changeTintColor(from: gentleCleaningWithPCE, to: sender)
+            changeAlpha(from: gentleCleaningWithPCE, to: sender)
             gentleCleaningWithPCE.toggle()
         } else if sender.tag == 30 {
-            changeTintColor(from: veryGentleCleaningWithPCE, to: sender)
+            changeAlpha(from: veryGentleCleaningWithPCE, to: sender)
             veryGentleCleaningWithPCE.toggle()
         } else if sender.tag == 31 {
-            changeTintColor(from: doNotDryClean, to: sender)
+            changeAlpha(from: doNotDryClean, to: sender)
             doNotDryClean.toggle()
         } else if sender.tag == 32 {
-            changeTintColor(from: gentleWetCleaning, to: sender)
+            changeAlpha(from: gentleWetCleaning, to: sender)
             gentleWetCleaning.toggle()
         } else if sender.tag == 33 {
-            changeTintColor(from: veryGentleWetCleaning, to: sender)
+            changeAlpha(from: veryGentleWetCleaning, to: sender)
             veryGentleWetCleaning.toggle()
         } else if sender.tag == 34 {
-            changeTintColor(from: doNotWetClean, to: sender)
+            changeAlpha(from: doNotWetClean, to: sender)
             doNotWetClean.toggle()
-        } 
+        }
     }
     
     
@@ -249,6 +251,20 @@ class AddNewTagViewController: UIViewController {
             sender.tintColor = .red
         } else {
             sender.tintColor = .none
+        }
+    }
+    
+    private func changeAlpha(from value: Bool, to sender: UIButton) {
+        if value {
+            sender.alpha = 0.2
+        } else { sender.alpha = 1.0
+        }
+    }
+    
+    private func changeEnableStatus(from value: Bool, to sender: UIButton) {
+        if !value {
+            sender.isEnabled = true
+        } else { sender.isEnabled = false
         }
     }
     

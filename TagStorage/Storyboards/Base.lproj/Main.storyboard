@@ -107,7 +107,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3w-wP-S5h">
                                 <rect key="frame" x="334" y="20" width="25" height="24"/>
-                                <color key="tintColor" red="0.42564287779999999" green="0.53019136190000005" blue="0.87013345959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
                                 </state>
@@ -116,25 +116,25 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-4b-etO">
-                                <rect key="frame" x="176" y="64" width="43.5" height="58.5"/>
+                                <rect key="frame" x="170" y="64" width="42.5" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-tl-CLD">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.42120577110000001" green="0.42105211729999997" blue="0.45718914389999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8o-WK-IJg">
-                                        <rect key="frame" x="0.0" y="39" width="43.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="39" width="42.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkP-mY-I6y">
                                 <rect key="frame" x="16" y="20" width="25" height="24"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
                                     <imageReference key="image" image="xmark.bin.circle" catalog="system" symbolScale="large"/>
                                 </state>
@@ -142,230 +142,213 @@
                                     <action selector="deleteButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="biF-A6-VaQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-Rr-afz">
-                                <rect key="frame" x="127" y="169" width="22" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="IDU-Fz-tYD"/>
-                                    <constraint firstAttribute="height" constant="22" id="xmf-qx-N7W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="square.and.arrow.down" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveButtonTapped" destination="jL4-dj-j8S" eventType="touchUpInside" id="mLV-cP-YkX"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pTh-EL-iRx">
-                                <rect key="frame" x="60" y="224" width="255" height="312"/>
+                                <rect key="frame" x="60" y="224" width="255" height="340"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-Rb-lVl">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-La-0Ie">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="wash30"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0x-9j-WD5">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="2"/>
+                                                <state key="normal" backgroundImage="wash40"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUj-Zq-Iyw">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="3"/>
+                                                <state key="normal" backgroundImage="wash50"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-FB-X81">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="4"/>
+                                                <state key="normal" backgroundImage="wash60"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-hw-Oq8">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="5"/>
+                                                <state key="normal" backgroundImage="handWash"/>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JAt-Ch-kdK">
-                                        <rect key="frame" x="0.0" y="46" width="255" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAt-Ch-kdK">
+                                        <rect key="frame" x="0.0" y="50" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-8H-1tb">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="6"/>
+                                                <state key="normal" backgroundImage="doNotWash"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-oU-abt">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="7"/>
+                                                <state key="normal" backgroundImage="bleachingWithChlorine"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-JF-93a">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="8"/>
+                                                <state key="normal" backgroundImage="nonChlorineBleach"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-aI-rW6">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" backgroundImage="doNotBleach1"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-6q-jTw">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="10"/>
+                                                <state key="normal" backgroundImage="doNotBleach2"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-8G-PBS">
-                                        <rect key="frame" x="0.0" y="92" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="100" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-7W-cHp">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="11"/>
+                                                <state key="normal" backgroundImage="tumpleDryingLow"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svp-ls-CQG">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="12"/>
+                                                <state key="normal" backgroundImage="tumpleDryingNormal"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osk-jy-Qk5">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="13"/>
+                                                <state key="normal" backgroundImage="doNotTumpleDry"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYB-qJ-CZt">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="14"/>
+                                                <state key="normal" backgroundImage="lineDry"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5z-b4-b21">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="15"/>
+                                                <state key="normal" backgroundImage="dryFlat"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3n0-ab-Pi6">
-                                        <rect key="frame" x="0.0" y="138" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="150" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7E-vn-NYV">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="16"/>
+                                                <state key="normal" backgroundImage="dripDry"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-OF-XiM">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="17"/>
+                                                <state key="normal" backgroundImage="dryInTheShade"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pi-LA-GG7">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="18"/>
+                                                <state key="normal" backgroundImage="lineDryInTheShade"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-DS-DyL">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="19"/>
+                                                <state key="normal" backgroundImage="dryFlatInShade"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-j4-32N">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="20"/>
+                                                <state key="normal" backgroundImage="dripDryInShade"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-wO-qWw">
-                                        <rect key="frame" x="0.0" y="184" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="200" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izd-5e-vcm">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="21"/>
+                                                <state key="normal" backgroundImage="ironAtLowTemp"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04Z-Oo-BcN">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="22"/>
+                                                <state key="normal" backgroundImage="ironAtMediumTemp"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or3-60-xTP">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="23"/>
+                                                <state key="normal" backgroundImage="ironAtHeightTemp"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-fJ-dhi">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="24"/>
+                                                <state key="normal" backgroundImage="doNotIron"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4X-Vc-0Vs">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="25"/>
+                                                <state key="normal" backgroundImage="dryCleanHCSOnly"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-GJ-eZp">
-                                        <rect key="frame" x="0.0" y="230" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="250" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w9-Pa-J5W">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="26"/>
+                                                <state key="normal" backgroundImage="cleaningWithHCS"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-fd-WZ4">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="27"/>
+                                                <state key="normal" backgroundImage="gentleCleaningWithHCS"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z0-na-0Ps">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="28"/>
+                                                <state key="normal" backgroundImage="dryCleanPCEOnly"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1E-0B-SS3">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="29"/>
+                                                <state key="normal" backgroundImage="gentleCleaningWithPCE"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40j-PM-W6N">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="30"/>
+                                                <state key="normal" backgroundImage="veryGentleCleaningWithPCE"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-yZ-D8e">
-                                        <rect key="frame" x="0.0" y="276" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="300" width="255" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-h9-xta">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="31"/>
+                                                <state key="normal" backgroundImage="doNotDryClean"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mls-ag-W7b">
-                                                <rect key="frame" x="56.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="56.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="32"/>
+                                                <state key="normal" backgroundImage="gentleWetCleaning"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-TU-KmF">
-                                                <rect key="frame" x="112.5" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="112.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="33"/>
+                                                <state key="normal" backgroundImage="veryGentleWetCleaning"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-9a-R58">
-                                                <rect key="frame" x="169" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="169" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="34"/>
+                                                <state key="normal" backgroundImage="doNotWetClean"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYI-yf-AfT">
-                                                <rect key="frame" x="225" y="0.0" width="30" height="36"/>
+                                                <rect key="frame" x="225" y="0.0" width="30" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title=" "/>
                                             </button>
@@ -378,10 +361,9 @@
                         <color key="backgroundColor" red="0.99636274579999995" green="0.9771860242" blue="0.92557531599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="iiW-rk-RsX" firstAttribute="trailing" secondItem="pTh-EL-iRx" secondAttribute="trailing" constant="60" id="07i-qI-VBp"/>
-                            <constraint firstItem="R8c-BP-xlt" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="20" id="2jl-Vp-S5M"/>
+                            <constraint firstItem="R8c-BP-xlt" firstAttribute="leading" secondItem="bAX-It-qLH" secondAttribute="leading" constant="20" id="2jl-Vp-S5M"/>
                             <constraint firstItem="iiW-rk-RsX" firstAttribute="trailing" secondItem="U3w-wP-S5h" secondAttribute="trailing" constant="16" id="6Dy-so-hPf"/>
                             <constraint firstItem="aE2-NT-vnO" firstAttribute="trailing" secondItem="iiW-rk-RsX" secondAttribute="trailing" id="8md-RG-4Ld"/>
-                            <constraint firstItem="Tic-4b-etO" firstAttribute="leading" secondItem="R8c-BP-xlt" secondAttribute="trailing" constant="26" id="B9B-DF-EAP"/>
                             <constraint firstItem="pTh-EL-iRx" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="60" id="Czd-nZ-yCg"/>
                             <constraint firstItem="CkP-mY-I6y" firstAttribute="top" secondItem="iiW-rk-RsX" secondAttribute="top" constant="20" id="HLm-yK-PIa"/>
                             <constraint firstItem="U3w-wP-S5h" firstAttribute="top" secondItem="iiW-rk-RsX" secondAttribute="top" constant="20" id="ISZ-1d-kge"/>
@@ -390,9 +372,8 @@
                             <constraint firstItem="aE2-NT-vnO" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" id="X8i-86-aiL"/>
                             <constraint firstItem="CkP-mY-I6y" firstAttribute="leading" secondItem="iiW-rk-RsX" secondAttribute="leading" constant="16" id="a0G-SS-cZm"/>
                             <constraint firstItem="aE2-NT-vnO" firstAttribute="bottom" secondItem="bAX-It-qLH" secondAttribute="bottom" id="hqX-cm-IzF"/>
+                            <constraint firstItem="Tic-4b-etO" firstAttribute="leading" secondItem="R8c-BP-xlt" secondAttribute="trailing" constant="20" id="pzX-dk-d3e"/>
                             <constraint firstItem="pTh-EL-iRx" firstAttribute="top" secondItem="R8c-BP-xlt" secondAttribute="bottom" constant="30" id="r2B-3v-usR"/>
-                            <constraint firstItem="1FE-Rr-afz" firstAttribute="bottom" secondItem="R8c-BP-xlt" secondAttribute="bottom" constant="-3" id="sn5-db-56T"/>
-                            <constraint firstItem="1FE-Rr-afz" firstAttribute="trailing" secondItem="R8c-BP-xlt" secondAttribute="trailing" constant="-1" id="uTu-UB-bwc"/>
                             <constraint firstItem="aE2-NT-vnO" firstAttribute="top" secondItem="iiW-rk-RsX" secondAttribute="top" id="vYn-ly-Fdh"/>
                             <constraint firstItem="pTh-EL-iRx" firstAttribute="centerX" secondItem="iiW-rk-RsX" secondAttribute="centerX" id="wLP-rl-x5q"/>
                         </constraints>
@@ -570,7 +551,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="YOUR TAGS" id="Aum-hh-eTb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wlf-Sh-A5e">
-                            <color key="tintColor" red="0.49117690320000001" green="0.40726077560000001" blue="0.7720838189" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="hYy-LY-uOF" kind="presentation" identifier="AddNewTagViewController" modalPresentationStyle="pageSheet" id="eOV-TB-KLI"/>
                             </connections>
@@ -595,7 +576,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-Vd-msd">
                                 <rect key="frame" x="334" y="20" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="tintColor" red="0.42564287779999999" green="0.53019136190000005" blue="0.87013345959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
                                 </state>
@@ -624,43 +605,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wZN-r9-ZMO">
-                                <rect key="frame" x="60" y="180" width="255" height="321"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wZN-r9-ZMO">
+                                <rect key="frame" x="60" y="180" width="255" height="340"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AvD-t4-efI">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
-                                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
-                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-0f-ok0">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="wash30"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QUU-VY-As1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-A2-0Ex">
-                                                <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-A2-0Ex">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="wash40"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="l0N-IR-4JS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-Cx-azT">
-                                                <rect key="frame" x="115" y="1.5" width="25" height="18"/>
-                                                <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-Cx-azT">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="wash50"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="h5I-Lw-QlJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-y5-vMA">
-                                                <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-y5-vMA">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="wash60"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Qos-pp-Wml"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-05-8Zn">
-                                                <rect key="frame" x="236" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-05-8Zn">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="handWash"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="5xh-hd-2yc"/>
                                                 </connections>
@@ -668,39 +650,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hOE-t3-4iR">
-                                        <rect key="frame" x="0.0" y="50" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="50" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-DN-bb2">
-                                                <rect key="frame" x="0.0" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-DN-bb2">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotWash"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="zd9-ec-H0q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-l6-MYR">
-                                                <rect key="frame" x="59" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-l6-MYR">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="bleachingWithChlorine"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="82e-4m-ULP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-kU-wZ3">
-                                                <rect key="frame" x="117.5" y="0.5" width="20" height="19"/>
-                                                <state key="normal" backgroundImage="paperclip.circle" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-kU-wZ3">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="nonChlorineBleach"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QIa-im-9ck"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-G5-GkU">
-                                                <rect key="frame" x="175.5" y="1" width="21" height="20.5"/>
-                                                <state key="normal" backgroundImage="person.badge.plus" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-G5-GkU">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotBleach1"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ouh-vL-IN8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-xh-bcz">
-                                                <rect key="frame" x="236" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-xh-bcz">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotBleach2"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Fg8-ul-pg3"/>
                                                 </connections>
@@ -708,39 +690,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iGh-Qr-xgf">
-                                        <rect key="frame" x="0.0" y="100" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="100" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-Lm-vb4">
-                                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
-                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-Lm-vb4">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" image="tumpleDryingLow"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="bAI-H4-vxn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-tN-714">
-                                                <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-tN-714">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="tumpleDryingNormal"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="n6w-ha-Z92"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHE-Oh-eW9">
-                                                <rect key="frame" x="115" y="1.5" width="25" height="18"/>
-                                                <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHE-Oh-eW9">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotTumpleDry"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="NEd-e4-Z5q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-6R-0Wt">
-                                                <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-6R-0Wt">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="lineDry"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="u7Z-47-JVW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-J7-Ai0">
-                                                <rect key="frame" x="236" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-J7-Ai0">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dryFlat"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="P6e-97-EgK"/>
                                                 </connections>
@@ -748,39 +730,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-hq-1GK">
-                                        <rect key="frame" x="0.0" y="150" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="150" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Ly-Peo">
-                                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
-                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-Ly-Peo">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dripDry"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="hOH-9v-B4L"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-0V-1hI">
-                                                <rect key="frame" x="58.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-0V-1hI">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dryInTheShade"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="lHk-He-URX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Bs-TxR">
-                                                <rect key="frame" x="115" y="1.5" width="25" height="18"/>
-                                                <state key="normal" backgroundImage="externaldrive.badge.checkmark" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Bs-TxR">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="lineDryInTheShade"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="97I-rX-N1q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-4o-rx8">
-                                                <rect key="frame" x="178.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-4o-rx8">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dryFlatInShade"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ZWh-xY-j2X"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-vp-9ff">
-                                                <rect key="frame" x="236" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-vp-9ff">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dripDryInShade"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="eQu-tc-f3d"/>
                                                 </connections>
@@ -788,39 +770,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wZG-NX-EUq">
-                                        <rect key="frame" x="0.0" y="200" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="200" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEP-sJ-N27">
-                                                <rect key="frame" x="0.0" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEP-sJ-N27">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="ironAtLowTemp"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Yl-KT-D5f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-DR-R3w">
-                                                <rect key="frame" x="57.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-DR-R3w">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="ironAtMediumTemp"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="DVp-0P-7BQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THs-Jp-fQy">
-                                                <rect key="frame" x="115" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THs-Jp-fQy">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="ironAtHeightTemp"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kxO-mi-fQS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Gs-apa">
-                                                <rect key="frame" x="172" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Gs-apa">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotIron"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="url-Mh-Q4T"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ZC-LRV">
-                                                <rect key="frame" x="229.5" y="-1.5" width="25.5" height="19.5"/>
-                                                <state key="normal" backgroundImage="sunrise.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ZC-LRV">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dryCleanHCSOnly"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="1Sm-Ol-dlp"/>
                                                 </connections>
@@ -828,39 +810,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-91-nqe">
-                                        <rect key="frame" x="0.0" y="250" width="255" height="20"/>
+                                        <rect key="frame" x="0.0" y="250" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-Kd-m2L">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="21.5"/>
-                                                <state key="normal" backgroundImage="cloud.heavyrain.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-Kd-m2L">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="cleaningWithHCS"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="pKa-O5-wRR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-nr-b3G">
-                                                <rect key="frame" x="58.5" y="-2.5" width="25.5" height="26"/>
-                                                <state key="normal" backgroundImage="cloud.sun.bolt.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-nr-b3G">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="gentleCleaningWithHCS"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QXs-bV-WYA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-E1-JEE">
-                                                <rect key="frame" x="120.5" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-E1-JEE">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="dryCleanPCEOnly"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="g3R-Z2-EDe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-6T-wdN">
-                                                <rect key="frame" x="177" y="-1" width="19" height="21"/>
-                                                <state key="normal" backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-6T-wdN">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="gentleCleaningWithPCE"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wFJ-bo-xhg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1t-KA-sEy">
-                                                <rect key="frame" x="233.5" y="0.0" width="21.5" height="19.5"/>
-                                                <state key="normal" backgroundImage="cursorarrow.motionlines.click" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1t-KA-sEy">
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="veryGentleCleaningWithPCE"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="J13-y1-nJv"/>
                                                 </connections>
@@ -868,39 +850,39 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q77-LK-d67">
-                                        <rect key="frame" x="0.0" y="300" width="255" height="21"/>
+                                        <rect key="frame" x="0.0" y="300" width="255" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-Tz-JMU">
-                                                <rect key="frame" x="0.0" y="2.5" width="22" height="16"/>
-                                                <state key="normal" backgroundImage="square.grid.4x3.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-Tz-JMU">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotDryClean"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wRD-bW-fPs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atp-dt-bIU">
-                                                <rect key="frame" x="59" y="0.5" width="20" height="20"/>
-                                                <state key="normal" backgroundImage="pause.circle.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atp-dt-bIU">
+                                                <rect key="frame" x="54" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="gentleWetCleaning"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kav-Ja-lbR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-yY-2eC">
-                                                <rect key="frame" x="116" y="0.5" width="15" height="20"/>
-                                                <state key="normal" backgroundImage="drop.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-yY-2eC">
+                                                <rect key="frame" x="107.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="veryGentleWetCleaning"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="fIk-ME-CJW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-Qe-pKS">
-                                                <rect key="frame" x="168" y="2" width="31" height="17"/>
-                                                <state key="normal" backgroundImage="forward.end.alt.fill" catalog="system"/>
+                                            <button opaque="NO" alpha="0.29999999999999999" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-Qe-pKS">
+                                                <rect key="frame" x="161.5" y="0.0" width="40" height="40"/>
+                                                <state key="normal" backgroundImage="doNotWetClean"/>
                                                 <connections>
                                                     <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="yL6-ke-L6e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i12-td-E5u">
-                                                <rect key="frame" x="236" y="-1" width="19" height="22"/>
-                                                <state key="normal" title=" " backgroundImage="square.and.arrow.up.fill" catalog="system"/>
+                                                <rect key="frame" x="215" y="0.0" width="40" height="40"/>
+                                                <state key="normal" title=" " backgroundImage="doNotDryClean"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -931,12 +913,11 @@
                                     <action selector="takeFromCamera" destination="hYy-LY-uOF" eventType="touchUpInside" id="EQR-nH-gRz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
-                                <rect key="frame" x="98" y="531" width="179" height="37"/>
-                                <color key="backgroundColor" red="0.49117690320000001" green="0.40726077560000001" blue="0.7720838189" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ8-3p-8Go">
+                                <rect key="frame" x="20" y="550" width="335" height="45"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="0Q6-dd-BaO"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="179" id="zqQ-6b-S6G"/>
+                                    <constraint firstAttribute="height" constant="45" id="0Q6-dd-BaO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -967,9 +948,11 @@
                             <constraint firstItem="XJ8-3p-8Go" firstAttribute="top" secondItem="wZN-r9-ZMO" secondAttribute="bottom" constant="30" id="W4z-aj-e8D"/>
                             <constraint firstItem="J86-vR-VHn" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="20" id="YDk-C9-WtS"/>
                             <constraint firstItem="wZN-r9-ZMO" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="60" id="bmh-da-chH"/>
+                            <constraint firstItem="wAf-OR-OOn" firstAttribute="trailing" secondItem="XJ8-3p-8Go" secondAttribute="trailing" constant="20" id="dIr-BZ-ySs"/>
                             <constraint firstItem="AUl-ll-aGa" firstAttribute="bottom" secondItem="ZKG-Bk-Brw" secondAttribute="bottom" id="g29-yi-yyg"/>
                             <constraint firstItem="J86-vR-VHn" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="mVI-Fe-dZB"/>
                             <constraint firstItem="AUl-ll-aGa" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" id="mzD-V6-UTJ"/>
+                            <constraint firstItem="XJ8-3p-8Go" firstAttribute="leading" secondItem="wAf-OR-OOn" secondAttribute="leading" constant="20" id="r9T-lQ-H2r"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="trailing" secondItem="ZKG-Bk-Brw" secondAttribute="trailingMargin" id="tRM-Ld-e2y"/>
                             <constraint firstItem="z96-Vd-msd" firstAttribute="top" secondItem="wAf-OR-OOn" secondAttribute="top" constant="20" id="tcs-4Q-PYe"/>
                             <constraint firstItem="AUl-ll-aGa" firstAttribute="trailing" secondItem="wAf-OR-OOn" secondAttribute="trailing" id="v1W-YC-Ug0"/>
@@ -1003,7 +986,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-e1-G6j">
                                 <rect key="frame" x="334" y="20" width="25" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="tintColor" red="0.42564287779999999" green="0.53019136190000005" blue="0.87013345959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.50280290839999997" green="0.43206083769999998" blue="0.76035159829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
                                 </state>
@@ -1241,27 +1224,46 @@
     </scenes>
     <resources>
         <image name="back" width="375" height="667"/>
+        <image name="bleachingWithChlorine" width="40" height="40"/>
         <image name="book.circle.fill" catalog="system" width="128" height="121"/>
         <image name="camera" catalog="system" width="128" height="94"/>
-        <image name="cloud.heavyrain.fill" catalog="system" width="125" height="128"/>
-        <image name="cloud.sun.bolt.fill" catalog="system" width="125" height="128"/>
-        <image name="cursorarrow.motionlines.click" catalog="system" width="128" height="116"/>
+        <image name="cleaningWithHCS" width="40" height="40"/>
         <image name="detail" width="375" height="334"/>
-        <image name="drop.fill" catalog="system" width="101" height="128"/>
-        <image name="externaldrive.badge.checkmark" catalog="system" width="128" height="92"/>
-        <image name="forward.end.alt.fill" catalog="system" width="128" height="66"/>
+        <image name="doNotBleach1" width="40" height="40"/>
+        <image name="doNotBleach2" width="40" height="40"/>
+        <image name="doNotDryClean" width="40" height="40"/>
+        <image name="doNotIron" width="40" height="40"/>
+        <image name="doNotTumpleDry" width="40" height="40"/>
+        <image name="doNotWash" width="40" height="40"/>
+        <image name="doNotWetClean" width="40" height="40"/>
+        <image name="dripDry" width="40" height="40"/>
+        <image name="dripDryInShade" width="40" height="40"/>
+        <image name="dryCleanHCSOnly" width="40" height="40"/>
+        <image name="dryCleanPCEOnly" width="40" height="40"/>
+        <image name="dryFlat" width="40" height="40"/>
+        <image name="dryFlatInShade" width="40" height="40"/>
+        <image name="dryInTheShade" width="40" height="40"/>
         <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
+        <image name="gentleCleaningWithHCS" width="40" height="40"/>
+        <image name="gentleCleaningWithPCE" width="40" height="40"/>
+        <image name="gentleWetCleaning" width="40" height="40"/>
+        <image name="handWash" width="40" height="40"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="paperclip.circle" catalog="system" width="128" height="121"/>
-        <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="person.badge.plus" catalog="system" width="128" height="124"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
-        <image name="square.grid.4x3.fill" catalog="system" width="128" height="87"/>
-        <image name="sunrise.fill" catalog="system" width="128" height="97"/>
+        <image name="ironAtHeightTemp" width="40" height="40"/>
+        <image name="ironAtLowTemp" width="40" height="40"/>
+        <image name="ironAtMediumTemp" width="40" height="40"/>
+        <image name="lineDry" width="40" height="40"/>
+        <image name="lineDryInTheShade" width="40" height="40"/>
+        <image name="nonChlorineBleach" width="40" height="40"/>
         <image name="tshort" width="1000" height="1250"/>
+        <image name="tumpleDryingLow" width="40" height="40"/>
+        <image name="tumpleDryingNormal" width="40" height="40"/>
+        <image name="veryGentleCleaningWithPCE" width="40" height="40"/>
+        <image name="veryGentleWetCleaning" width="40" height="40"/>
+        <image name="wash30" width="40" height="40"/>
+        <image name="wash40" width="40" height="40"/>
+        <image name="wash50" width="40" height="40"/>
+        <image name="wash60" width="40" height="40"/>
         <image name="xmark.bin.circle" catalog="system" width="128" height="121"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="📌" width="128" height="128"/>

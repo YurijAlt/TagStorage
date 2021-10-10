@@ -51,7 +51,13 @@ class MainTableViewController: UITableViewController {
         
         if let imageData = tag.img {
             cell.tagImage.image = UIImage(data: imageData)
+        } else {
+            cell.tagImage.image = UIImage(named: "tshort")
         }
+        
+        cell.tagImage.layer.borderWidth = 1
+        cell.tagImage.layer.borderColor = UIColor.white.cgColor
+        
         cell.nameLabel.text = tag.name
         cell.brandLabel.text = tag.brand
         

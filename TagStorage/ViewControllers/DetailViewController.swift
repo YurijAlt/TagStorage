@@ -24,13 +24,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var wash60Button: UIButton!
     @IBOutlet weak var handWashButton: UIButton!
     @IBOutlet weak var doNotWashButton: UIButton!
+    
     @IBOutlet weak var bleachingWithChlorineButton: UIButton!
     @IBOutlet weak var nonChlorineBleachButton: UIButton!
     @IBOutlet weak var doNotBleach1Button: UIButton!
     @IBOutlet weak var doNotBleach2Button: UIButton!
+    
     @IBOutlet weak var tumpleDryingLowButton: UIButton!
     @IBOutlet weak var tumpleDryingNormalButton: UIButton!
     @IBOutlet weak var doNotTumpleDryButton: UIButton!
+    
     @IBOutlet weak var lineDryButton: UIButton!
     @IBOutlet weak var dryFlatButton: UIButton!
     @IBOutlet weak var dripDryButton: UIButton!
@@ -38,10 +41,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lineDryInTheShadeButton: UIButton!
     @IBOutlet weak var dryFlatInShadeButton: UIButton!
     @IBOutlet weak var dripDryInShadeButton: UIButton!
+    
     @IBOutlet weak var ironAtLowTempButton: UIButton!
     @IBOutlet weak var ironAtMediumTempButton: UIButton!
     @IBOutlet weak var ironAtHeightTempButton: UIButton!
     @IBOutlet weak var doNotIronButton: UIButton!
+    
     @IBOutlet weak var dryCleanHCSOnlyButton: UIButton!
     @IBOutlet weak var cleaningWithHCSButton: UIButton!
     @IBOutlet weak var gentleCleaningWithHCSButton: UIButton!
@@ -49,10 +54,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var gentleCleaningWithPCEButton: UIButton!
     @IBOutlet weak var veryGentleCleaningWithPCEButton: UIButton!
     @IBOutlet weak var doNotDryCleanButton: UIButton!
+    
     @IBOutlet weak var gentleWetCleaningButton: UIButton!
     @IBOutlet weak var veryGentleWetCleaningButton: UIButton!
     @IBOutlet weak var doNotWetCleanButton: UIButton!
-    
     
     //MARK: - Override Methods
     override func viewDidLoad() {
@@ -71,73 +76,59 @@ class DetailViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
-    @IBAction func bleachingInfo() {
-        
-    }
-    
-    
-    @IBAction func saveButtonTapped() {
-        guard let image = tagImage.image else { return }
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-    }
-    
-    //MARK: - TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST! TEST!
-    
     //MARK: - Private Methods
     private func setupUI() {
         if let imageData = tag.img {
             tagImage.image = UIImage(data: imageData)
         }
+        
+        tagImage.layer.borderWidth = 1
+        tagImage.layer.borderColor = UIColor.white.cgColor
+        
+        
         nameLabel.text = tag.name
         brandLabel.text = tag.brand
-        wash30Button.tintColor = tag.wash30 ? .systemBlue : .red
-        wash40Button.tintColor = tag.wash40 ? .systemBlue : .red
-        wash50Button.tintColor = tag.wash50 ? .systemBlue : .red
-        wash60Button.tintColor = tag.wash60 ? .systemBlue : .red
-        handWashButton.tintColor = tag.handWash ? .systemBlue : .red
-        doNotWashButton.tintColor = tag.doNotWash ? .systemBlue : .red
-        bleachingWithChlorineButton.tintColor = tag.bleachingWithChlorine ? .systemBlue : .red
-        nonChlorineBleachButton.tintColor = tag.nonChlorineBleach ? .systemBlue : .red
-        doNotBleach1Button.tintColor = tag.doNotBleach1 ? .systemBlue : .red
-        doNotBleach2Button.tintColor = tag.doNotBleach2 ? .systemBlue : .red
-        tumpleDryingLowButton.tintColor = tag.tumpleDryingLow ? .systemBlue : .red
-        tumpleDryingNormalButton.tintColor = tag.tumpleDryingNormal ? .systemBlue : .red
-        doNotTumpleDryButton.tintColor = tag.doNotTumpleDry ? .systemBlue : .red
-        lineDryButton.tintColor = tag.lineDry ? .systemBlue : .red
-        dryFlatButton.tintColor = tag.dryFlat ? .systemBlue : .red
-        dripDryButton.tintColor = tag.dripDry ? .systemBlue : .red
-        dryInTheShadeButton.tintColor = tag.dryInTheShade ? .systemBlue : .red
-        lineDryInTheShadeButton.tintColor = tag.lineDryInTheShade ? .systemBlue : .red
-        dryFlatInShadeButton.tintColor = tag.dryFlatInShade ? .systemBlue : .red
-        dripDryInShadeButton.tintColor = tag.dripDryInShade ? .systemBlue : .red
-        ironAtLowTempButton.tintColor = tag.ironAtLowTemp ? .systemBlue : .red
-        ironAtMediumTempButton.tintColor = tag.ironAtMediumTemp ? .systemBlue : .red
-        ironAtHeightTempButton.tintColor = tag.ironAtHeightTemp ? .systemBlue : .red
-        doNotIronButton.tintColor = tag.doNotIron ? .systemBlue : .red
-        dryCleanHCSOnlyButton.tintColor = tag.dryCleanHCSOnly ? .systemBlue : .red
-        cleaningWithHCSButton.tintColor = tag.cleaningWithHCS ? .systemBlue : .red
-        gentleCleaningWithHCSButton.tintColor = tag.gentleCleaningWithHCS ? .systemBlue : .red
-        dryCleanPCEOnlyButton.tintColor = tag.dryCleanPCEOnly ? .systemBlue : .red
-        gentleCleaningWithPCEButton.tintColor = tag.gentleCleaningWithPCE ? .systemBlue : .red
-        veryGentleCleaningWithPCEButton.tintColor = tag.veryGentleCleaningWithPCE ? .systemBlue : .red
-        doNotDryCleanButton.tintColor = tag.doNotDryClean ? .systemBlue : .red
-        gentleWetCleaningButton.tintColor = tag.gentleWetCleaning ? .systemBlue : .red
-        veryGentleWetCleaningButton.tintColor = tag.veryGentleWetCleaning ? .systemBlue : .red
-        doNotWetCleanButton.tintColor = tag.doNotWetClean ? .systemBlue : .red
-        //detail.isHidden = true
         
-    }
-    
-    @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            let ac = UIAlertController(title: "Ошибка сохранения", message: error.localizedDescription, preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-        } else {
-            let ac = UIAlertController(title: "Готово!", message: "Изображение сохранено в медиатеку", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
+        wash30Button.isEnabled = tag.wash30
+        wash40Button.isEnabled = tag.wash40
+        wash50Button.isEnabled = tag.wash50
+        wash60Button.isEnabled = tag.wash60
+        handWashButton.isEnabled = tag.handWash
+        doNotWashButton.isEnabled = tag.doNotWash
+        
+        bleachingWithChlorineButton.isEnabled = tag.bleachingWithChlorine
+        nonChlorineBleachButton.isEnabled = tag.nonChlorineBleach
+        doNotBleach1Button.isEnabled = tag.doNotBleach1
+        doNotBleach2Button.isEnabled = tag.doNotBleach2
+        
+        tumpleDryingLowButton.isEnabled = tag.tumpleDryingLow
+        tumpleDryingNormalButton.isEnabled = tag.tumpleDryingNormal
+        doNotTumpleDryButton.isEnabled = tag.doNotTumpleDry
+        
+        lineDryButton.isEnabled = tag.lineDry
+        dryFlatButton.isEnabled = tag.dryFlat
+        dripDryButton.isEnabled = tag.dripDry
+        dryInTheShadeButton.isEnabled = tag.dryInTheShade
+        lineDryInTheShadeButton.isEnabled = tag.lineDryInTheShade
+        dryFlatInShadeButton.isEnabled = tag.dryFlatInShade
+        dripDryInShadeButton.isEnabled = tag.dripDryInShade
+        
+        ironAtLowTempButton.isEnabled = tag.ironAtLowTemp
+        ironAtMediumTempButton.isEnabled = tag.ironAtMediumTemp
+        ironAtHeightTempButton.isEnabled = tag.ironAtHeightTemp
+        doNotIronButton.isEnabled = tag.doNotIron
+        
+        dryCleanHCSOnlyButton.isEnabled = tag.dryCleanHCSOnly
+        cleaningWithHCSButton.isEnabled = tag.cleaningWithHCS
+        gentleCleaningWithHCSButton.isEnabled = tag.gentleCleaningWithHCS
+        dryCleanPCEOnlyButton.isEnabled = tag.dryCleanPCEOnly
+        gentleCleaningWithPCEButton.isEnabled = tag.gentleCleaningWithPCE
+        veryGentleCleaningWithPCEButton.isEnabled = tag.veryGentleCleaningWithPCE
+        doNotDryCleanButton.isEnabled = tag.doNotDryClean
+        
+        gentleWetCleaningButton.isEnabled = tag.gentleWetCleaning
+        veryGentleWetCleaningButton.isEnabled = tag.veryGentleWetCleaning
+        doNotWetCleanButton.isEnabled = tag.doNotWetClean
     }
     
 }
