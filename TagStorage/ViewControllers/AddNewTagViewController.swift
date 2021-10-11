@@ -76,7 +76,6 @@ class AddNewTagViewController: UIViewController {
     @IBAction func addButtonTapped() {
         saveTag()
         delegate.update()
-        dismiss(animated: true)
     }
     
     @IBAction func wash30ButtonTapped(_ sender: UIButton) {
@@ -243,8 +242,14 @@ class AddNewTagViewController: UIViewController {
                     )
                 )
             }
+            dismiss(animated: true, completion: nil)
         }
-    }
+        else {
+            tagNameTextField.becomeFirstResponder()
+            tagNameTextField.backgroundColor = UIColor.systemGray4
+            }
+        }
+    
     
     private func changeTintColor(from value: Bool, to sender: UIButton) {
         if value {
