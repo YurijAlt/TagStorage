@@ -13,5 +13,5 @@ class AdviceDetailViewController: UIViewController {
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
-    
+
 }
