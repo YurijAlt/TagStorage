@@ -85,7 +85,6 @@ class DetailViewController: UIViewController {
         tagImage.layer.borderWidth = 1
         tagImage.layer.borderColor = UIColor.white.cgColor
         
-        
         nameLabel.text = tag.name
         brandLabel.text = tag.brand
         
