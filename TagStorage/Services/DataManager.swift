@@ -9,7 +9,7 @@ class DataManager {
     static let shared = DataManager()
     
     let settingsMenu = ["Help&Support", "What's New", "About This App"]
-    
+    let settingsImages = ["questionmark.circle", "text.book.closed", "info.circle"]
     
     
     let advicePreviewImages = [
