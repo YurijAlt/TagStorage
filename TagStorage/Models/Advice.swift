@@ -8,6 +8,7 @@
 struct Advice {
     let imageName: String
     let mainLabelText: String
+    let detailLabelText: String
 }
 
 extension Advice {
@@ -15,10 +16,12 @@ extension Advice {
         var advices: [Advice] = []
         let imageNames = DataManager.shared.advicePreviewImages
         let mainLabelTexts = DataManager.shared.adviceMainLabelTexts
-        for index in 0..<DataManager.shared.advicePreviewImages.count {
+        let detailLabelTexts = DataManager.shared.adviceDetailLabelTexts
+        for index in 0..<DataManager.shared.adviceMainLabelTexts.count {
             let advice = Advice(
                 imageName: imageNames[index],
-                mainLabelText: mainLabelTexts[index]
+                mainLabelText: mainLabelTexts[index],
+                detailLabelText: detailLabelTexts[index]
             )
             advices.append(advice)
         }

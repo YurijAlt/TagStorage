@@ -31,6 +31,13 @@ class AdviceCollectionViewController: UICollectionViewController {
         cell.previewImage.image = UIImage(systemName: "checkmark.circle")
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let adviceDetailVC = segue.destination as? AdviceDetailViewController else { return }
+        guard let paths = collectionView.indexPathsForSelectedItems else { return }
+        guard let indexPath = paths.first?.row else { return }
+        adviceDetailVC.advice = advices[indexPath]
+    }
 
 }
 
