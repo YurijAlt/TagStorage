@@ -52,7 +52,7 @@ class MainTableViewController: UITableViewController {
         if let imageData = tag.img {
             cell.tagImage.image = UIImage(data: imageData)
         } else {
-            cell.tagImage.image = UIImage(named: "tshort")
+            cell.tagImage.image = UIImage(named: "unowned")
         }
         
         cell.tagImage.layer.borderWidth = 1

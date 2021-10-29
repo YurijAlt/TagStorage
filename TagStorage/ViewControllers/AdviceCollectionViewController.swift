@@ -26,9 +26,13 @@ class AdviceCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath) as! AdviceCollectionViewCell
         let advice = advices[indexPath.row]
         cell.mainLabelText.text = advice.mainLabelText
-        cell.mainLabelText.textColor = UIColor.purple
+       // cell.mainLabelText.textColor = UIColor.purple
         //cell.previewImage.image = UIImage(named: advice.imageName)
-        cell.previewImage.image = UIImage(systemName: "checkmark.circle")
+        
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.white.cgColor
+        
+        
         return cell
     }
     
