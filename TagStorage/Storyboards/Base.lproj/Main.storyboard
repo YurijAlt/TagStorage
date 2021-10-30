@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="87v-BB-9Vr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="87v-BB-9Vr">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -162,209 +162,311 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-Rb-lVl">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-La-0Ie">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-La-0Ie">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="wash30"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="qwc-IX-k33"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0x-9j-WD5">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0x-9j-WD5">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="wash40"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="nLp-TM-v69"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUj-Zq-Iyw">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUj-Zq-Iyw">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="wash50"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="mky-Hb-kbn"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-FB-X81">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-FB-X81">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="wash60"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="zZZ-wT-UqZ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-hw-Oq8">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-hw-Oq8">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="handWash"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="V15-Em-fTO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JAt-Ch-kdK">
                                         <rect key="frame" x="0.0" y="50" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-8H-1tb">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-8H-1tb">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotWash"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="PlU-hb-jtv"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-oU-abt">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-oU-abt">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="bleachingWithChlorine"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="p8m-tK-I3n"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-JF-93a">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-JF-93a">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="nonChlorineBleach"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="8jH-M3-xbS"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-aI-rW6">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-aI-rW6">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotBleach1"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="Bsa-ht-Pcr"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-6q-jTw">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-6q-jTw">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotBleach2"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="SFx-RO-tLz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-8G-PBS">
                                         <rect key="frame" x="0.0" y="100" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-7W-cHp">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-7W-cHp">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="tumpleDryingLow"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="EtS-jT-mkk"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svp-ls-CQG">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svp-ls-CQG">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="tumpleDryingNormal"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="kNE-GO-OHP"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osk-jy-Qk5">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osk-jy-Qk5">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotTumpleDry"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="fcZ-mK-LXH"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYB-qJ-CZt">
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYB-qJ-CZt">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="lineDry"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="nFj-5t-eGe"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5z-b4-b21">
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5z-b4-b21">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dryFlat"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="kgK-Tu-qwu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3n0-ab-Pi6">
                                         <rect key="frame" x="0.0" y="150" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7E-vn-NYV">
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7E-vn-NYV">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dripDry"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="6RH-I5-YX1"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-OF-XiM">
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-OF-XiM">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dryInTheShade"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="fw0-yw-Rc9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pi-LA-GG7">
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pi-LA-GG7">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="lineDryInTheShade"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="AAv-qi-IsO"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-DS-DyL">
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-DS-DyL">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dryFlatInShade"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="PG9-KM-Lbu"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-j4-32N">
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsO-j4-32N">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dripDryInShade"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="eRc-g2-cob"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mRy-wO-qWw">
                                         <rect key="frame" x="0.0" y="200" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izd-5e-vcm">
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izd-5e-vcm">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="ironAtLowTemp"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="CQ0-xF-cLy"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04Z-Oo-BcN">
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04Z-Oo-BcN">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="ironAtMediumTemp"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="mCP-3w-WEA"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or3-60-xTP">
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or3-60-xTP">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="ironAtHeightTemp"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="Oq6-r8-mij"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-fJ-dhi">
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-fJ-dhi">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotIron"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="Tc3-0y-W71"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4X-Vc-0Vs">
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4X-Vc-0Vs">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dryCleanHCSOnly"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="XFF-q3-ZgR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-GJ-eZp">
                                         <rect key="frame" x="0.0" y="250" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w9-Pa-J5W">
+                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7w9-Pa-J5W">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="cleaningWithHCS"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="Reb-wE-Dco"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-fd-WZ4">
+                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waf-fd-WZ4">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="gentleCleaningWithHCS"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="S8b-g1-IK2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z0-na-0Ps">
+                                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z0-na-0Ps">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="dryCleanPCEOnly"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="B2i-za-1ga"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1E-0B-SS3">
+                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1E-0B-SS3">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="gentleCleaningWithPCE"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="zK6-lz-0aj"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40j-PM-W6N">
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40j-PM-W6N">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="veryGentleCleaningWithPCE"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="Csw-od-CtB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-yZ-D8e">
                                         <rect key="frame" x="0.0" y="300" width="315" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-h9-xta">
+                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-h9-xta">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotDryClean"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="faO-jy-268"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mls-ag-W7b">
-                                                <rect key="frame" x="71.5" y="0.0" width="40" height="40"/>
+                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mls-ag-W7b">
+                                                <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="gentleWetCleaning"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="5dc-Po-M4n"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-TU-KmF">
-                                                <rect key="frame" x="142.5" y="0.0" width="40" height="40"/>
+                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-TU-KmF">
+                                                <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="veryGentleWetCleaning"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="8cC-Gy-Ugj"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-9a-R58">
-                                                <rect key="frame" x="214" y="0.0" width="40" height="40"/>
+                                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-9a-R58">
+                                                <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" backgroundImage="doNotWetClean"/>
+                                                <connections>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="jL4-dj-j8S" eventType="touchUpInside" id="deP-ba-oYe"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYI-yf-AfT">
-                                                <rect key="frame" x="285" y="0.0" width="30" height="40"/>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYI-yf-AfT">
+                                                <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title=" "/>
+                                                <state key="normal" title=" " backgroundImage="doNotWetClean"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -632,35 +734,35 @@
                                                 <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="wash30"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QUU-VY-As1"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ykJ-gc-uKG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFh-A2-0Ex">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="wash40"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="l0N-IR-4JS"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="9xA-K1-M9l"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgU-Cx-azT">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="wash50"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="h5I-Lw-QlJ"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="VQF-e8-yKj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-y5-vMA">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="wash60"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Qos-pp-Wml"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="371-Nt-pme"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-05-8Zn">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="handWash"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="5xh-hd-2yc"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="SJl-kQ-HZh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -672,35 +774,35 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotWash"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="zd9-ec-H0q"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="3R7-5Z-w2z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-l6-MYR">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="bleachingWithChlorine"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="82e-4m-ULP"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="vqu-8w-eqX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-kU-wZ3">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="nonChlorineBleach"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QIa-im-9ck"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="CGe-KF-Bc0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICb-G5-GkU">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotBleach1"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ouh-vL-IN8"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="sSy-u3-Sn9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPi-xh-bcz">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotBleach2"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Fg8-ul-pg3"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="rvv-ab-lwI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -712,35 +814,35 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" image="tumpleDryingLow"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="bAI-H4-vxn"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="LKk-Xb-ncc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-tN-714">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="tumpleDryingNormal"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="n6w-ha-Z92"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Wt1-Oa-7kx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHE-Oh-eW9">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotTumpleDry"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="NEd-e4-Z5q"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="8jN-2e-M1n"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXg-6R-0Wt">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="lineDry"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="u7Z-47-JVW"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="vn6-QA-SOX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-J7-Ai0">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dryFlat"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="P6e-97-EgK"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="66w-wv-Lnq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -752,35 +854,35 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dripDry"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="hOH-9v-B4L"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="97v-PJ-ZIs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-0V-1hI">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dryInTheShade"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="lHk-He-URX"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Dk2-xA-ocy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Bs-TxR">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="lineDryInTheShade"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="97I-rX-N1q"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="gkw-jq-bw8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-4o-rx8">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dryFlatInShade"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ZWh-xY-j2X"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="PYx-Nf-9aH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kas-vp-9ff">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dripDryInShade"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="eQu-tc-f3d"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="BYT-j3-XAi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -792,35 +894,35 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="ironAtLowTemp"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="4Yl-KT-D5f"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="7MW-eo-exT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-DR-R3w">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="ironAtMediumTemp"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="DVp-0P-7BQ"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="jmJ-CS-ZCk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THs-Jp-fQy">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="ironAtHeightTemp"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kxO-mi-fQS"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="7kS-4v-hzy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Gs-apa">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotIron"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="url-Mh-Q4T"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="LGT-kV-rje"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ZC-LRV">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dryCleanHCSOnly"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="1Sm-Ol-dlp"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Hd1-Xl-eiO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -832,35 +934,35 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="cleaningWithHCS"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="pKa-O5-wRR"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="38V-go-qQs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elS-nr-b3G">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="gentleCleaningWithHCS"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="QXs-bV-WYA"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="ic5-s0-tGY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-E1-JEE">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="dryCleanPCEOnly"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="g3R-Z2-EDe"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="s7M-7F-FAo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-6T-wdN">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="gentleCleaningWithPCE"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wFJ-bo-xhg"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="cgP-CU-Mn6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1t-KA-sEy">
                                                 <rect key="frame" x="275" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="veryGentleCleaningWithPCE"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="J13-y1-nJv"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="fOI-PZ-Fb9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -872,28 +974,28 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotDryClean"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="wRD-bW-fPs"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="j11-gc-7rA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atp-dt-bIU">
                                                 <rect key="frame" x="69" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="gentleWetCleaning"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="kav-Ja-lbR"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="2VD-HB-h3h"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-yY-2eC">
                                                 <rect key="frame" x="137.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="veryGentleWetCleaning"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="fIk-ME-CJW"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="Qjv-zx-kiW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.29999999999999999" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-Qe-pKS">
                                                 <rect key="frame" x="206.5" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="doNotWetClean"/>
                                                 <connections>
-                                                    <action selector="wash30ButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="yL6-ke-L6e"/>
+                                                    <action selector="symbolOfCareButtonTapped:" destination="hYy-LY-uOF" eventType="touchUpInside" id="u5M-jS-8Mk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i12-td-E5u">
@@ -1083,7 +1185,7 @@
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.86264318230000003" green="0.86921828990000005" blue="0.95671111350000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.86264318230000003" green="0.86921828990000005" blue="0.95671111350000004" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="customSize" width="172" height="172"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

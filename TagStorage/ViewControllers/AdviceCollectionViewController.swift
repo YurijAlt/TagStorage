@@ -26,12 +26,12 @@ class AdviceCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdviceCollectionViewCell", for: indexPath) as! AdviceCollectionViewCell
         let advice = advices[indexPath.row]
         cell.mainLabelText.text = advice.mainLabelText
-       // cell.mainLabelText.textColor = UIColor.purple
-        //cell.previewImage.image = UIImage(named: advice.imageName)
-        
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.white.cgColor
         
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(named: "selectedCellColor")
+        cell.selectedBackgroundView = bgColorView
         
         return cell
     }
@@ -42,6 +42,28 @@ class AdviceCollectionViewController: UICollectionViewController {
         guard let indexPath = paths.first?.row else { return }
         adviceDetailVC.advice = advices[indexPath]
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+//        //Briefly fade the cell on selection
+//        UIView.animate(withDuration: 0.5,
+//                       animations: {
+//                        //Fade-out
+//                        cell?.alpha = 0.5
+//        }) { _ in
+//            UIView.animate(withDuration: 0.5,
+//                           animations: {
+//                            //Fade-out
+//                            cell?.alpha = 1
+//            })
+//        }
+    }
+    
+    
 
 }
 

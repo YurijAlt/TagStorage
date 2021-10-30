@@ -78,7 +78,7 @@ class AddNewTagViewController: UIViewController {
         delegate.update()
     }
     
-    @IBAction func wash30ButtonTapped(_ sender: UIButton) {
+    @IBAction func symbolOfCareButtonTapped(_ sender: UIButton) {
         if sender.tag == 1 {
             changeAlpha(from: wash30, to: sender)
             wash30.toggle()
@@ -184,8 +184,6 @@ class AddNewTagViewController: UIViewController {
         }
     }
     
- 
-    
     @IBAction func takePhotoFromCamera() {
         let picker = UIImagePickerController()
         picker.sourceType = .camera
@@ -245,30 +243,11 @@ class AddNewTagViewController: UIViewController {
         else {
             tagNameTextField.becomeFirstResponder()
             tagNameTextField.backgroundColor = UIColor.systemGray4
-            }
-        }
-    
-    
-    private func changeTintColor(from value: Bool, to sender: UIButton) {
-        if value {
-            sender.tintColor = .red
-        } else {
-            sender.tintColor = .none
         }
     }
     
     private func changeAlpha(from value: Bool, to sender: UIButton) {
-        if value {
-            sender.alpha = 0.2
-        } else { sender.alpha = 1.0
-        }
-    }
-    
-    private func changeEnableStatus(from value: Bool, to sender: UIButton) {
-        if !value {
-            sender.isEnabled = true
-        } else { sender.isEnabled = false
-        }
+        sender.alpha = value ? 0.2 : 1.0
     }
     
 }

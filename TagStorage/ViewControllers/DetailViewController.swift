@@ -76,6 +76,78 @@ class DetailViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func symbolOfCareButtonTapped(_ sender: UIButton) {
+        if sender.tag == 1 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 2 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 3 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 4 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 5 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 6 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 7 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 8 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 9 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 10 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 11 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 12 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 13 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 14 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 15 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 16 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 17 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 18 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 19 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 20 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 21 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 22 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 23 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 24 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 25 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 26 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 27 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 28 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 29 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 30 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 31 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 32 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 33 {
+            showAlert(senderTag: sender.tag)
+        } else if sender.tag == 34 {
+            showAlert(senderTag: sender.tag)
+        }
+    }
+    
     //MARK: - Private Methods
     private func setupUI() {
         if let imageData = tag.img {
@@ -89,45 +161,89 @@ class DetailViewController: UIViewController {
         brandLabel.text = tag.brand
         
         wash30Button.isEnabled = tag.wash30
+        wash30Button.alpha = tag.wash30 ? 1 : 0.3
         wash40Button.isEnabled = tag.wash40
+        wash40Button.alpha = tag.wash40 ? 1 : 0.3
         wash50Button.isEnabled = tag.wash50
+        wash50Button.alpha = tag.wash50 ? 1 : 0.3
         wash60Button.isEnabled = tag.wash60
+        wash60Button.alpha = tag.wash60 ? 1 : 0.3
         handWashButton.isEnabled = tag.handWash
+        handWashButton.alpha = tag.handWash ? 1 : 0.3
         doNotWashButton.isEnabled = tag.doNotWash
+        doNotWashButton.alpha = tag.doNotWash ? 1 : 0.3
         
         bleachingWithChlorineButton.isEnabled = tag.bleachingWithChlorine
+        bleachingWithChlorineButton.alpha = tag.bleachingWithChlorine ? 1 : 0.3
         nonChlorineBleachButton.isEnabled = tag.nonChlorineBleach
+        nonChlorineBleachButton.alpha = tag.nonChlorineBleach ? 1 : 0.3
         doNotBleach1Button.isEnabled = tag.doNotBleach1
+        doNotBleach1Button.alpha = tag.doNotBleach1 ? 1 : 0.3
         doNotBleach2Button.isEnabled = tag.doNotBleach2
+        doNotBleach2Button.alpha = tag.doNotBleach2 ? 1 : 0.3
         
         tumpleDryingLowButton.isEnabled = tag.tumpleDryingLow
+        tumpleDryingLowButton.alpha = tag.tumpleDryingLow ? 1 : 0.3
         tumpleDryingNormalButton.isEnabled = tag.tumpleDryingNormal
+        tumpleDryingNormalButton.alpha = tag.tumpleDryingNormal ? 1 : 0.3
         doNotTumpleDryButton.isEnabled = tag.doNotTumpleDry
+        doNotTumpleDryButton.alpha = tag.doNotTumpleDry ? 1 : 0.3
         
         lineDryButton.isEnabled = tag.lineDry
+        lineDryButton.alpha = tag.lineDry ? 1 : 0.3
         dryFlatButton.isEnabled = tag.dryFlat
+        dryFlatButton.alpha = tag.dryFlat ? 1 : 0.3
         dripDryButton.isEnabled = tag.dripDry
+        dripDryButton.alpha = tag.dripDry ? 1 : 0.3
         dryInTheShadeButton.isEnabled = tag.dryInTheShade
+        dryInTheShadeButton.alpha = tag.dryInTheShade ? 1 : 0.3
         lineDryInTheShadeButton.isEnabled = tag.lineDryInTheShade
+        lineDryInTheShadeButton.alpha = tag.lineDryInTheShade ? 1 : 0.3
         dryFlatInShadeButton.isEnabled = tag.dryFlatInShade
+        dryFlatInShadeButton.alpha = tag.dryFlatInShade ? 1 : 0.3
         dripDryInShadeButton.isEnabled = tag.dripDryInShade
+        dripDryInShadeButton.alpha = tag.dripDryInShade ? 1 : 0.3
         
         ironAtLowTempButton.isEnabled = tag.ironAtLowTemp
+        ironAtLowTempButton.alpha = tag.ironAtLowTemp ? 1 : 0.3
         ironAtMediumTempButton.isEnabled = tag.ironAtMediumTemp
+        ironAtMediumTempButton.alpha = tag.ironAtMediumTemp ? 1 : 0.3
         ironAtHeightTempButton.isEnabled = tag.ironAtHeightTemp
+        ironAtHeightTempButton.alpha = tag.ironAtHeightTemp ? 1 : 0.3
         doNotIronButton.isEnabled = tag.doNotIron
+        doNotIronButton.alpha = tag.doNotIron ? 1 : 0.3
         
         dryCleanHCSOnlyButton.isEnabled = tag.dryCleanHCSOnly
+        dryCleanHCSOnlyButton.alpha = tag.dryCleanHCSOnly ? 1 : 0.3
         cleaningWithHCSButton.isEnabled = tag.cleaningWithHCS
+        cleaningWithHCSButton.alpha = tag.cleaningWithHCS ? 1 : 0.3
         gentleCleaningWithHCSButton.isEnabled = tag.gentleCleaningWithHCS
+        gentleCleaningWithHCSButton.alpha = tag.gentleCleaningWithHCS ? 1 : 0.3
         dryCleanPCEOnlyButton.isEnabled = tag.dryCleanPCEOnly
+        dryCleanPCEOnlyButton.alpha = tag.dryCleanPCEOnly ? 1 : 0.3
         gentleCleaningWithPCEButton.isEnabled = tag.gentleCleaningWithPCE
+        gentleCleaningWithPCEButton.alpha = tag.gentleCleaningWithPCE ? 1 : 0.3
         veryGentleCleaningWithPCEButton.isEnabled = tag.veryGentleCleaningWithPCE
+        veryGentleCleaningWithPCEButton.alpha = tag.veryGentleCleaningWithPCE ? 1 : 0.3
         doNotDryCleanButton.isEnabled = tag.doNotDryClean
+        doNotDryCleanButton.alpha = tag.doNotDryClean ? 1 : 0.3
         
         gentleWetCleaningButton.isEnabled = tag.gentleWetCleaning
+        gentleWetCleaningButton.alpha = tag.gentleWetCleaning ? 1 : 0.3
         veryGentleWetCleaningButton.isEnabled = tag.veryGentleWetCleaning
+        veryGentleWetCleaningButton.alpha = tag.veryGentleWetCleaning ? 1 : 0.3
         doNotWetCleanButton.isEnabled = tag.doNotWetClean
+        doNotWetCleanButton.alpha = tag.doNotWetClean ? 1 : 0.3
+    }
+    
+    private func showAlert(senderTag: Int) {
+        let alert = UIAlertController(title: "", message: DataManager.shared.careDescriptions[senderTag - 1], preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            alert.dismiss(animated: true)
+        }
     }
     
 }

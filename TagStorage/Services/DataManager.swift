@@ -10,20 +10,6 @@ class DataManager {
     
     let settingsMenu = ["Help&Support", "What's New", "About This App"]
     let settingsImages = ["questionmark.circle", "text.book.closed", "info.circle"]
-    
-    
-    let advicePreviewImages = [
-        "one",
-        "two",
-        "three",
-        "two",
-        "two",
-        "two",
-        "two",
-        "two",
-        "two",
-        "two",
-    ]
     let adviceMainLabelTexts = [
         "Select the Right Water Temperature",
         "Select the Right Detergent",
@@ -48,6 +34,43 @@ class DataManager {
         "When whites start going gray or yellow, it could be because you are using water temperatures that are too low. You may be overloading your washer and piling in really dirty clothes that cause dirt to resettle on mildly soiled clothes making them dull.",
         "To make bras and delicate undergarments hold their shape and last longer, wash them by hand in a sink filled with cool water. If you want to use the washer, toss bras in a mesh lingerie bag and use the delicate cycle.",
         "Who has time to iron? Use a fabric softener or dryer sheet to help reduce fabric wrinkles and select the lowest dryer temperature setting possible that will still get the job done. Always remove clothing from the dryer as quickly as possible when they're dry and immediately fold or hang them."
+    ]
+    
+    let careDescriptions = [
+        "Wash at or below 30 °C (USA, 1 dot, ●)",
+        "Wash at or below 40 °C (USA, 2 dots, ●●)",
+        "Wash at or below 50 °C (USA, 3 dots, ●●●)",
+        "Wash at or below 60 °C (USA, 4 dots, ●●●●)",
+        "Hand wash",
+        "Do not wash",
+        "Bleaching with chlorine allowed (obsolete)",
+        "Non-chlorine bleach when needed",
+        "Do not bleach",
+        "Do not bleach",
+        "Tumble drying (low temperature)",
+        "Tumble drying (normal)",
+        "Do not tumble dry",
+        "Line dry",
+        "Dry flat",
+        "Drip dry",
+        "Dry in the shade",
+        "Line dry in the shade",
+        "Dry flat in shade",
+        "Drip dry in shade",
+        "Iron at low temperature",
+        "Iron at medium temperature",
+        "Iron at high temperature",
+        "Do not iron",
+        "Dry clean, hydrocarbon solvent only (HCS)",
+        "Gentle cleaning with hydrocarbon solvents",
+        "Very gentle cleaning with hydrocarbon solvents",
+        "Dry clean, tetrachloroethylene (PCE) only",
+        "Gentle cleaning with PCE",
+        "Very gentle cleaning with PCE",
+        "Do not dry clean",
+        "Gentle wet cleaning",
+        "Very gentle wet cleaning",
+        "Do not wet clean"
     ]
     
     private init() {}

@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
+    
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class SettingsTableViewController: UITableViewController {
         let imageView = UIImageView(image: image)
         tableView.backgroundView = imageView
     }
-
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataManager.shared.settingsMenu.count
@@ -27,7 +27,7 @@ class SettingsTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.image = UIImage(systemName: DataManager.shared.settingsImages[indexPath.row])
         content.text = DataManager.shared.settingsMenu[indexPath.row]
-        content.textProperties.color = UIColor.purple
+        content.textProperties.color = UIColor(named: "textColor") ?? UIColor.purple
         cell.contentConfiguration = content
         return cell
     }
@@ -35,4 +35,5 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
 }
