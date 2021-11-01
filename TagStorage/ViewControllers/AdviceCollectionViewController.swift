@@ -44,23 +44,7 @@ class AdviceCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let cell = collectionView.cellForItem(at: indexPath)
-        
         collectionView.deselectItem(at: indexPath, animated: true)
-        
-//        //Briefly fade the cell on selection
-//        UIView.animate(withDuration: 0.5,
-//                       animations: {
-//                        //Fade-out
-//                        cell?.alpha = 0.5
-//        }) { _ in
-//            UIView.animate(withDuration: 0.5,
-//                           animations: {
-//                            //Fade-out
-//                            cell?.alpha = 1
-//            })
-//        }
     }
     
     

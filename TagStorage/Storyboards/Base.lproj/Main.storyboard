@@ -43,9 +43,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <segue destination="qc4-wN-sJE" kind="show" id="aDb-Fj-7Z1"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,13 +59,13 @@
         <!--Help Table View Controller-->
         <scene sceneID="UFD-TQ-xGa">
             <objects>
-                <tableViewController id="qc4-wN-sJE" customClass="HelpTableViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="HelpTableViewController" id="qc4-wN-sJE" customClass="HelpTableViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aUR-Es-XFQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ck6-W9-u1S" style="IBUITableViewCellStyleDefault" id="AyE-Wk-vnU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelpTableViewCell" textLabel="ck6-W9-u1S" style="IBUITableViewCellStyleDefault" id="AyE-Wk-vnU">
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AyE-Wk-vnU" id="cej-Mo-luL">
@@ -95,7 +92,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6C-Gn-OQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2553" y="1458"/>
+            <point key="canvasLocation" x="2662" y="1458"/>
+        </scene>
+        <!--Whats New Table View Controller-->
+        <scene sceneID="CZR-vA-HzB">
+            <objects>
+                <tableViewController storyboardIdentifier="WhatsNewTableViewController" id="CeG-tV-CWq" customClass="WhatsNewTableViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="GVZ-aC-6Gd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WhatsNewTableViewCell" id="MR8-aU-WTQ">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MR8-aU-WTQ" id="MYh-UM-6Ey">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CeG-tV-CWq" id="UYc-tv-F5R"/>
+                            <outlet property="delegate" destination="CeG-tV-CWq" id="N4i-eh-S8F"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTE-M0-LeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3442" y="1458"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="FJv-Rm-Cpa">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="XFT-ah-DpJ" customClass="AboutViewController" customModule="TagStorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8FI-l9-V2j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1U-gz-Ihu">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MF1-ry-tok"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X1U-gz-Ihu" firstAttribute="centerX" secondItem="8FI-l9-V2j" secondAttribute="centerX" id="5b6-be-XcM"/>
+                            <constraint firstItem="X1U-gz-Ihu" firstAttribute="centerY" secondItem="8FI-l9-V2j" secondAttribute="centerY" id="eTw-g0-TiF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bQ-t7-rVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4162" y="1458"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="AzG-cU-1hI">
