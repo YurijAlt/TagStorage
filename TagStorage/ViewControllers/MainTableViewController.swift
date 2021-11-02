@@ -28,6 +28,7 @@ class MainTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "AddNewTagViewController" {
             guard let addNewTagVC = segue.destination as? AddNewTagViewController else { return }
             addNewTagVC.delegate = self

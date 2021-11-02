@@ -12,7 +12,9 @@ class AboutViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
     }
-
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }

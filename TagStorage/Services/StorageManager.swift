@@ -109,8 +109,6 @@ class StorageManager {
         addTag.doNotWetClean = tag.doNotWetClean
         saveContext()
     }
-    
-
 
     func delete(_ tag: SavedTag) {
         viewContext.delete(tag)

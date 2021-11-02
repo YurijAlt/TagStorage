@@ -12,7 +12,9 @@ class HelpTableViewController: UITableViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor.red
+        let image = UIImage(named: "back")
+        let imageView = UIImageView(image: image)
+        tableView.backgroundView = imageView
         
     }
     
@@ -31,9 +33,13 @@ class HelpTableViewController: UITableViewController {
 
         var content = cell.defaultContentConfiguration()
         content.text = "Test. 1. How take a photo of my thing"
-        
+        content.textProperties.color = UIColor(named: "textColor") ?? UIColor.purple
         cell.contentConfiguration = content
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

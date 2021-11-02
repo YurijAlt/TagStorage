@@ -35,18 +35,16 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             guard let helpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelpTableViewController") as? HelpTableViewController else { return }
             navigationController?.pushViewController(helpVC, animated: true)
-        }
-        if indexPath.row == 1 {
+        case 1:
             guard let whatsNewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WhatsNewTableViewController") as? WhatsNewTableViewController else { return }
             navigationController?.pushViewController(whatsNewVC, animated: true)
-        }
-        if indexPath.row == 2 {
+        default:
             guard let aboutVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutViewController") as? AboutViewController else { return }
             present(aboutVC, animated: true, completion: nil)
         }
     }
-
 }

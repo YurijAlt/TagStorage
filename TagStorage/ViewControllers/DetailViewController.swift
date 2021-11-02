@@ -77,75 +77,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func symbolOfCareButtonTapped(_ sender: UIButton) {
-        if sender.tag == 1 {
             showAlert(senderTag: sender.tag)
-        } else if sender.tag == 2 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 3 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 4 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 5 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 6 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 7 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 8 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 9 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 10 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 11 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 12 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 13 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 14 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 15 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 16 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 17 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 18 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 19 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 20 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 21 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 22 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 23 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 24 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 25 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 26 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 27 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 28 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 29 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 30 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 31 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 32 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 33 {
-            showAlert(senderTag: sender.tag)
-        } else if sender.tag == 34 {
-            showAlert(senderTag: sender.tag)
-        }
     }
     
     //MARK: - Private Methods
