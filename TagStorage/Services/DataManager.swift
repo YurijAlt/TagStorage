@@ -8,8 +8,8 @@
 class DataManager {
     static let shared = DataManager()
     
-    let settingsMenu = ["Help&Support", "What's New", "About This App"]
-    let settingsImages = ["questionmark.circle", "text.book.closed", "info.circle"]
+    let settingsMenu = ["What's New", "About This App"]
+    let settingsImages = ["text.book.closed", "info.circle"]
     let adviceMainLabelTexts = [
         "Select the Right Water Temperature",
         "Select the Right Detergent",
@@ -72,6 +72,10 @@ class DataManager {
         "Very gentle wet cleaning",
         "Do not wet clean"
     ]
+    
+    let buildVersions = ["1.0"]
+    let buildVersionsDescription = ["04 Nov 2021\nThe application was released. The journey will be long! 🥳"]
+    
     
     private init() {}
 }

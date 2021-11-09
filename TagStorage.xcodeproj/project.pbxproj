@@ -11,11 +11,16 @@
 		C4177D6B26F7C14F00DD61E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */; };
 		C4177D6D26F7C1C400DD61E3 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6C26F7C1C400DD61E3 /* MainTableViewCell.swift */; };
 		C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4177D6F26F7C59100DD61E3 /* Tag.swift */; };
+		C42E670E2739B88B0037BBCA /* Start1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E670D2739B88B0037BBCA /* Start1ViewController.swift */; };
+		C42E67102739B8980037BBCA /* Start2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E670F2739B8980037BBCA /* Start2ViewController.swift */; };
+		C42E67122739B8A80037BBCA /* Start3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E67112739B8A80037BBCA /* Start3ViewController.swift */; };
+		C42E67142739B8B70037BBCA /* Start4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E67132739B8B70037BBCA /* Start4ViewController.swift */; };
+		C43AA6E32731EC690019D1A5 /* Extension + NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AA6E22731EC690019D1A5 /* Extension + NSMutableAttributedString.swift */; };
+		C43D81D72738409F006E3C56 /* FirstStartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43D81D62738409F006E3C56 /* FirstStartPageViewController.swift */; };
 		C4421BA4272ECECD00FAF2F6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4421BA3272ECECD00FAF2F6 /* AboutViewController.swift */; };
 		C4421BA6272F449900FAF2F6 /* WhatsNewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4421BA5272F449900FAF2F6 /* WhatsNewTableViewController.swift */; };
 		C446CB8726FBC8A300933DA7 /* AdviceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */; };
 		C446CB8926FBC91E00933DA7 /* AdviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */; };
-		C474D905270F808700BF571C /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474D904270F808700BF571C /* HelpTableViewController.swift */; };
 		C486DC9B2703A2490031BCB5 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486DC9A2703A2490031BCB5 /* Extension + UIButton.swift */; };
 		C48C0E46270E509D00DE3953 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C0E45270E509D00DE3953 /* SettingsTableViewController.swift */; };
 		C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493508B26F86DD300DF9AF4 /* StorageManager.swift */; };
@@ -36,18 +41,23 @@
 		C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C4177D6C26F7C1C400DD61E3 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		C4177D6F26F7C59100DD61E3 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		C42E670D2739B88B0037BBCA /* Start1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start1ViewController.swift; sourceTree = "<group>"; };
+		C42E670F2739B8980037BBCA /* Start2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start2ViewController.swift; sourceTree = "<group>"; };
+		C42E67112739B8A80037BBCA /* Start3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start3ViewController.swift; sourceTree = "<group>"; };
+		C42E67132739B8B70037BBCA /* Start4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start4ViewController.swift; sourceTree = "<group>"; };
+		C43AA6E22731EC690019D1A5 /* Extension + NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + NSMutableAttributedString.swift"; sourceTree = "<group>"; };
+		C43D81D62738409F006E3C56 /* FirstStartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStartPageViewController.swift; sourceTree = "<group>"; };
 		C4421BA3272ECECD00FAF2F6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C4421BA5272F449900FAF2F6 /* WhatsNewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewTableViewController.swift; sourceTree = "<group>"; };
 		C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewController.swift; sourceTree = "<group>"; };
 		C446CB8826FBC91E00933DA7 /* AdviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCollectionViewCell.swift; sourceTree = "<group>"; };
-		C474D904270F808700BF571C /* HelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		C486DC9A2703A2490031BCB5 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 		C48C0E45270E509D00DE3953 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		C493508B26F86DD300DF9AF4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C4956A8227050355007DFBEC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C4956A84270509FE007DFBEC /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		C49848AC2707B2B900320ECB /* AdviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceDetailViewController.swift; sourceTree = "<group>"; };
-		C4AAEF7726F7BAA400E3891B /* TagStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AAEF7726F7BAA400E3891B /* YourTags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourTags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AAEF7A26F7BAA400E3891B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4AAEF7C26F7BAA400E3891B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTagViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C486DC9A2703A2490031BCB5 /* Extension + UIButton.swift */,
+				C43AA6E22731EC690019D1A5 /* Extension + NSMutableAttributedString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -115,7 +126,7 @@
 		C4AAEF7826F7BAA400E3891B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4AAEF7726F7BAA400E3891B /* TagStorage.app */,
+				C4AAEF7726F7BAA400E3891B /* YourTags.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,13 +160,17 @@
 		C4AAEF9226F7BBE500E3891B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C43D81D62738409F006E3C56 /* FirstStartPageViewController.swift */,
+				C42E670D2739B88B0037BBCA /* Start1ViewController.swift */,
+				C42E670F2739B8980037BBCA /* Start2ViewController.swift */,
+				C42E67112739B8A80037BBCA /* Start3ViewController.swift */,
+				C42E67132739B8B70037BBCA /* Start4ViewController.swift */,
 				C4177D6826F7BF8200DD61E3 /* MainTableViewController.swift */,
 				C4177D6A26F7C14F00DD61E3 /* DetailViewController.swift */,
 				C4AAEF7E26F7BAA400E3891B /* AddNewTagViewController.swift */,
 				C446CB8626FBC8A300933DA7 /* AdviceCollectionViewController.swift */,
 				C48C0E45270E509D00DE3953 /* SettingsTableViewController.swift */,
 				C49848AC2707B2B900320ECB /* AdviceDetailViewController.swift */,
-				C474D904270F808700BF571C /* HelpTableViewController.swift */,
 				C4421BA5272F449900FAF2F6 /* WhatsNewTableViewController.swift */,
 				C4421BA3272ECECD00FAF2F6 /* AboutViewController.swift */,
 			);
@@ -182,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4AAEF7626F7BAA400E3891B /* TagStorage */ = {
+		C4AAEF7626F7BAA400E3891B /* YourTags */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4AAEF8E26F7BAA700E3891B /* Build configuration list for PBXNativeTarget "TagStorage" */;
+			buildConfigurationList = C4AAEF8E26F7BAA700E3891B /* Build configuration list for PBXNativeTarget "YourTags" */;
 			buildPhases = (
 				C4AAEF7326F7BAA400E3891B /* Sources */,
 				C4AAEF7426F7BAA400E3891B /* Frameworks */,
@@ -194,9 +209,9 @@
 			);
 			dependencies = (
 			);
-			name = TagStorage;
+			name = YourTags;
 			productName = TagStorage;
-			productReference = C4AAEF7726F7BAA400E3891B /* TagStorage.app */;
+			productReference = C4AAEF7726F7BAA400E3891B /* YourTags.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4AAEF7626F7BAA400E3891B /* TagStorage */,
+				C4AAEF7626F7BAA400E3891B /* YourTags */,
 			);
 		};
 /* End PBXProject section */
@@ -252,19 +267,24 @@
 				C446CB8926FBC91E00933DA7 /* AdviceCollectionViewCell.swift in Sources */,
 				C446CB8726FBC8A300933DA7 /* AdviceCollectionViewController.swift in Sources */,
 				C4177D7026F7C59100DD61E3 /* Tag.swift in Sources */,
+				C43D81D72738409F006E3C56 /* FirstStartPageViewController.swift in Sources */,
 				C4AAEF8526F7BAA400E3891B /* Storage.xcdatamodeld in Sources */,
 				C4AAEF7F26F7BAA400E3891B /* AddNewTagViewController.swift in Sources */,
+				C42E67142739B8B70037BBCA /* Start4ViewController.swift in Sources */,
 				C493508C26F86DD300DF9AF4 /* StorageManager.swift in Sources */,
+				C42E670E2739B88B0037BBCA /* Start1ViewController.swift in Sources */,
+				C42E67122739B8A80037BBCA /* Start3ViewController.swift in Sources */,
 				C486DC9B2703A2490031BCB5 /* Extension + UIButton.swift in Sources */,
 				C49848AD2707B2BA00320ECB /* AdviceDetailViewController.swift in Sources */,
-				C474D905270F808700BF571C /* HelpTableViewController.swift in Sources */,
 				C4AAEF7B26F7BAA400E3891B /* AppDelegate.swift in Sources */,
 				C4177D6D26F7C1C400DD61E3 /* MainTableViewCell.swift in Sources */,
+				C42E67102739B8980037BBCA /* Start2ViewController.swift in Sources */,
 				C4956A85270509FE007DFBEC /* Advice.swift in Sources */,
 				C4421BA4272ECECD00FAF2F6 /* AboutViewController.swift in Sources */,
 				C4177D6B26F7C14F00DD61E3 /* DetailViewController.swift in Sources */,
 				C48C0E46270E509D00DE3953 /* SettingsTableViewController.swift in Sources */,
 				C4421BA6272F449900FAF2F6 /* WhatsNewTableViewController.swift in Sources */,
+				C43AA6E32731EC690019D1A5 /* Extension + NSMutableAttributedString.swift in Sources */,
 				C4177D6926F7BF8200DD61E3 /* MainTableViewController.swift in Sources */,
 				C4956A8327050355007DFBEC /* DataManager.swift in Sources */,
 				C4AAEF7D26F7BAA400E3891B /* SceneDelegate.swift in Sources */,
@@ -344,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yura-chakalyuk.TagStorage";
+				PRODUCT_BUNDLE_IDENTIFIER = "yura-chakalyuk.YourTags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -442,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yura-chakalyuk.TagStorage";
+				PRODUCT_BUNDLE_IDENTIFIER = "yura-chakalyuk.YourTags";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -461,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4AAEF8E26F7BAA700E3891B /* Build configuration list for PBXNativeTarget "TagStorage" */ = {
+		C4AAEF8E26F7BAA700E3891B /* Build configuration list for PBXNativeTarget "YourTags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4AAEF8F26F7BAA700E3891B /* Debug */,

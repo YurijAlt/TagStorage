@@ -79,106 +79,107 @@ class AddNewTagViewController: UIViewController {
     }
     
     @IBAction func symbolOfCareButtonTapped(_ sender: UIButton) {
-        if sender.tag == 1 {
+        switch sender.tag {
+        case 1:
             changeAlpha(from: wash30, to: sender)
             wash30.toggle()
-        } else if sender.tag == 2 {
+        case 2:
             changeAlpha(from: wash40, to: sender)
             wash40.toggle()
-        } else if sender.tag == 3 {
+        case 3:
             changeAlpha(from: wash50, to: sender)
             wash50.toggle()
-        } else if sender.tag == 4 {
+        case 4:
             changeAlpha(from: wash60, to: sender)
             wash60.toggle()
-        } else if sender.tag == 5 {
+        case 5:
             changeAlpha(from: handWash, to: sender)
             handWash.toggle()
-        } else if sender.tag == 6 {
+        case 6:
             changeAlpha(from: doNotWash, to: sender)
             doNotWash.toggle()
-        } else if sender.tag == 7 {
+        case 7:
             changeAlpha(from: bleachingWithChlorine, to: sender)
             bleachingWithChlorine.toggle()
-        } else if sender.tag == 8 {
+        case 8:
             changeAlpha(from: nonChlorineBleach, to: sender)
             nonChlorineBleach.toggle()
-        } else if sender.tag == 9 {
+        case 9:
             changeAlpha(from: doNotBleach1, to: sender)
             doNotBleach1.toggle()
-        } else if sender.tag == 10 {
+        case 10:
             changeAlpha(from: doNotBleach2, to: sender)
             doNotBleach2.toggle()
-        } else if sender.tag == 11 {
+        case 11:
             changeAlpha(from: tumpleDryingLow, to: sender)
             tumpleDryingLow.toggle()
-        } else if sender.tag == 12 {
+        case 12:
             changeAlpha(from: tumpleDryingNormal, to: sender)
             tumpleDryingNormal.toggle()
-        } else if sender.tag == 13 {
+        case 13:
             changeAlpha(from: doNotTumpleDry, to: sender)
             doNotTumpleDry.toggle()
-        } else if sender.tag == 14 {
+        case 14:
             changeAlpha(from: lineDry, to: sender)
             lineDry.toggle()
-        } else if sender.tag == 15 {
+        case 15:
             changeAlpha(from: dryFlat, to: sender)
             dryFlat.toggle()
-        } else if sender.tag == 16 {
+        case 16:
             changeAlpha(from: dripDry, to: sender)
             dripDry.toggle()
-        } else if sender.tag == 17 {
+        case 17:
             changeAlpha(from: dryInTheShade, to: sender)
             dryInTheShade.toggle()
-        } else if sender.tag == 18 {
+        case 18:
             changeAlpha(from: lineDryInTheShade, to: sender)
             lineDryInTheShade.toggle()
-        } else if sender.tag == 19 {
+        case 19:
             changeAlpha(from: dryFlatInShade, to: sender)
             dryFlatInShade.toggle()
-        } else if sender.tag == 20 {
+        case 20:
             changeAlpha(from: dripDryInShade, to: sender)
             dripDryInShade.toggle()
-        } else if sender.tag == 21 {
+        case 21:
             changeAlpha(from: ironAtLowTemp, to: sender)
             ironAtLowTemp.toggle()
-        } else if sender.tag == 22 {
+        case 22:
             changeAlpha(from: ironAtMediumTemp, to: sender)
             ironAtMediumTemp.toggle()
-        } else if sender.tag == 23 {
+        case 23:
             changeAlpha(from: ironAtHeightTemp, to: sender)
             ironAtHeightTemp.toggle()
-        } else if sender.tag == 24 {
+        case 24:
             changeAlpha(from: doNotIron, to: sender)
             doNotIron.toggle()
-        } else if sender.tag == 25 {
+        case 25:
             changeAlpha(from: dryCleanHCSOnly, to: sender)
             dryCleanHCSOnly.toggle()
-        } else if sender.tag == 26 {
+        case 26:
             changeAlpha(from: cleaningWithHCS, to: sender)
             cleaningWithHCS.toggle()
-        } else if sender.tag == 27 {
+        case 27:
             changeAlpha(from: gentleCleaningWithHCS, to: sender)
             gentleCleaningWithHCS.toggle()
-        } else if sender.tag == 28 {
+        case 28:
             changeAlpha(from: dryCleanPCEOnly, to: sender)
             dryCleanPCEOnly.toggle()
-        } else if sender.tag == 29 {
+        case 29:
             changeAlpha(from: gentleCleaningWithPCE, to: sender)
             gentleCleaningWithPCE.toggle()
-        } else if sender.tag == 30 {
+        case 30:
             changeAlpha(from: veryGentleCleaningWithPCE, to: sender)
             veryGentleCleaningWithPCE.toggle()
-        } else if sender.tag == 31 {
+        case 31:
             changeAlpha(from: doNotDryClean, to: sender)
             doNotDryClean.toggle()
-        } else if sender.tag == 32 {
+        case 32:
             changeAlpha(from: gentleWetCleaning, to: sender)
             gentleWetCleaning.toggle()
-        } else if sender.tag == 33 {
+        case 33:
             changeAlpha(from: veryGentleWetCleaning, to: sender)
             veryGentleWetCleaning.toggle()
-        } else if sender.tag == 34 {
+        default:
             changeAlpha(from: doNotWetClean, to: sender)
             doNotWetClean.toggle()
         }
@@ -272,7 +273,6 @@ extension AddNewTagViewController: UITextFieldDelegate {
 
 //MARK: - Work with camera
 extension AddNewTagViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }

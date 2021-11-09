@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     var tag: SavedTag!
     var delegate: MainTableViewControllerDelegate!
     
-    //MARK: - IB Outlets
+    //MARK: - IBOutlets
     @IBOutlet weak var tagImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var brandLabel: UILabel!

@@ -28,6 +28,7 @@ class SettingsTableViewController: UITableViewController {
         content.image = UIImage(systemName: DataManager.shared.settingsImages[indexPath.row])
         content.text = DataManager.shared.settingsMenu[indexPath.row]
         content.textProperties.color = UIColor(named: "textColor") ?? UIColor.purple
+        
         cell.contentConfiguration = content
         return cell
     }
@@ -37,9 +38,6 @@ class SettingsTableViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            guard let helpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelpTableViewController") as? HelpTableViewController else { return }
-            navigationController?.pushViewController(helpVC, animated: true)
-        case 1:
             guard let whatsNewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WhatsNewTableViewController") as? WhatsNewTableViewController else { return }
             navigationController?.pushViewController(whatsNewVC, animated: true)
         default:

@@ -12,15 +12,13 @@ class AdviceDetailViewController: UIViewController {
     //MARK: - Private Properties
     var advice: Advice!
     
-    //MARK: - IB Outlets
+    //MARK: - IBOutlets
     @IBOutlet weak var adviceLabel: UILabel!
     
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         adviceLabel.text = advice.detailLabelText
-        
         if let presentationController = presentationController as? UISheetPresentationController {
             presentationController.detents = [.medium(), .large()]
             presentationController.prefersGrabberVisible = true
@@ -31,5 +29,4 @@ class AdviceDetailViewController: UIViewController {
     @IBAction func closeButtonTapped() {
         dismiss(animated: true)
     }
-
 }

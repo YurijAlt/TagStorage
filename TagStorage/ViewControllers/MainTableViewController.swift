@@ -17,6 +17,8 @@ class MainTableViewController: UITableViewController {
     private var tags: [SavedTag] = []
     
     //MARK: - Override Methods
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
@@ -27,8 +29,21 @@ class MainTableViewController: UITableViewController {
         tableView.backgroundView = imageView
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if UserDefaults.standard.object(forKey: "Change") == nil {
+            guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstStartPageViewController") as? FirstStartPageViewController else { return }
+            show(view, sender: nil)
+
+            UserDefaults.standard.set(false, forKey: "Change")
+        }
         
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddNewTagViewController" {
             guard let addNewTagVC = segue.destination as? AddNewTagViewController else { return }
             addNewTagVC.delegate = self
@@ -84,7 +99,7 @@ class MainTableViewController: UITableViewController {
         100
     }
     
-    //MARK: - IB Actions
+    //MARK: - IBActions
     @IBAction func sortingList(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             StorageManager.shared.fetchbyDate { result in
