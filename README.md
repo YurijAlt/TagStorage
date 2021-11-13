@@ -19,7 +19,7 @@ UIKit, UITabBarController, UINavigationController, UIAlertController, CoreData, 
 - Проект локализован только на английском языке.
 - Использована архитектура MVC.
 - Использованы UITabBarController, UINavigationController.
-- Использованы UITableView, UICollectionView с кастомными ячейками.
+- Использованы UITableView, UICollectionView с кастомными ячейками UICollectionViewCell и UITableViewCell.
 - Реализована возможность загрузки пользовательских фотографий с камеры iPhone.
 - Добавлена функция фильтра по дате/алфавиту среди записей CoreData.
 - Подобран дизайн, добавлены AppIcon, LaunchScreen.
