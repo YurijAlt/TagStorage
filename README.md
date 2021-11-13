@@ -22,6 +22,7 @@ UIKit, UITabBarController, UINavigationController, UIAlertController, CoreData, 
 - Использованы UITableView, UICollectionView с кастомными ячейками UICollectionViewCell и UITableViewCell.
 - Реализована возможность загрузки пользовательских фотографий с камеры iPhone.
 - Добавлена функция фильтра по дате/алфавиту среди записей CoreData.
+- Отображение описания символа ухода за одежой в UIAlertController, исчезающим по таймеру.
 - Подобран дизайн, добавлены AppIcon, LaunchScreen.
 
 ##### Short description:
@@ -31,7 +32,8 @@ UIKit, UITabBarController, UINavigationController, UIAlertController, CoreData, 
 - The project is localized only in English.
 - Used architecture MVC.
 - Used UITabBarController, UINavigationController.
-- Used UITableView, UICollectionView with custom cells.
+- Used UITableView, UICollectionView with custom cells UICollectionViewCell and UITableViewCell.
 - Implemented the ability to upload custom photos from the iPhone camera.
 - Added filter function by date / alphabet among CoreData records.
+- Displays a description of a garment care symbol in the UIAlertController that disappears by timer.
 - Designed, AppIcon, LaunchScreen added.
