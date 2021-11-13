@@ -7,7 +7,7 @@
 ### Основной использованный стек:
 ##### Main used stack:
 
-UIKit, UITabBarController, UINavigationController, UIAlertController, CoreData, UserDafaults, MVC
+UIKit, UITabBarController, UINavigationController, UIAlertController, CoreData, UserDefaults, MVC
 
 ### Краткое описание:
 
