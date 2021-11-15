@@ -67,49 +67,90 @@ class StorageManager {
     
 
     //MARK: Save and delete Data
-    func save(_ tag: Tag) {
-        let addTag = SavedTag(context: viewContext)
-        addTag.img = tag.img
-        addTag.name = tag.name
-        addTag.brand = tag.brand
-        addTag.dateStamp = tag.dateStamp
-        addTag.wash30 = tag.wash30
-        addTag.wash40 = tag.wash40
-        addTag.wash50 = tag.wash50
-        addTag.wash60 = tag.wash60
-        addTag.handWash = tag.handWash
-        addTag.doNotWash = tag.doNotWash
-        addTag.bleachingWithChlorine = tag.bleachingWithChlorine
-        addTag.nonChlorineBleach = tag.nonChlorineBleach
-        addTag.doNotBleach1 = tag.doNotBleach1
-        addTag.doNotBleach2 = tag.doNotBleach2
-        addTag.tumpleDryingLow = tag.tumpleDryingLow
-        addTag.tumpleDryingNormal = tag.tumpleDryingNormal
-        addTag.doNotTumpleDry = tag.doNotTumpleDry
-        addTag.lineDry = tag.lineDry
-        addTag.dryFlat = tag.dryFlat
-        addTag.dripDry = tag.dripDry
-        addTag.dryInTheShade = tag.dryInTheShade
-        addTag.lineDryInTheShade = tag.lineDryInTheShade
-        addTag.dryFlatInShade = tag.dryFlatInShade
-        addTag.dripDryInShade = tag.dripDryInShade
-        addTag.ironAtLowTemp = tag.ironAtLowTemp
-        addTag.ironAtMediumTemp = tag.ironAtMediumTemp
-        addTag.ironAtHeightTemp = tag.ironAtHeightTemp
-        addTag.doNotIron = tag.doNotIron
-        addTag.dryCleanHCSOnly = tag.dryCleanHCSOnly
-        addTag.cleaningWithHCS = tag.cleaningWithHCS
-        addTag.gentleCleaningWithHCS = tag.gentleCleaningWithHCS
-        addTag.dryCleanPCEOnly = tag.dryCleanPCEOnly
-        addTag.gentleCleaningWithPCE = tag.gentleCleaningWithPCE
-        addTag.veryGentleCleaningWithPCE = tag.veryGentleCleaningWithPCE
-        addTag.doNotDryClean = tag.doNotDryClean
-        addTag.gentleWetCleaning = tag.gentleWetCleaning
-        addTag.veryGentleWetCleaning = tag.veryGentleWetCleaning
-        addTag.doNotWetClean = tag.doNotWetClean
+    
+    func save(
+        _ img: Data,
+        _ name: String,
+        _ brand: String,
+        _ dateStamp: Date,
+        _ wash30: Bool,
+        _ wash40: Bool,
+        _ wash50: Bool,
+        _ wash60: Bool,
+        _ handWash: Bool,
+        _ doNotWash: Bool,
+        _ bleachingWithChlorine: Bool,
+        _ nonChlorineBleach: Bool,
+        _ doNotBleach1: Bool,
+        _ doNotBleach2: Bool,
+        _ tumpleDryingLow: Bool,
+        _ tumpleDryingNormal: Bool,
+        _ doNotTumpleDry: Bool,
+        _ lineDry: Bool,
+        _ dryFlat: Bool,
+        _ dripDry: Bool,
+        _ dryInTheShade: Bool,
+        _ lineDryInTheShade: Bool,
+        _ dryFlatInShade: Bool,
+        _ dripDryInShade: Bool,
+        _ ironAtLowTemp: Bool,
+        _ ironAtMediumTemp: Bool,
+        _ ironAtHeightTemp: Bool,
+        _ doNotIron: Bool,
+        _ dryCleanHCSOnly: Bool,
+        _ cleaningWithHCS: Bool,
+        _ gentleCleaningWithHCS: Bool,
+        _ dryCleanPCEOnly: Bool,
+        _ gentleCleaningWithPCE: Bool,
+        _ veryGentleCleaningWithPCE: Bool,
+        _ doNotDryClean: Bool,
+        _ gentleWetCleaning: Bool,
+        _ veryGentleWetCleaning: Bool,
+        _ doNotWetClean: Bool
+    ) {
+        let savedTag = SavedTag(context: viewContext)
+        savedTag.img = img
+        savedTag.name = name
+        savedTag.brand = brand
+        savedTag.dateStamp = dateStamp
+        savedTag.wash30 = wash30
+        savedTag.wash40 = wash40
+        savedTag.wash50 = wash50
+        savedTag.wash60 = wash60
+        savedTag.handWash = handWash
+        savedTag.doNotWash = doNotWash
+        savedTag.bleachingWithChlorine = bleachingWithChlorine
+        savedTag.nonChlorineBleach = nonChlorineBleach
+        savedTag.doNotBleach1 = doNotBleach1
+        savedTag.doNotBleach2 = doNotBleach2
+        savedTag.tumpleDryingLow = tumpleDryingLow
+        savedTag.tumpleDryingNormal = tumpleDryingNormal
+        savedTag.doNotTumpleDry = doNotTumpleDry
+        savedTag.lineDry = lineDry
+        savedTag.dryFlat = dryFlat
+        savedTag.dripDry = dripDry
+        savedTag.dryInTheShade = dryInTheShade
+        savedTag.lineDryInTheShade = lineDryInTheShade
+        savedTag.dryFlatInShade = dryFlatInShade
+        savedTag.dripDryInShade = dripDryInShade
+        savedTag.ironAtLowTemp = ironAtLowTemp
+        savedTag.ironAtMediumTemp = ironAtMediumTemp
+        savedTag.ironAtHeightTemp = ironAtHeightTemp
+        savedTag.doNotIron = doNotIron
+        savedTag.dryCleanHCSOnly = dryCleanHCSOnly
+        savedTag.cleaningWithHCS = cleaningWithHCS
+        savedTag.gentleCleaningWithHCS = gentleCleaningWithHCS
+        savedTag.dryCleanPCEOnly = dryCleanPCEOnly
+        savedTag.gentleCleaningWithPCE = gentleCleaningWithPCE
+        savedTag.veryGentleCleaningWithPCE = veryGentleCleaningWithPCE
+        savedTag.doNotDryClean = doNotDryClean
+        savedTag.gentleWetCleaning = gentleWetCleaning
+        savedTag.veryGentleWetCleaning = veryGentleWetCleaning
+        savedTag.doNotWetClean = doNotWetClean
         saveContext()
     }
-
+    
+    
     func delete(_ tag: SavedTag) {
         viewContext.delete(tag)
         saveContext()
