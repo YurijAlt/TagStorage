@@ -185,6 +185,7 @@ class AddNewTagViewController: UIViewController {
         }
     }
     
+    
     @IBAction func takePhotoFromCamera() {
         let picker = UIImagePickerController()
         picker.sourceType = .camera
