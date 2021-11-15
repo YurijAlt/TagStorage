@@ -150,7 +150,6 @@ class StorageManager {
         saveContext()
     }
     
-    
     func delete(_ tag: SavedTag) {
         viewContext.delete(tag)
         saveContext()
