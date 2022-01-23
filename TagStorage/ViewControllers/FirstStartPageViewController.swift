@@ -13,7 +13,7 @@ class FirstStartPageViewController: UIPageViewController {
     private var pages = [UIViewController]()
     private let pageControl = UIPageControl()
     private let initialPage = 0
-    
+
     private var pageControlBottomAnchor: NSLayoutConstraint?
     
     //MARK: - Override Methods
@@ -30,10 +30,9 @@ class FirstStartPageViewController: UIPageViewController {
         delegate = self
         pageControl.addTarget(self, action: #selector(pageControlTapped(_:)), for: .valueChanged)
         
-        guard let startVC1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Start1ViewController") as? Start1ViewController else { return }
-        
-        guard let startVC2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Start2ViewController") as? Start2ViewController else { return }
-        guard let startVC3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Start3ViewController") as? Start3ViewController else { return }
+        let startVC1 = Start1ViewController()
+        let startVC2 = Start2ViewController()
+        let startVC3 = Start3ViewController()
         guard let startVC4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Start4ViewController") as? Start4ViewController else { return }
         
         let page1 = startVC1
