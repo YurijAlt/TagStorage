@@ -2,7 +2,7 @@
 ## Приложение для сохранения бирок от одежды с использованием CoreData.
 ##### Application for saving tags from clothes using CoreData.
 
-![TagStorageScreenShot](https://downloader.disk.yandex.ru/preview/9c9cc55f39c72b6ffd306a0b6636b5c2595b39d9788ce5384514f9ba3e451426/61905d1d/VTwKJFn3Eytw1hlVJOb5JMq-pOzaTXC9lOlL5a9Ba8QMuAgYAImAH5fztaoTLWjsV30cES-8oGUMO7MN3-8Y8A%3D%3D?uid=0&filename=TagStorageScreenShots.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048 "TagStorage")
+![TagStorageScreenShot](https://i.ibb.co/K0cZ81y/Tag-Storage-Screen-Shots.png "TagStorage")
 
 ### Основной использованный стек:
 ##### Main used stack:
