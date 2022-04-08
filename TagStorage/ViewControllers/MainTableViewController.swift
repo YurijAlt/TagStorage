@@ -17,7 +17,7 @@ class MainTableViewController: UITableViewController {
     private var tags: [SavedTag] = []
     
     //MARK: - Override Methods
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class MainTableViewController: UITableViewController {
         if UserDefaults.standard.object(forKey: "Change") == nil {
             guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstStartPageViewController") as? FirstStartPageViewController else { return }
             show(view, sender: nil)
-
+            
             UserDefaults.standard.set(false, forKey: "Change")
         }
         
@@ -101,7 +101,8 @@ class MainTableViewController: UITableViewController {
     
     //MARK: - IBActions
     @IBAction func sortingList(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
+        switch sender.selectedSegmentIndex {
+        case 0:
             StorageManager.shared.fetchbyDate { result in
                 switch result {
                 case .success(let tags):
@@ -111,9 +112,7 @@ class MainTableViewController: UITableViewController {
                 }
             }
             tableView.reloadData()
-        }
-        
-        if sender.selectedSegmentIndex == 1 {
+        default:
             StorageManager.shared.fetchbyAZ { result in
                 switch result {
                 case .success(let tags):
